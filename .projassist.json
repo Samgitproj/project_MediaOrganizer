@@ -46,6 +46,10 @@
         {
             "path": "core\\MediaSearchThread.py",
             "github_url": "https://github.com/Samgitproj/project_MediaOrganizer/blob/main/core/MediaSearchThread.py"
+        },
+        {
+            "path": "core\\media_utils.py",
+            "github_url": "https://github.com/Samgitproj/project_MediaOrganizer/blob/main/core/media_utils.py"
         }
     ],
     "changelogs": [
