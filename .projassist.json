@@ -1,57 +1,61 @@
 {
-  "project_name": "MediaOrganizer",
-  "project_path": "C:\\OneDrive\\Vioprint\\OneDrive - Vioprint\\software projecten\\MediaOrganizer",
-  "github_repo": "https://github.com/Samgitproj/project_MediaOrganizer",
-  "scripts": [
-    {
-      "path": "main.py",
-      "github_url": "https://github.com/Samgitproj/project_MediaOrganizer/blob/main/main.py"
+    "project_name": "MediaOrganizer",
+    "project_path": "C:\\OneDrive\\Vioprint\\OneDrive - Vioprint\\software projecten\\MediaOrganizer",
+    "github_repo": "https://github.com/Samgitproj/project_MediaOrganizer",
+    "scripts": [
+        {
+            "path": "main.py",
+            "github_url": "https://github.com/Samgitproj/project_MediaOrganizer/blob/main/main.py"
+        },
+        {
+            "path": "backup/__init__.py",
+            "github_url": "https://github.com/Samgitproj/project_MediaOrganizer/blob/main/backup/__init__.py"
+        },
+        {
+            "path": "core/__init__.py",
+            "github_url": "https://github.com/Samgitproj/project_MediaOrganizer/blob/main/core/__init__.py"
+        },
+        {
+            "path": "documents/__init__.py",
+            "github_url": "https://github.com/Samgitproj/project_MediaOrganizer/blob/main/documents/__init__.py"
+        },
+        {
+            "path": "gui/MainWindow.ui",
+            "github_url": "https://github.com/Samgitproj/project_MediaOrganizer/blob/main/gui/MainWindow.ui"
+        },
+        {
+            "path": "gui/__init__.py",
+            "github_url": "https://github.com/Samgitproj/project_MediaOrganizer/blob/main/gui/__init__.py"
+        },
+        {
+            "path": "resources/__init__.py",
+            "github_url": "https://github.com/Samgitproj/project_MediaOrganizer/blob/main/resources/__init__.py"
+        },
+        {
+            "path": "core\\FotoBeheerApp.py",
+            "github_url": "https://github.com/Samgitproj/project_MediaOrganizer/blob/main/core/FotoBeheerApp.py"
+        }
+    ],
+    "changelogs": [
+        "main.changelog.txt"
+    ],
+    "log_file": "log.txt",
+    "rules": {
+        "auto_changelog": {
+            "enabled": true,
+            "apply_to_new_scripts": true
+        },
+        "log_format": "default",
+        "backup_on_edit": true
     },
-    {
-      "path": "backup/__init__.py",
-      "github_url": "https://github.com/Samgitproj/project_MediaOrganizer/blob/main/backup/__init__.py"
-    },
-    {
-      "path": "core/__init__.py",
-      "github_url": "https://github.com/Samgitproj/project_MediaOrganizer/blob/main/core/__init__.py"
-    },
-    {
-      "path": "documents/__init__.py",
-      "github_url": "https://github.com/Samgitproj/project_MediaOrganizer/blob/main/documents/__init__.py"
-    },
-    {
-      "path": "gui/MainWindow.ui",
-      "github_url": "https://github.com/Samgitproj/project_MediaOrganizer/blob/main/gui/MainWindow.ui"
-    },
-    {
-      "path": "gui/__init__.py",
-      "github_url": "https://github.com/Samgitproj/project_MediaOrganizer/blob/main/gui/__init__.py"
-    },
-    {
-      "path": "resources/__init__.py",
-      "github_url": "https://github.com/Samgitproj/project_MediaOrganizer/blob/main/resources/__init__.py"
-    }
-  ],
-  "changelogs": [
-    "main.changelog.txt"
-  ],
-  "log_file": "log.txt",
-  "rules": {
-    "auto_changelog": {
-      "enabled": true,
-      "apply_to_new_scripts": true
-    },
-    "log_format": "default",
-    "backup_on_edit": true
-  },
-  "ai_rules": [
-    {
-      "id": "add_logging",
-      "description": "Voeg logging.debug toe aan elke methode",
-      "active": true,
-      "trigger": "btnAddLoggingAI",
-      "prompt": "Voeg logging.debug() toe aan het begin van elke functie om aan te geven welke methode wordt aangeroepen. Gebruik geen andere loggingniveaus tenzij nodig."
-    }
-  ],
-  "gpt_status_url": "https://github.com/Samgitproj/project_MediaOrganizer/raw/main/.projassist.json"
+    "ai_rules": [
+        {
+            "id": "add_logging",
+            "description": "Voeg logging.debug toe aan elke methode",
+            "active": true,
+            "trigger": "btnAddLoggingAI",
+            "prompt": "Voeg logging.debug() toe aan het begin van elke functie om aan te geven welke methode wordt aangeroepen. Gebruik geen andere loggingniveaus tenzij nodig."
+        }
+    ],
+    "gpt_status_url": "https://github.com/Samgitproj/project_MediaOrganizer/raw/main/.projassist.json"
 }
