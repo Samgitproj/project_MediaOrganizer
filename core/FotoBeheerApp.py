@@ -246,24 +246,5 @@ def main():
     app.exec()
 
 
-def start_fotobeheer(ui):
-    logging.info("start_fotobeheer() gestart – GUI gekoppeld")
-
-    # Voeg hier je knoplogica toe, bijvoorbeeld:
-    ui.btnStart.clicked.connect(lambda: logging.info("Start geklikt"))
-    ui.btnStop.clicked.connect(lambda: logging.info("Stop geklikt"))
-    ui.btnPause.clicked.connect(lambda: logging.info("Pauze geklikt"))
-    ui.btnNext.clicked.connect(lambda: logging.info("Volgende geklikt"))
-    ui.btnPrevious.clicked.connect(lambda: logging.info("Vorige geklikt"))
-    ui.btnAddFolder.clicked.connect(lambda: logging.info("Map toevoegen geklikt"))
-    ui.btnRemoveFolder.clicked.connect(lambda: logging.info("Map verwijderen geklikt"))
-    ui.chkLoop.toggled.connect(
-        lambda checked: logging.info(f"Loop {'aan' if checked else 'uit'}")
-    )
-    ui.spinPhotoDelay.valueChanged.connect(
-        lambda v: logging.info(f"Fotovertraging ingesteld op {v} seconden")
-    )
-
-
 if __name__ == "__main__":
     main()
