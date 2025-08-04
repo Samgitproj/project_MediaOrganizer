@@ -67,6 +67,25 @@
     <string>Zoek in locatie</string>
    </property>
   </widget>
+  <widget class="QPushButton" name="btnStartMainwindow">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>260</y>
+     <width>120</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="text">
+    <string>Start voorstelling</string>
+   </property>
+  </widget>
  </widget>
  <resources/>
  <connections/>
