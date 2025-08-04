@@ -95,22 +95,29 @@ class FotoBeheerApp(QtWidgets.QMainWindow):
         )  # 0 = foto's, 1 = video's, 2 = beide
         resultaten = []
 
-        for root, dirs, files in os.walk(map_pad):
-            foto_count = 0
-            video_count = 0
-            for f in files:
-                ext = os.path.splitext(f)[1].lower()
-                if ext in self.supported_photo_exts:
-                    foto_count += 1
-                elif ext in self.supported_video_exts:
-                    video_count += 1
+        try:
+            for naam in sorted(os.listdir(map_pad)):
+                volledige_map = os.path.join(map_pad, naam)
+                if not os.path.isdir(volledige_map):
+                    continue
 
-            if (
-                (index == 0 and foto_count > 0)
-                or (index == 1 and video_count > 0)
-                or (index == 2 and (foto_count + video_count) > 0)
-            ):
-                resultaten.append(root)
+                foto_count = 0
+                video_count = 0
+                for f in os.listdir(volledige_map):
+                    ext = os.path.splitext(f)[1].lower()
+                    if ext in self.supported_photo_exts:
+                        foto_count += 1
+                    elif ext in self.supported_video_exts:
+                        video_count += 1
+
+                if (
+                    (index == 0 and foto_count > 0)
+                    or (index == 1 and video_count > 0)
+                    or (index == 2 and (foto_count + video_count) > 0)
+                ):
+                    resultaten.append((volledige_map, foto_count, video_count))
+        except Exception as e:
+            logging.warning(f"Fout bij het lezen van {map_pad}: {e}")
 
         return resultaten
 
@@ -139,11 +146,11 @@ class FotoBeheerApp(QtWidgets.QMainWindow):
 
         self.ui_dialog.listFoundedItems.clear()
         resultaten = self.zoek_media_in_map(folder)
-        for pad in resultaten:
+        for pad, foto_count, video_count in resultaten:
             item = QtWidgets.QTreeWidgetItem()
             item.setText(0, pad)
-            item.setText(1, "")  # kolom voor foto's blijft leeg
-            item.setText(2, "")  # kolom voor video's blijft leeg
+            item.setText(1, str(foto_count))
+            item.setText(2, str(video_count))
             self.ui_dialog.listFoundedItems.addTopLevelItem(item)
         logging.info(f"Zoekactie voltooid – {len(resultaten)} resultaten gevonden")
 
