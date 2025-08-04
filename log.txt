@@ -122,3 +122,8 @@
 2025-08-04 20:31:33,950 [INFO] FotoBeheerApp UI is geïnitialiseerd.
 2025-08-04 20:31:41,043 [INFO] Gekozen map: C:/OneDrive/Vioprint/OneDrive - Vioprint/leveranciers
 2025-08-04 20:31:49,384 [INFO] Mediatree geëxporteerd naar: C:\\OneDrive\\Vioprint\\OneDrive - Vioprint\\software projecten\\MediaOrganizer\\documents\\mediatree_export.csv
+2025-08-04 20:36:44,467 [INFO] main.py gestart
+2025-08-04 20:36:44,544 [INFO] FotoBeheerApp UI is geïnitialiseerd.
+2025-08-04 20:36:50,529 [INFO] Gekozen map: C:/OneDrive/Vioprint/OneDrive - Vioprint/leveranciers
+2025-08-04 20:37:36,956 [INFO] Mediatree geëxporteerd naar: C:\\OneDrive\\Vioprint\\OneDrive - Vioprint\\software projecten\\MediaOrganizer\\documents\\mediatree_export.csv
+2025-08-04 20:58:48,063 [INFO] Gekozen map: C:/OneDrive/Vioprint/OneDrive - Vioprint/leveranciers
