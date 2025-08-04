@@ -166,13 +166,38 @@ class FotoBeheerApp(QtWidgets.QMainWindow):
             self.status_dialoog.close()
 
     def verwerk_resultaten(self, mappen, fouten):
-        statusregel = (
+        logging.info(
             f"Zoekactie voltooid – {len(mappen)} mappen gevonden, {len(fouten)} fouten"
         )
-        logging.info(statusregel)
 
-        self.ui_dialog.listFoundedItems.addItems(mappen)
-        self.ui_dialog.listFoundedItemsNok.addItem(statusregel)  # 👈 toevoeging
+        self.ui_dialog.listFoundedItems.clear()
+
+        for pad in mappen:
+            foto_count = 0
+            video_count = 0
+
+            try:
+                for bestand in os.listdir(pad):
+                    full_path = os.path.join(pad, bestand)
+                    if not os.path.isfile(full_path):
+                        continue
+                    ext = os.path.splitext(bestand)[1].lower()
+                    if ext in self.supported_photo_exts:
+                        foto_count += 1
+                    elif ext in self.supported_video_exts:
+                        video_count += 1
+            except Exception as e:
+                logging.warning(f"Fout bij tellen in map {pad}: {e}")
+                fouten.append(f"{pad} – fout bij tellen: {e}")
+                continue
+
+            item = QtWidgets.QTreeWidgetItem()
+            item.setText(0, pad)
+            item.setText(1, str(foto_count))
+            item.setText(2, str(video_count))
+            self.ui_dialog.listFoundedItems.addTopLevelItem(item)
+
+        self.ui_dialog.listFoundedItemsNok.clear()
         self.ui_dialog.listFoundedItemsNok.addItems(fouten)
 
         self.ui_dialog.btnSearchAll.setEnabled(True)
