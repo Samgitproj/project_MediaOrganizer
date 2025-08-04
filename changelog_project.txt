@@ -231,3 +231,9 @@
 +        return ext in image_extensions or ext in video_extensions
 
 +    return False
+
+
+--- 2025-08-04 14:56:29 | core\media_utils.py ---
+
+
+--- 2025-08-04 14:58:12 | core\FotoBeheerApp.py ---

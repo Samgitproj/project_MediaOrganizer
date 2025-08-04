@@ -91,3 +91,6 @@
 +        return ext in image_extensions or ext in video_extensions
 
 +    return False
+
+
+--- 2025-08-04 14:56:29 ---
