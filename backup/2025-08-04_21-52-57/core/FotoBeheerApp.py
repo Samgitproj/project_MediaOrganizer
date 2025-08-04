@@ -89,6 +89,40 @@ class FotoBeheerApp(QtWidgets.QMainWindow):
             self.ui_dialog.lineScriptLocationMedia.setText(folder)
             logging.info(f"Gekozen map: {folder}")
 
+    def zoek_media_in_map(self, map_pad):
+        geselecteerd_type = self.ui_dialog.comboSelectTypeMain.currentText().lower()
+        resultaten = []
+
+        for root, dirs, files in os.walk(map_pad):
+            foto_count = 0
+            video_count = 0
+            for f in files:
+                ext = os.path.splitext(f)[1].lower()
+                if ext in self.supported_photo_exts:
+                    foto_count += 1
+                elif ext in self.supported_video_exts:
+                    video_count += 1
+
+            if (
+                (geselecteerd_type == "foto" and foto_count > 0)
+                or (geselecteerd_type == "video" and video_count > 0)
+                or (geselecteerd_type == "beide" and (foto_count + video_count) > 0)
+            ):
+                resultaten.append(root)
+        return resultaten
+
+    def verwerk_selectie_en_start_mainwindow(self):
+        geselecteerde_items = self.ui_dialog.listFoundedItems.selectedItems()
+        if not geselecteerde_items:
+            QtWidgets.QMessageBox.warning(
+                self.dialog, "Geen selectie", "Selecteer eerst een map."
+            )
+            return
+
+        geselecteerde_pad = geselecteerde_items[0].text()
+        self.mainwindow.ui.listFolders.addItem(geselecteerde_pad)
+        self.mainwindow.show()
+
     def start_search_from_location(self):
         folder = self.ui_dialog.lineScriptLocationMedia.text().strip()
         if not folder or not os.path.isdir(folder):
@@ -332,37 +366,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-    def zoek_media_in_map(self, map_pad):
-        geselecteerd_type = self.ui_dialog.comboSelectTypeMain.currentText().lower()
-        resultaten = []
-
-        for root, dirs, files in os.walk(map_pad):
-            foto_count = 0
-            video_count = 0
-            for f in files:
-                ext = os.path.splitext(f)[1].lower()
-                if ext in self.supported_photo_exts:
-                    foto_count += 1
-                elif ext in self.supported_video_exts:
-                    video_count += 1
-
-            if (
-                (geselecteerd_type == "foto" and foto_count > 0)
-                or (geselecteerd_type == "video" and video_count > 0)
-                or (geselecteerd_type == "beide" and (foto_count + video_count) > 0)
-            ):
-                resultaten.append(root)
-        return resultaten
-
-    def verwerk_selectie_en_start_mainwindow(self):
-        geselecteerde_items = self.ui_dialog.listFoundedItems.selectedItems()
-        if not geselecteerde_items:
-            QtWidgets.QMessageBox.warning(
-                self.dialog, "Geen selectie", "Selecteer eerst een map."
-            )
-            return
-
-        geselecteerde_pad = geselecteerde_items[0].text()
-        self.mainwindow.ui.listFolders.addItem(geselecteerde_pad)
-        self.mainwindow.show()
