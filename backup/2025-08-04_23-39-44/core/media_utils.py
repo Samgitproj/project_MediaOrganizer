@@ -35,16 +35,10 @@ excluded_folders = [
 # Controleer of een bestand een media-item is volgens opgegeven filtertype
 def is_media_file(filepath: str, filtertype: str) -> bool:
     ext = os.path.splitext(filepath)[1].lower()
-    print(f"[DEBUG] Bestand: {filepath}, extensie: {ext}, filtertype: {filtertype}")
-
     if filtertype == "images":
-        match = ext in image_extensions
+        return ext in image_extensions
     elif filtertype == "videos":
-        match = ext in video_extensions
+        return ext in video_extensions
     elif filtertype == "all":
-        match = ext in image_extensions or ext in video_extensions
-    else:
-        match = False
-
-    print(f"[DEBUG] → match: {match}")
-    return match
+        return ext in image_extensions or ext in video_extensions
+    return False

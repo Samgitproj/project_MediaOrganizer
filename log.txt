@@ -160,3 +160,996 @@ AttributeError: 'FotoBeheerApp' object has no attribute 'exporteer_naar_document
 2025-08-04 22:21:29,205 [INFO] FotoBeheerApp UI is geïnitialiseerd.
 2025-08-04 22:21:37,015 [INFO] Gekozen map: C:/OneDrive/Vioprint/OneDrive - Vioprint/leveranciers/Wipotec
 2025-08-04 22:21:40,027 [INFO] Zoekactie voltooid – 1 resultaten gevonden
+2025-08-04 22:26:55,852 [INFO] main.py gestart
+2025-08-04 22:26:55,929 [INFO] FotoBeheerApp UI is geïnitialiseerd.
+2025-08-04 22:27:03,290 [INFO] Gekozen map: C:/OneDrive/Vioprint/OneDrive - Vioprint/leveranciers/Wipotec
+2025-08-04 22:27:04,468 [INFO] Zoekactie voltooid – 1 resultaten gevonden
+2025-08-04 22:27:15,007 [INFO] Filtertype geselecteerd: Foto's
+2025-08-04 22:27:15,013 [INFO] Totaal gevonden bestanden: 7
+2025-08-04 22:27:15,013 [INFO]  → C:/OneDrive/Vioprint/OneDrive - Vioprint/leveranciers/Wipotec\instructies\handmatig starten.png
+2025-08-04 22:27:15,014 [INFO]  → C:/OneDrive/Vioprint/OneDrive - Vioprint/leveranciers/Wipotec\instructies\locatie van de logfiles in een backup.JPG
+2025-08-04 22:27:15,014 [INFO]  → C:/OneDrive/Vioprint/OneDrive - Vioprint/leveranciers/Wipotec\instructies\parameter settings voor remaining quantity.png
+2025-08-04 22:27:15,015 [INFO]  → C:/OneDrive/Vioprint/OneDrive - Vioprint/leveranciers/Wipotec\instructies\REA controller factory reset.PNG
+2025-08-04 22:27:15,015 [INFO]  → C:/OneDrive/Vioprint/OneDrive - Vioprint/leveranciers/Wipotec\instructies\scherm kalibreren met butterfly tool.PNG
+2025-08-04 22:27:15,015 [INFO]  → C:/OneDrive/Vioprint/OneDrive - Vioprint/leveranciers/Wipotec\instructies\TE sensor teachen.PNG
+2025-08-04 22:27:15,016 [INFO]  → C:/OneDrive/Vioprint/OneDrive - Vioprint/leveranciers/Wipotec\instructies\UPS battery change.png
+2025-08-04 22:27:16,470 [INFO] Foto getoond: C:/OneDrive/Vioprint/OneDrive - Vioprint/leveranciers/Wipotec\instructies\handmatig starten.png
+2025-08-04 22:27:20,695 [INFO] Foto getoond: C:/OneDrive/Vioprint/OneDrive - Vioprint/leveranciers/Wipotec\instructies\locatie van de logfiles in een backup.JPG
+2025-08-04 22:27:25,382 [INFO] Foto getoond: C:/OneDrive/Vioprint/OneDrive - Vioprint/leveranciers/Wipotec\instructies\parameter settings voor remaining quantity.png
+2025-08-04 22:27:30,638 [INFO] Foto getoond: C:/OneDrive/Vioprint/OneDrive - Vioprint/leveranciers/Wipotec\instructies\REA controller factory reset.PNG
+2025-08-04 22:27:34,988 [INFO] Foto getoond: C:/OneDrive/Vioprint/OneDrive - Vioprint/leveranciers/Wipotec\instructies\scherm kalibreren met butterfly tool.PNG
+2025-08-04 22:27:39,003 [INFO] Foto getoond: C:/OneDrive/Vioprint/OneDrive - Vioprint/leveranciers/Wipotec\instructies\TE sensor teachen.PNG
+2025-08-04 22:27:42,056 [INFO] Foto getoond: C:/OneDrive/Vioprint/OneDrive - Vioprint/leveranciers/Wipotec\instructies\UPS battery change.png
+2025-08-04 22:27:45,060 [INFO] Foto getoond: C:/OneDrive/Vioprint/OneDrive - Vioprint/leveranciers/Wipotec\instructies\handmatig starten.png
+2025-08-04 22:27:48,111 [INFO] Foto getoond: C:/OneDrive/Vioprint/OneDrive - Vioprint/leveranciers/Wipotec\instructies\locatie van de logfiles in een backup.JPG
+2025-08-04 22:27:51,148 [INFO] Foto getoond: C:/OneDrive/Vioprint/OneDrive - Vioprint/leveranciers/Wipotec\instructies\parameter settings voor remaining quantity.png
+2025-08-04 22:27:54,171 [INFO] Foto getoond: C:/OneDrive/Vioprint/OneDrive - Vioprint/leveranciers/Wipotec\instructies\REA controller factory reset.PNG
+2025-08-04 22:27:57,201 [INFO] Foto getoond: C:/OneDrive/Vioprint/OneDrive - Vioprint/leveranciers/Wipotec\instructies\scherm kalibreren met butterfly tool.PNG
+2025-08-04 22:28:00,236 [INFO] Foto getoond: C:/OneDrive/Vioprint/OneDrive - Vioprint/leveranciers/Wipotec\instructies\TE sensor teachen.PNG
+2025-08-04 22:28:03,295 [INFO] Foto getoond: C:/OneDrive/Vioprint/OneDrive - Vioprint/leveranciers/Wipotec\instructies\UPS battery change.png
+2025-08-04 22:28:06,308 [INFO] Foto getoond: C:/OneDrive/Vioprint/OneDrive - Vioprint/leveranciers/Wipotec\instructies\handmatig starten.png
+2025-08-04 22:28:09,318 [INFO] Foto getoond: C:/OneDrive/Vioprint/OneDrive - Vioprint/leveranciers/Wipotec\instructies\locatie van de logfiles in een backup.JPG
+2025-08-04 22:36:33,113 [INFO] main.py gestart
+2025-08-04 22:36:33,193 [INFO] FotoBeheerApp UI is geïnitialiseerd.
+2025-08-04 22:36:40,516 [INFO] Gekozen map: C:/OneDrive/Vioprint/OneDrive - Vioprint
+2025-08-04 22:36:42,472 [INFO] Zoekactie voltooid – 0 resultaten gevonden
+2025-08-04 22:37:17,700 [INFO] Gekozen map: C:/OneDrive/Vioprint/OneDrive - Vioprint
+2025-08-04 22:37:21,361 [INFO] Zoekactie voltooid – 0 resultaten gevonden
+2025-08-04 22:37:45,211 [INFO] Gekozen map: C:/OneDrive/Vioprint/OneDrive - Vioprint/leveranciers
+2025-08-04 22:37:48,210 [INFO] Zoekactie voltooid – 1 resultaten gevonden
+2025-08-04 22:38:09,449 [INFO] Gekozen map: C:/OneDrive/Vioprint/OneDrive - Vioprint/leveranciers/rota
+2025-08-04 22:38:11,533 [INFO] Zoekactie voltooid – 2 resultaten gevonden
+2025-08-04 22:41:18,148 [INFO] Gekozen map: C:/Users/SamVandenLangenbergh/Pictures
+2025-08-04 22:41:22,040 [INFO] Zoekactie voltooid – 3 resultaten gevonden
+2025-08-04 23:24:34,682 [INFO] Filtertype geselecteerd: Foto's
+2025-08-04 23:24:34,695 [INFO] Totaal gevonden bestanden: 8
+2025-08-04 23:24:34,696 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Camera Roll\WIN_20250214_17_24_12_Pro.jpg
+2025-08-04 23:24:34,697 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Camera Roll\WIN_20250214_17_31_22_Pro.jpg
+2025-08-04 23:24:34,698 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Camera Roll\WIN_20250214_19_21_10_Pro.jpg
+2025-08-04 23:24:34,698 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Camera Roll\WIN_20250214_19_21_12_Pro.jpg
+2025-08-04 23:24:34,700 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Camera Roll\WIN_20250214_19_21_26_Pro.jpg
+2025-08-04 23:24:34,701 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Camera Roll\WIN_20250214_19_32_38_Pro.jpg
+2025-08-04 23:24:34,702 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Camera Roll\WIN_20250214_19_35_57_Pro.jpg
+2025-08-04 23:24:34,703 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Camera Roll\WIN_20250214_19_35_59_Pro.jpg
+2025-08-04 23:24:34,721 [INFO] Foto getoond: C:/Users/SamVandenLangenbergh/Pictures\Camera Roll\WIN_20250214_17_24_12_Pro.jpg
+2025-08-04 23:24:37,756 [INFO] Foto getoond: C:/Users/SamVandenLangenbergh/Pictures\Camera Roll\WIN_20250214_17_31_22_Pro.jpg
+2025-08-04 23:24:40,790 [INFO] Foto getoond: C:/Users/SamVandenLangenbergh/Pictures\Camera Roll\WIN_20250214_19_21_10_Pro.jpg
+2025-08-04 23:24:43,814 [INFO] Foto getoond: C:/Users/SamVandenLangenbergh/Pictures\Camera Roll\WIN_20250214_19_21_12_Pro.jpg
+2025-08-04 23:24:46,152 [INFO] Foto getoond: C:/Users/SamVandenLangenbergh/Pictures\Camera Roll\WIN_20250214_19_21_26_Pro.jpg
+2025-08-04 23:24:47,454 [INFO] Foto getoond: C:/Users/SamVandenLangenbergh/Pictures\Camera Roll\WIN_20250214_19_32_38_Pro.jpg
+2025-08-04 23:24:47,983 [INFO] Foto getoond: C:/Users/SamVandenLangenbergh/Pictures\Camera Roll\WIN_20250214_19_35_57_Pro.jpg
+2025-08-04 23:24:48,364 [INFO] Foto getoond: C:/Users/SamVandenLangenbergh/Pictures\Camera Roll\WIN_20250214_19_35_59_Pro.jpg
+2025-08-04 23:24:51,380 [INFO] Foto getoond: C:/Users/SamVandenLangenbergh/Pictures\Camera Roll\WIN_20250214_17_24_12_Pro.jpg
+2025-08-04 23:24:54,411 [INFO] Foto getoond: C:/Users/SamVandenLangenbergh/Pictures\Camera Roll\WIN_20250214_17_31_22_Pro.jpg
+2025-08-04 23:24:57,423 [INFO] Foto getoond: C:/Users/SamVandenLangenbergh/Pictures\Camera Roll\WIN_20250214_19_21_10_Pro.jpg
+2025-08-04 23:24:57,924 [INFO] Filtertype geselecteerd: Foto's
+2025-08-04 23:24:57,935 [INFO] Totaal gevonden bestanden: 11
+2025-08-04 23:24:57,936 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Camera Roll\WIN_20250214_17_24_12_Pro.jpg
+2025-08-04 23:24:57,937 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Camera Roll\WIN_20250214_17_31_22_Pro.jpg
+2025-08-04 23:24:57,938 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Camera Roll\WIN_20250214_19_21_10_Pro.jpg
+2025-08-04 23:24:57,939 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Camera Roll\WIN_20250214_19_21_12_Pro.jpg
+2025-08-04 23:24:57,940 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Camera Roll\WIN_20250214_19_21_26_Pro.jpg
+2025-08-04 23:24:57,941 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Camera Roll\WIN_20250214_19_32_38_Pro.jpg
+2025-08-04 23:24:57,943 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Camera Roll\WIN_20250214_19_35_57_Pro.jpg
+2025-08-04 23:24:57,943 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Camera Roll\WIN_20250214_19_35_59_Pro.jpg
+2025-08-04 23:24:57,944 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\tjoapack\IMG-20250321-WA0000.jpg
+2025-08-04 23:24:57,945 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\tjoapack\IMG-20250321-WA0001.jpg
+2025-08-04 23:24:57,945 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\tjoapack\IMG-20250321-WA0002.jpg
+2025-08-04 23:24:57,958 [INFO] Foto getoond: C:/Users/SamVandenLangenbergh/Pictures\Camera Roll\WIN_20250214_19_21_10_Pro.jpg
+2025-08-04 23:24:58,366 [INFO] Filtertype geselecteerd: Foto's
+2025-08-04 23:24:58,367 [INFO] Totaal gevonden bestanden: 11
+2025-08-04 23:24:58,368 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Camera Roll\WIN_20250214_17_24_12_Pro.jpg
+2025-08-04 23:24:58,369 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Camera Roll\WIN_20250214_17_31_22_Pro.jpg
+2025-08-04 23:24:58,369 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Camera Roll\WIN_20250214_19_21_10_Pro.jpg
+2025-08-04 23:24:58,370 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Camera Roll\WIN_20250214_19_21_12_Pro.jpg
+2025-08-04 23:24:58,371 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Camera Roll\WIN_20250214_19_21_26_Pro.jpg
+2025-08-04 23:24:58,371 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Camera Roll\WIN_20250214_19_32_38_Pro.jpg
+2025-08-04 23:24:58,372 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Camera Roll\WIN_20250214_19_35_57_Pro.jpg
+2025-08-04 23:24:58,372 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Camera Roll\WIN_20250214_19_35_59_Pro.jpg
+2025-08-04 23:24:58,372 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\tjoapack\IMG-20250321-WA0000.jpg
+2025-08-04 23:24:58,373 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\tjoapack\IMG-20250321-WA0001.jpg
+2025-08-04 23:24:58,373 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\tjoapack\IMG-20250321-WA0002.jpg
+2025-08-04 23:24:58,384 [INFO] Foto getoond: C:/Users/SamVandenLangenbergh/Pictures\Camera Roll\WIN_20250214_19_21_10_Pro.jpg
+2025-08-04 23:25:01,416 [INFO] Foto getoond: C:/Users/SamVandenLangenbergh/Pictures\Camera Roll\WIN_20250214_19_21_12_Pro.jpg
+2025-08-04 23:25:04,421 [INFO] Foto getoond: C:/Users/SamVandenLangenbergh/Pictures\Camera Roll\WIN_20250214_19_21_26_Pro.jpg
+2025-08-04 23:25:07,444 [INFO] Foto getoond: C:/Users/SamVandenLangenbergh/Pictures\Camera Roll\WIN_20250214_19_32_38_Pro.jpg
+2025-08-04 23:25:10,455 [INFO] Foto getoond: C:/Users/SamVandenLangenbergh/Pictures\Camera Roll\WIN_20250214_19_35_57_Pro.jpg
+2025-08-04 23:25:13,467 [INFO] Foto getoond: C:/Users/SamVandenLangenbergh/Pictures\Camera Roll\WIN_20250214_19_35_59_Pro.jpg
+2025-08-04 23:25:13,810 [INFO] Map verwijderd: C:/Users/SamVandenLangenbergh/Pictures\tjoapack
+2025-08-04 23:25:16,522 [INFO] Foto getoond: C:/Users/SamVandenLangenbergh/Pictures\tjoapack\IMG-20250321-WA0000.jpg
+2025-08-04 23:25:19,555 [INFO] Foto getoond: C:/Users/SamVandenLangenbergh/Pictures\tjoapack\IMG-20250321-WA0001.jpg
+2025-08-04 23:25:22,602 [INFO] Foto getoond: C:/Users/SamVandenLangenbergh/Pictures\tjoapack\IMG-20250321-WA0002.jpg
+2025-08-04 23:25:25,602 [INFO] Foto getoond: C:/Users/SamVandenLangenbergh/Pictures\Camera Roll\WIN_20250214_17_24_12_Pro.jpg
+2025-08-04 23:25:28,365 [INFO] Filtertype geselecteerd: Beide
+2025-08-04 23:25:28,366 [INFO] Totaal gevonden bestanden: 11
+2025-08-04 23:25:28,367 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Camera Roll\WIN_20250211_12_10_12_Pro.mp4
+2025-08-04 23:25:28,367 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Camera Roll\WIN_20250214_17_24_12_Pro.jpg
+2025-08-04 23:25:28,367 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Camera Roll\WIN_20250214_17_27_44_Pro.mp4
+2025-08-04 23:25:28,367 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Camera Roll\WIN_20250214_17_31_22_Pro.jpg
+2025-08-04 23:25:28,368 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Camera Roll\WIN_20250214_19_21_10_Pro.jpg
+2025-08-04 23:25:28,368 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Camera Roll\WIN_20250214_19_21_12_Pro.jpg
+2025-08-04 23:25:28,368 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Camera Roll\WIN_20250214_19_21_26_Pro.jpg
+2025-08-04 23:25:28,368 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Camera Roll\WIN_20250214_19_31_45_Pro.mp4
+2025-08-04 23:25:28,368 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Camera Roll\WIN_20250214_19_32_38_Pro.jpg
+2025-08-04 23:25:28,369 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Camera Roll\WIN_20250214_19_35_57_Pro.jpg
+2025-08-04 23:25:28,369 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Camera Roll\WIN_20250214_19_35_59_Pro.jpg
+2025-08-04 23:25:28,373 [INFO] Video afgespeeld: C:/Users/SamVandenLangenbergh/Pictures\Camera Roll\WIN_20250211_12_10_12_Pro.mp4
+2025-08-04 23:25:28,423 [ERROR] Mediabestand is ongeldig of kan niet worden afgespeeld.
+2025-08-04 23:25:39,945 [INFO] Foto getoond: C:/Users/SamVandenLangenbergh/Pictures\Camera Roll\WIN_20250214_17_24_12_Pro.jpg
+2025-08-04 23:25:42,959 [INFO] Video afgespeeld: C:/Users/SamVandenLangenbergh/Pictures\Camera Roll\WIN_20250214_17_27_44_Pro.mp4
+2025-08-04 23:25:42,963 [ERROR] Mediabestand is ongeldig of kan niet worden afgespeeld.
+2025-08-04 23:25:43,782 [INFO] Map verwijderd: C:/Users/SamVandenLangenbergh/Pictures\Camera Roll
+2025-08-04 23:25:57,663 [INFO] Filtertype geselecteerd: Foto's
+2025-08-04 23:25:57,665 [INFO] Totaal gevonden bestanden: 3
+2025-08-04 23:25:57,666 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\tjoapack\IMG-20250321-WA0000.jpg
+2025-08-04 23:25:57,666 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\tjoapack\IMG-20250321-WA0001.jpg
+2025-08-04 23:25:57,667 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\tjoapack\IMG-20250321-WA0002.jpg
+2025-08-04 23:25:57,697 [INFO] Foto getoond: C:/Users/SamVandenLangenbergh/Pictures\tjoapack\IMG-20250321-WA0002.jpg
+2025-08-04 23:26:00,732 [INFO] Foto getoond: C:/Users/SamVandenLangenbergh/Pictures\tjoapack\IMG-20250321-WA0000.jpg
+2025-08-04 23:26:03,796 [INFO] Foto getoond: C:/Users/SamVandenLangenbergh/Pictures\tjoapack\IMG-20250321-WA0001.jpg
+2025-08-04 23:26:06,843 [INFO] Foto getoond: C:/Users/SamVandenLangenbergh/Pictures\tjoapack\IMG-20250321-WA0002.jpg
+2025-08-04 23:26:07,168 [INFO] Filtertype geselecteerd: Films
+2025-08-04 23:26:07,169 [INFO] Totaal gevonden bestanden: 1
+2025-08-04 23:26:07,170 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\tjoapack\2025-07-07 18-36-40.mkv
+2025-08-04 23:26:07,171 [WARNING] Index buiten bereik.
+2025-08-04 23:26:09,852 [INFO] Video afgespeeld: C:/Users/SamVandenLangenbergh/Pictures\tjoapack\2025-07-07 18-36-40.mkv
+2025-08-04 23:26:14,814 [INFO] Video afgespeeld: C:/Users/SamVandenLangenbergh/Pictures\tjoapack\2025-07-07 18-36-40.mkv
+2025-08-04 23:26:19,380 [INFO] Video afgespeeld: C:/Users/SamVandenLangenbergh/Pictures\tjoapack\2025-07-07 18-36-40.mkv
+2025-08-04 23:26:23,935 [INFO] Video afgespeeld: C:/Users/SamVandenLangenbergh/Pictures\tjoapack\2025-07-07 18-36-40.mkv
+2025-08-04 23:26:28,503 [INFO] Video afgespeeld: C:/Users/SamVandenLangenbergh/Pictures\tjoapack\2025-07-07 18-36-40.mkv
+2025-08-04 23:26:32,949 [INFO] Video afgespeeld: C:/Users/SamVandenLangenbergh/Pictures\tjoapack\2025-07-07 18-36-40.mkv
+2025-08-04 23:26:36,435 [INFO] Video afgespeeld: C:/Users/SamVandenLangenbergh/Pictures\tjoapack\2025-07-07 18-36-40.mkv
+2025-08-04 23:26:38,866 [INFO] Afspeellijst gestopt.
+2025-08-04 23:26:48,830 [INFO] Map verwijderd: C:/Users/SamVandenLangenbergh/Pictures\tjoapack
+2025-08-04 23:26:50,933 [INFO] Filtertype geselecteerd: Beide
+2025-08-04 23:26:50,952 [INFO] Totaal gevonden bestanden: 745
+2025-08-04 23:26:50,953 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-02-21 064222.png
+2025-08-04 23:26:50,954 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-02-22 122819.png
+2025-08-04 23:26:50,954 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-02-22 124502.png
+2025-08-04 23:26:50,955 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-02-22 124623.png
+2025-08-04 23:26:50,955 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-02-22 125122.png
+2025-08-04 23:26:50,956 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-02-22 125357.png
+2025-08-04 23:26:50,956 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-02-22 125502.png
+2025-08-04 23:26:50,956 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-02-22 165328.png
+2025-08-04 23:26:50,957 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-02-23 104742.png
+2025-08-04 23:26:50,957 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-02-23 162222.png
+2025-08-04 23:26:50,958 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-02-24 073529.png
+2025-08-04 23:26:50,958 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-02-24 080312.png
+2025-08-04 23:26:50,958 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-02-24 213421.png
+2025-08-04 23:26:50,958 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-02-24 213916.png
+2025-08-04 23:26:50,959 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-02-25 181010.png
+2025-08-04 23:26:50,959 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-02-25 181218.png
+2025-08-04 23:26:50,959 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-02-25 182001.png
+2025-08-04 23:26:50,959 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-02-25 183117.png
+2025-08-04 23:26:50,959 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-02-25 183327.png
+2025-08-04 23:26:50,960 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-02-25 193933.png
+2025-08-04 23:26:50,961 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-02-25 194304.png
+2025-08-04 23:26:50,961 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-02-26 065735.png
+2025-08-04 23:26:50,961 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-02-26 070037.png
+2025-08-04 23:26:50,962 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-02-26 201602.png
+2025-08-04 23:26:50,962 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-02-26 202124.png
+2025-08-04 23:26:50,962 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-02-26 202217.png
+2025-08-04 23:26:50,963 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-02-26 202449.png
+2025-08-04 23:26:50,963 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-02-26 202807.png
+2025-08-04 23:26:50,963 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-02-26 203223.png
+2025-08-04 23:26:50,964 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-02-26 205747.png
+2025-08-04 23:26:50,964 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-02-26 210134.png
+2025-08-04 23:26:50,964 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-02-26 210338.png
+2025-08-04 23:26:50,965 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-02-26 210842.png
+2025-08-04 23:26:50,965 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-02-26 210906.png
+2025-08-04 23:26:50,965 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-02-26 211404.png
+2025-08-04 23:26:50,965 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-02-26 212814.png
+2025-08-04 23:26:50,965 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-02-26 214211.png
+2025-08-04 23:26:50,965 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-02-27 070657.png
+2025-08-04 23:26:50,965 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-02-27 072030.png
+2025-08-04 23:26:50,965 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-02-27 072629.png
+2025-08-04 23:26:50,966 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-02-27 072844.png
+2025-08-04 23:26:50,966 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-02-27 073213.png
+2025-08-04 23:26:50,966 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-02-27 173615.png
+2025-08-04 23:26:50,966 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-02-27 190618.png
+2025-08-04 23:26:50,966 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-02-27 191114.png
+2025-08-04 23:26:50,966 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-02-27 200029.png
+2025-08-04 23:26:50,966 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-02-27 200354.png
+2025-08-04 23:26:50,966 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-02-27 200503.png
+2025-08-04 23:26:50,966 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-02-27 202457.png
+2025-08-04 23:26:50,967 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-02-27 202638.png
+2025-08-04 23:26:50,967 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-02-27 202902.png
+2025-08-04 23:26:50,967 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-02-27 203200.png
+2025-08-04 23:26:50,967 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-02-27 203332.png
+2025-08-04 23:26:50,967 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-02-27 203411.png
+2025-08-04 23:26:50,967 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-02-27 220351.png
+2025-08-04 23:26:50,967 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-02-28 145528.png
+2025-08-04 23:26:50,967 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-02-28 145711.png
+2025-08-04 23:26:50,967 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-03-01 211338.png
+2025-08-04 23:26:50,968 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-03-02 061200.png
+2025-08-04 23:26:50,968 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-03-02 061359.png
+2025-08-04 23:26:50,968 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-03-02 061650.png
+2025-08-04 23:26:50,968 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-03-02 062014.png
+2025-08-04 23:26:50,968 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-03-02 072734.png
+2025-08-04 23:26:50,968 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-03-02 172314.png
+2025-08-04 23:26:50,968 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-03-02 172502.png
+2025-08-04 23:26:50,968 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-03-02 182556.png
+2025-08-04 23:26:50,968 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-03-02 183139.png
+2025-08-04 23:26:50,969 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-03-02 183627.png
+2025-08-04 23:26:50,969 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-03-02 184844.png
+2025-08-04 23:26:50,969 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-03-02 190538.png
+2025-08-04 23:26:50,969 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-03-02 204527.png
+2025-08-04 23:26:50,969 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-03-02 205931.png
+2025-08-04 23:26:50,969 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-03-03 090439.png
+2025-08-04 23:26:50,969 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-03-03 190807.png
+2025-08-04 23:26:50,969 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-03-03 190854.png
+2025-08-04 23:26:50,969 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-03-03 191804.png
+2025-08-04 23:26:50,969 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-03-03 195252.png
+2025-08-04 23:26:50,969 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-03-03 195424.png
+2025-08-04 23:26:50,970 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-03-03 200100.png
+2025-08-04 23:26:50,970 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-03-03 200256.png
+2025-08-04 23:26:50,970 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-03-03 200415.png
+2025-08-04 23:26:50,970 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-03-03 213233.png
+2025-08-04 23:26:50,970 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-03-04 091440.png
+2025-08-04 23:26:50,970 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-03-05 082332.png
+2025-08-04 23:26:50,970 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-03-05 192517.png
+2025-08-04 23:26:50,970 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-03-05 192607.png
+2025-08-04 23:26:50,971 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-03-05 192650.png
+2025-08-04 23:26:50,971 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-03-05 210439.png
+2025-08-04 23:26:50,971 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-03-05 210850.png
+2025-08-04 23:26:50,971 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-03-05 212210.png
+2025-08-04 23:26:50,971 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-03-06 145813.png
+2025-08-04 23:26:50,971 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-03-07 172724.png
+2025-08-04 23:26:50,971 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-03-08 152455.png
+2025-08-04 23:26:50,971 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-03-08 153538.png
+2025-08-04 23:26:50,972 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-03-08 160631.png
+2025-08-04 23:26:50,972 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-03-09 123603.png
+2025-08-04 23:26:50,972 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-03-14 161352.png
+2025-08-04 23:26:50,972 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-03-14 165003.png
+2025-08-04 23:26:50,972 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-03-14 165045.png
+2025-08-04 23:26:50,972 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-03-14 165104.png
+2025-08-04 23:26:50,972 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-03-14 165435.png
+2025-08-04 23:26:50,972 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-03-15 085137.png
+2025-08-04 23:26:50,972 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-03-15 085222.png
+2025-08-04 23:26:50,972 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-03-15 085258.png
+2025-08-04 23:26:50,973 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-03-15 085333.png
+2025-08-04 23:26:50,973 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-03-15 085410.png
+2025-08-04 23:26:50,973 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-03-15 085450.png
+2025-08-04 23:26:50,974 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-03-15 085514.png
+2025-08-04 23:26:50,974 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-03-15 085547.png
+2025-08-04 23:26:50,974 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-03-15 085619.png
+2025-08-04 23:26:50,974 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-03-15 085659.png
+2025-08-04 23:26:50,974 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-03-15 085721.png
+2025-08-04 23:26:50,974 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-03-18 064851.png
+2025-08-04 23:26:50,974 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-03-18 100959.png
+2025-08-04 23:26:50,975 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-03-18 101514.png
+2025-08-04 23:26:50,975 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-03-18 102622.png
+2025-08-04 23:26:50,975 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-03-18 102906.png
+2025-08-04 23:26:50,975 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-03-18 103716.png
+2025-08-04 23:26:50,975 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-03-18 210932.png
+2025-08-04 23:26:50,975 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-03-18 211529.png
+2025-08-04 23:26:50,975 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-03-18 211534.png
+2025-08-04 23:26:50,975 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-03-18 213406.png
+2025-08-04 23:26:50,975 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-03-19 071042.png
+2025-08-04 23:26:50,975 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-03-19 071117.png
+2025-08-04 23:26:50,976 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-03-19 071211.png
+2025-08-04 23:26:50,976 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-03-19 071239.png
+2025-08-04 23:26:50,976 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-03-19 071322.png
+2025-08-04 23:26:50,976 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-03-19 071349.png
+2025-08-04 23:26:50,976 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-03-19 071458.png
+2025-08-04 23:26:50,976 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-03-19 071549.png
+2025-08-04 23:26:50,976 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-03-19 071742.png
+2025-08-04 23:26:50,976 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-03-19 071903.png
+2025-08-04 23:26:50,976 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-03-19 072001.png
+2025-08-04 23:26:50,976 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-03-19 072157.png
+2025-08-04 23:26:50,977 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-03-19 072220.png
+2025-08-04 23:26:50,977 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-03-20 141259.png
+2025-08-04 23:26:50,977 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-03-20 174813.png
+2025-08-04 23:26:50,977 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-03-20 174852.png
+2025-08-04 23:26:50,977 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-03-21 150500.png
+2025-08-04 23:26:50,977 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-03-24 091845.png
+2025-08-04 23:26:50,977 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-03-26 053140.png
+2025-08-04 23:26:50,977 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-03-26 105354.png
+2025-08-04 23:26:50,977 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-03-27 211205.png
+2025-08-04 23:26:50,978 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-03-28 081126.png
+2025-08-04 23:26:50,978 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-03-28 082124.png
+2025-08-04 23:26:50,978 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-03-28 140207.png
+2025-08-04 23:26:50,978 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-03-29 192322.png
+2025-08-04 23:26:50,978 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-03-30 142743.png
+2025-08-04 23:26:50,978 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-03-30 153540.png
+2025-08-04 23:26:50,978 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-03-30 162420.png
+2025-08-04 23:26:50,978 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-03-30 162455.png
+2025-08-04 23:26:50,978 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-03-30 194007.png
+2025-08-04 23:26:50,978 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-04-02 080809.png
+2025-08-04 23:26:50,979 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-04-07 064156.png
+2025-08-04 23:26:50,979 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-04-07 134125.png
+2025-08-04 23:26:50,979 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-04-09 071057.png
+2025-08-04 23:26:50,979 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-04-09 071427.png
+2025-08-04 23:26:50,979 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-04-12 181127.png
+2025-08-04 23:26:50,979 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-04-12 205252.png
+2025-08-04 23:26:50,979 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-04-12 205332.png
+2025-08-04 23:26:50,979 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-04-13 110532.png
+2025-08-04 23:26:50,979 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-04-13 111117.png
+2025-08-04 23:26:50,979 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-04-13 221215.png
+2025-08-04 23:26:50,980 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-04-13 222327.png
+2025-08-04 23:26:50,980 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-04-14 111956.png
+2025-08-04 23:26:50,980 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-04-14 140413.png
+2025-08-04 23:26:50,980 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-04-14 144845.png
+2025-08-04 23:26:50,980 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-04-15 165626.png
+2025-08-04 23:26:50,980 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-04-15 165925.png
+2025-08-04 23:26:50,980 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-04-15 170734.png
+2025-08-04 23:26:50,980 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-04-16 074906.png
+2025-08-04 23:26:50,980 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-04-16 115958.png
+2025-08-04 23:26:50,980 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-04-16 123354.png
+2025-08-04 23:26:50,980 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-04-16 123811.png
+2025-08-04 23:26:50,982 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-04-16 141350.png
+2025-08-04 23:26:50,982 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-04-16 144620.png
+2025-08-04 23:26:50,982 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-04-16 155000.png
+2025-08-04 23:26:50,982 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-04-16 155036.png
+2025-08-04 23:26:50,982 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-04-23 090844.png
+2025-08-04 23:26:50,982 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-04-23 090926.png
+2025-08-04 23:26:50,982 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-04-23 093100.png
+2025-08-04 23:26:50,982 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-04-23 095536.png
+2025-08-04 23:26:50,982 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-04-23 100021.png
+2025-08-04 23:26:50,982 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-04-24 111452.png
+2025-08-04 23:26:50,983 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-04-29 113425.png
+2025-08-04 23:26:50,983 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-04-29 125641.png
+2025-08-04 23:26:50,983 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-05-12 152746.png
+2025-08-04 23:26:50,983 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-05-13 124855.png
+2025-08-04 23:26:50,983 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-05-13 124924.png
+2025-08-04 23:26:50,983 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-05-20 143829.png
+2025-08-04 23:26:50,983 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-05-20 145236.png
+2025-08-04 23:26:50,983 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-05-20 145335.png
+2025-08-04 23:26:50,983 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-05-27 145749.png
+2025-08-04 23:26:50,983 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-05-27 145820.png
+2025-08-04 23:26:50,983 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-05-27 150001.png
+2025-08-04 23:26:50,984 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-05-27 150028.png
+2025-08-04 23:26:50,984 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-05-27 150130.png
+2025-08-04 23:26:50,984 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-05-27 150204.png
+2025-08-04 23:26:50,984 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-06-04 080940.png
+2025-08-04 23:26:50,984 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-06-06 101033.png
+2025-08-04 23:26:50,984 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-06-06 113231.png
+2025-08-04 23:26:50,984 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-06-06 113536.png
+2025-08-04 23:26:50,984 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-06-06 113612.png
+2025-08-04 23:26:50,984 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-06-06 113638.png
+2025-08-04 23:26:50,984 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-06-06 113654.png
+2025-08-04 23:26:50,985 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-06-06 122136.png
+2025-08-04 23:26:50,985 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-06-21 165502.png
+2025-08-04 23:26:50,985 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-06-23 132856.png
+2025-08-04 23:26:50,985 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-06-26 101503.png
+2025-08-04 23:26:50,985 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-06-26 103018.png
+2025-08-04 23:26:50,985 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-06-26 103917.png
+2025-08-04 23:26:50,985 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-06-26 104801.png
+2025-08-04 23:26:50,985 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-06-26 104839.png
+2025-08-04 23:26:50,985 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-06-26 105426.png
+2025-08-04 23:26:50,985 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-06-26 105738.png
+2025-08-04 23:26:50,986 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-06-26 110040.png
+2025-08-04 23:26:50,986 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-06-26 110117.png
+2025-08-04 23:26:50,986 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-06-26 110157.png
+2025-08-04 23:26:50,986 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-06-26 111059.png
+2025-08-04 23:26:50,986 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-06-26 111405.png
+2025-08-04 23:26:50,986 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-06-26 111445.png
+2025-08-04 23:26:50,986 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-06-26 111527.png
+2025-08-04 23:26:50,986 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-06-26 111605.png
+2025-08-04 23:26:50,986 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-06-26 111933.png
+2025-08-04 23:26:50,987 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-06-26 131837.png
+2025-08-04 23:26:50,987 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-06-26 131926.png
+2025-08-04 23:26:50,987 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-06-26 132112.png
+2025-08-04 23:26:50,987 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-06-26 132305.png
+2025-08-04 23:26:50,987 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-06-26 132434.png
+2025-08-04 23:26:50,987 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-01 145124.png
+2025-08-04 23:26:50,987 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-01 154654.png
+2025-08-04 23:26:50,987 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-01 154905.png
+2025-08-04 23:26:50,987 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-01 154915.png
+2025-08-04 23:26:50,987 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-01 155134.png
+2025-08-04 23:26:50,988 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-01 155229.png
+2025-08-04 23:26:50,988 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-02 144719.png
+2025-08-04 23:26:50,988 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-04 133546.png
+2025-08-04 23:26:50,988 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-04 140911.png
+2025-08-04 23:26:50,988 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-04 142818.png
+2025-08-04 23:26:50,988 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-04 143944.png
+2025-08-04 23:26:50,988 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-04 144119.png
+2025-08-04 23:26:50,988 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-04 193338.png
+2025-08-04 23:26:50,988 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-05 082151.png
+2025-08-04 23:26:50,988 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-05 082646.png
+2025-08-04 23:26:50,988 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-05 082806.png
+2025-08-04 23:26:50,989 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-05 102224.png
+2025-08-04 23:26:50,989 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-06 085845.png
+2025-08-04 23:26:50,989 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-06 085951.png
+2025-08-04 23:26:50,989 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-06 090040.png
+2025-08-04 23:26:50,989 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-06 090109.png
+2025-08-04 23:26:50,989 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-06 090149.png
+2025-08-04 23:26:50,989 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-06 090223.png
+2025-08-04 23:26:50,989 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-06 090247.png
+2025-08-04 23:26:50,990 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-06 090314.png
+2025-08-04 23:26:50,990 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-06 090334.png
+2025-08-04 23:26:50,990 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-06 091344.png
+2025-08-04 23:26:50,990 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-06 091952.png
+2025-08-04 23:26:50,990 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-06 100744.png
+2025-08-04 23:26:50,990 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-06 104510.png
+2025-08-04 23:26:50,990 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-06 120643.png
+2025-08-04 23:26:50,990 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-06 120921.png
+2025-08-04 23:26:50,990 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-06 121056.png
+2025-08-04 23:26:50,990 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-06 121418.png
+2025-08-04 23:26:50,991 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-06 143154.png
+2025-08-04 23:26:50,991 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-06 144954.png
+2025-08-04 23:26:50,991 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-07 102610.png
+2025-08-04 23:26:50,991 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-07 102713.png
+2025-08-04 23:26:50,991 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-07 102738.png
+2025-08-04 23:26:50,991 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-07 102821.png
+2025-08-04 23:26:50,992 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-07 115337.png
+2025-08-04 23:26:50,992 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-07 115710.png
+2025-08-04 23:26:50,992 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-07 121118.png
+2025-08-04 23:26:50,992 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-07 121128.png
+2025-08-04 23:26:50,992 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-07 141227.png
+2025-08-04 23:26:50,992 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-07 141437.png
+2025-08-04 23:26:50,992 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-07 142434.png
+2025-08-04 23:26:50,992 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-07 142536.png
+2025-08-04 23:26:50,992 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-07 143115.png
+2025-08-04 23:26:50,992 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-07 143356.png
+2025-08-04 23:26:50,993 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-07 143646.png
+2025-08-04 23:26:50,993 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-07 144044.png
+2025-08-04 23:26:50,993 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-07 144236.png
+2025-08-04 23:26:50,993 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-07 145133.png
+2025-08-04 23:26:50,993 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-07 150413.png
+2025-08-04 23:26:50,993 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-07 151001.png
+2025-08-04 23:26:50,993 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-07 151428.png
+2025-08-04 23:26:50,993 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-07 151644.png
+2025-08-04 23:26:50,993 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-07 151842.png
+2025-08-04 23:26:50,993 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-07 154228.png
+2025-08-04 23:26:50,993 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-07 154337.png
+2025-08-04 23:26:50,993 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-07 154459.png
+2025-08-04 23:26:50,993 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-07 154509.png
+2025-08-04 23:26:50,993 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-07 160018.png
+2025-08-04 23:26:50,994 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-07 160031.png
+2025-08-04 23:26:50,994 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-07 160052.png
+2025-08-04 23:26:50,994 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-07 160320.png
+2025-08-04 23:26:50,994 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-07 160956.png
+2025-08-04 23:26:50,994 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-07 161123.png
+2025-08-04 23:26:50,994 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-07 161226.png
+2025-08-04 23:26:50,994 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-07 182139.png
+2025-08-04 23:26:50,994 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-07 182309.png
+2025-08-04 23:26:50,994 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-07 192352.png
+2025-08-04 23:26:50,994 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-07 192535.png
+2025-08-04 23:26:50,994 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-07 192938.png
+2025-08-04 23:26:50,994 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-07 193054.png
+2025-08-04 23:26:50,994 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-07 193629.png
+2025-08-04 23:26:50,995 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-07 193806.png
+2025-08-04 23:26:50,995 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-07 194037.png
+2025-08-04 23:26:50,995 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-07 194049.png
+2025-08-04 23:26:50,995 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-07 195939.png
+2025-08-04 23:26:50,995 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-07 200048.png
+2025-08-04 23:26:50,995 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-07 200656.png
+2025-08-04 23:26:50,995 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-07 201118.png
+2025-08-04 23:26:50,995 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-07 201832.png
+2025-08-04 23:26:50,995 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-07 202114.png
+2025-08-04 23:26:50,995 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-07 202401.png
+2025-08-04 23:26:50,995 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-07 202650.png
+2025-08-04 23:26:50,995 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-07 202756.png
+2025-08-04 23:26:50,995 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-07 202931.png
+2025-08-04 23:26:50,995 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-07 205822.png
+2025-08-04 23:26:50,996 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-07 210046.png
+2025-08-04 23:26:50,996 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-07 210159.png
+2025-08-04 23:26:50,996 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-07 210552.png
+2025-08-04 23:26:50,996 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-07 210743.png
+2025-08-04 23:26:50,996 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-07 210755.png
+2025-08-04 23:26:50,996 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-07 220041.png
+2025-08-04 23:26:50,996 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-07 220252.png
+2025-08-04 23:26:50,996 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-07 220405.png
+2025-08-04 23:26:50,996 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-07 220521.png
+2025-08-04 23:26:50,996 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-07 222207.png
+2025-08-04 23:26:50,996 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-07 222212.png
+2025-08-04 23:26:50,996 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-07 222258.png
+2025-08-04 23:26:50,997 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-07 222322.png
+2025-08-04 23:26:50,997 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-07 222522.png
+2025-08-04 23:26:50,997 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-07 223055.png
+2025-08-04 23:26:50,997 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-07 223127.png
+2025-08-04 23:26:50,997 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-07 223315.png
+2025-08-04 23:26:50,997 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-08 070526.png
+2025-08-04 23:26:50,997 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-08 070556.png
+2025-08-04 23:26:50,997 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-08 070646.png
+2025-08-04 23:26:50,997 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-08 070756.png
+2025-08-04 23:26:50,997 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-08 071012.png
+2025-08-04 23:26:50,997 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-08 073946.png
+2025-08-04 23:26:50,998 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-08 074242.png
+2025-08-04 23:26:50,998 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-08 083559.png
+2025-08-04 23:26:50,998 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-08 084205.png
+2025-08-04 23:26:50,998 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-08 084442.png
+2025-08-04 23:26:50,998 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-08 084719.png
+2025-08-04 23:26:50,998 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-08 084736.png
+2025-08-04 23:26:50,998 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-08 084800.png
+2025-08-04 23:26:50,998 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-08 084856.png
+2025-08-04 23:26:50,998 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-08 084911.png
+2025-08-04 23:26:50,998 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-08 085049.png
+2025-08-04 23:26:50,999 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-08 085216.png
+2025-08-04 23:26:50,999 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-08 085256.png
+2025-08-04 23:26:50,999 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-08 085318.png
+2025-08-04 23:26:50,999 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-08 085327.png
+2025-08-04 23:26:50,999 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-08 091954.png
+2025-08-04 23:26:50,999 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-08 102856.png
+2025-08-04 23:26:50,999 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-08 105150.png
+2025-08-04 23:26:50,999 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-08 105623.png
+2025-08-04 23:26:50,999 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-08 110031.png
+2025-08-04 23:26:50,999 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-08 121004.png
+2025-08-04 23:26:51,000 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-08 121203.png
+2025-08-04 23:26:51,000 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-08 121846.png
+2025-08-04 23:26:51,000 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-08 122056.png
+2025-08-04 23:26:51,000 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-08 122232.png
+2025-08-04 23:26:51,000 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-08 122457.png
+2025-08-04 23:26:51,000 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-08 122559.png
+2025-08-04 23:26:51,000 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-08 122705.png
+2025-08-04 23:26:51,001 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-08 122831.png
+2025-08-04 23:26:51,001 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-08 123536.png
+2025-08-04 23:26:51,001 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-08 123612.png
+2025-08-04 23:26:51,001 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-08 123621.png
+2025-08-04 23:26:51,001 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-08 123708.png
+2025-08-04 23:26:51,001 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-08 123756.png
+2025-08-04 23:26:51,001 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-08 123855.png
+2025-08-04 23:26:51,001 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-08 124734.png
+2025-08-04 23:26:51,001 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-08 124827.png
+2025-08-04 23:26:51,001 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-08 124917.png
+2025-08-04 23:26:51,001 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-08 125018.png
+2025-08-04 23:26:51,001 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-08 131235.png
+2025-08-04 23:26:51,001 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-08 131459.png
+2025-08-04 23:26:51,001 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-08 133117.png
+2025-08-04 23:26:51,001 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-08 151716.png
+2025-08-04 23:26:51,001 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-08 152302.png
+2025-08-04 23:26:51,003 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-08 152329.png
+2025-08-04 23:26:51,003 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-08 213319.png
+2025-08-04 23:26:51,003 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-09 064624.png
+2025-08-04 23:26:51,003 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-09 065946.png
+2025-08-04 23:26:51,003 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-09 070308.png
+2025-08-04 23:26:51,003 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-09 070440.png
+2025-08-04 23:26:51,003 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-09 071244.png
+2025-08-04 23:26:51,003 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-09 071422.png
+2025-08-04 23:26:51,003 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-09 071552.png
+2025-08-04 23:26:51,003 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-09 071640.png
+2025-08-04 23:26:51,004 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-09 071743.png
+2025-08-04 23:26:51,004 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-09 071914.png
+2025-08-04 23:26:51,004 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-09 072701.png
+2025-08-04 23:26:51,004 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-09 075403.png
+2025-08-04 23:26:51,004 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-09 075411.png
+2025-08-04 23:26:51,004 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-09 092457.png
+2025-08-04 23:26:51,004 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-09 095031.png
+2025-08-04 23:26:51,004 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-09 095130.png
+2025-08-04 23:26:51,005 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-09 095350.png
+2025-08-04 23:26:51,005 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-09 095416.png
+2025-08-04 23:26:51,005 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-09 095434.png
+2025-08-04 23:26:51,005 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-09 095510.png
+2025-08-04 23:26:51,005 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-09 095709.png
+2025-08-04 23:26:51,005 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-09 095732.png
+2025-08-04 23:26:51,006 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-09 095753.png
+2025-08-04 23:26:51,006 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-09 095833.png
+2025-08-04 23:26:51,006 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-09 095848.png
+2025-08-04 23:26:51,006 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-09 095912.png
+2025-08-04 23:26:51,006 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-09 095944.png
+2025-08-04 23:26:51,006 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-09 100411.png
+2025-08-04 23:26:51,006 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-09 100916.png
+2025-08-04 23:26:51,006 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-09 101350.png
+2025-08-04 23:26:51,006 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-09 134304.png
+2025-08-04 23:26:51,007 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-09 141025.png
+2025-08-04 23:26:51,007 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-09 141322.png
+2025-08-04 23:26:51,007 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-09 145636.png
+2025-08-04 23:26:51,007 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-09 145950.png
+2025-08-04 23:26:51,007 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-09 150217.png
+2025-08-04 23:26:51,008 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-09 150535.png
+2025-08-04 23:26:51,008 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-09 150739.png
+2025-08-04 23:26:51,008 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-09 151447.png
+2025-08-04 23:26:51,008 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-09 151622.png
+2025-08-04 23:26:51,008 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-09 153259.png
+2025-08-04 23:26:51,008 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-09 154603.png
+2025-08-04 23:26:51,008 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-09 154619.png
+2025-08-04 23:26:51,008 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-09 155321.png
+2025-08-04 23:26:51,008 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-09 155823.png
+2025-08-04 23:26:51,008 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-09 160230.png
+2025-08-04 23:26:51,008 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-09 162846.png
+2025-08-04 23:26:51,008 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-09 164108.png
+2025-08-04 23:26:51,008 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-10 070637.png
+2025-08-04 23:26:51,008 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-10 070820.png
+2025-08-04 23:26:51,009 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-10 072826.png
+2025-08-04 23:26:51,009 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-10 072839.png
+2025-08-04 23:26:51,009 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-10 073013.png
+2025-08-04 23:26:51,009 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-10 073943.png
+2025-08-04 23:26:51,009 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-10 081214.png
+2025-08-04 23:26:51,009 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-10 095604.png
+2025-08-04 23:26:51,009 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-10 095811.png
+2025-08-04 23:26:51,009 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-10 103921.png
+2025-08-04 23:26:51,009 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-10 104431.png
+2025-08-04 23:26:51,009 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-10 105311.png
+2025-08-04 23:26:51,010 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-10 110321.png
+2025-08-04 23:26:51,010 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-10 110550.png
+2025-08-04 23:26:51,010 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-10 112445.png
+2025-08-04 23:26:51,010 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-10 112616.png
+2025-08-04 23:26:51,010 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-10 112842.png
+2025-08-04 23:26:51,010 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-10 112957.png
+2025-08-04 23:26:51,010 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-10 113043.png
+2025-08-04 23:26:51,010 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-10 113146.png
+2025-08-04 23:26:51,010 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-10 113403.png
+2025-08-04 23:26:51,010 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-10 113558.png
+2025-08-04 23:26:51,010 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-10 113837.png
+2025-08-04 23:26:51,010 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-10 114237.png
+2025-08-04 23:26:51,010 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-10 114352.png
+2025-08-04 23:26:51,010 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-10 114542.png
+2025-08-04 23:26:51,010 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-10 120101.png
+2025-08-04 23:26:51,012 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-10 120338.png
+2025-08-04 23:26:51,012 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-10 130032.png
+2025-08-04 23:26:51,012 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-10 130214.png
+2025-08-04 23:26:51,012 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-10 130712.png
+2025-08-04 23:26:51,012 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-10 130903.png
+2025-08-04 23:26:51,012 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-10 131344.png
+2025-08-04 23:26:51,012 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-10 132840.png
+2025-08-04 23:26:51,012 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-10 133132.png
+2025-08-04 23:26:51,012 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-10 133942.png
+2025-08-04 23:26:51,012 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-10 134050.png
+2025-08-04 23:26:51,012 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-10 134412.png
+2025-08-04 23:26:51,012 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-10 134521.png
+2025-08-04 23:26:51,012 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-10 144240.png
+2025-08-04 23:26:51,012 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-10 194657.png
+2025-08-04 23:26:51,013 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-10 194916.png
+2025-08-04 23:26:51,013 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-10 194927.png
+2025-08-04 23:26:51,013 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-11 084934.png
+2025-08-04 23:26:51,013 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-11 085209.png
+2025-08-04 23:26:51,013 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-11 085753.png
+2025-08-04 23:26:51,013 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-11 090327.png
+2025-08-04 23:26:51,013 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-11 090338.png
+2025-08-04 23:26:51,013 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-11 090510.png
+2025-08-04 23:26:51,013 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-11 100046.png
+2025-08-04 23:26:51,013 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-11 100307.png
+2025-08-04 23:26:51,013 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-11 100350.png
+2025-08-04 23:26:51,013 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-11 101852.png
+2025-08-04 23:26:51,013 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-11 123856.png
+2025-08-04 23:26:51,013 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-11 125337.png
+2025-08-04 23:26:51,013 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-11 125444.png
+2025-08-04 23:26:51,013 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-11 125734.png
+2025-08-04 23:26:51,013 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-11 135847.png
+2025-08-04 23:26:51,013 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-11 140010.png
+2025-08-04 23:26:51,014 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-11 195131.png
+2025-08-04 23:26:51,014 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-12 094732.png
+2025-08-04 23:26:51,014 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-12 103317.png
+2025-08-04 23:26:51,014 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-12 122718.png
+2025-08-04 23:26:51,014 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-12 132659.png
+2025-08-04 23:26:51,014 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-12 133858.png
+2025-08-04 23:26:51,014 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-12 133930.png
+2025-08-04 23:26:51,014 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-12 143502.png
+2025-08-04 23:26:51,014 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-12 152822.png
+2025-08-04 23:26:51,014 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-13 094547.png
+2025-08-04 23:26:51,015 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-13 124832.png
+2025-08-04 23:26:51,015 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-13 125715.png
+2025-08-04 23:26:51,015 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-13 125938.png
+2025-08-04 23:26:51,015 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-13 130316.png
+2025-08-04 23:26:51,015 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-13 131630.png
+2025-08-04 23:26:51,015 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-13 132018.png
+2025-08-04 23:26:51,015 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-13 133050.png
+2025-08-04 23:26:51,015 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-13 133150.png
+2025-08-04 23:26:51,015 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-13 133723.png
+2025-08-04 23:26:51,015 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-13 134021.png
+2025-08-04 23:26:51,016 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-13 143519.png
+2025-08-04 23:26:51,016 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-13 201307.png
+2025-08-04 23:26:51,016 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-13 204752.png
+2025-08-04 23:26:51,016 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-16 072835.png
+2025-08-04 23:26:51,016 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-17 111601.png
+2025-08-04 23:26:51,016 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-17 133154.png
+2025-08-04 23:26:51,016 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-17 160549.png
+2025-08-04 23:26:51,016 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-17 161841.png
+2025-08-04 23:26:51,016 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-18 130038.png
+2025-08-04 23:26:51,016 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-18 130111.png
+2025-08-04 23:26:51,016 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-18 132359.png
+2025-08-04 23:26:51,017 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-18 143840.png
+2025-08-04 23:26:51,017 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-18 144458.png
+2025-08-04 23:26:51,017 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-18 221110.png
+2025-08-04 23:26:51,017 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-19 082357.png
+2025-08-04 23:26:51,017 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-19 082510.png
+2025-08-04 23:26:51,017 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-19 082602.png
+2025-08-04 23:26:51,017 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-19 082810.png
+2025-08-04 23:26:51,017 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-19 082859.png
+2025-08-04 23:26:51,017 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-19 082942.png
+2025-08-04 23:26:51,017 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-19 083109.png
+2025-08-04 23:26:51,018 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-19 083325.png
+2025-08-04 23:26:51,018 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-19 101401.png
+2025-08-04 23:26:51,018 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-19 102413.png
+2025-08-04 23:26:51,018 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-19 104802.png
+2025-08-04 23:26:51,018 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-19 120547.png
+2025-08-04 23:26:51,018 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-19 145616.png
+2025-08-04 23:26:51,018 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-19 150330.png
+2025-08-04 23:26:51,018 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-19 150553.png
+2025-08-04 23:26:51,018 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-19 150857.png
+2025-08-04 23:26:51,018 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-19 162736.png
+2025-08-04 23:26:51,018 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-19 175148.png
+2025-08-04 23:26:51,019 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-19 220923.png
+2025-08-04 23:26:51,019 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-19 221531.png
+2025-08-04 23:26:51,019 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-19 223214.png
+2025-08-04 23:26:51,019 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-20 083156.png
+2025-08-04 23:26:51,019 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-20 083823.png
+2025-08-04 23:26:51,020 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-20 084948.png
+2025-08-04 23:26:51,020 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-20 085455.png
+2025-08-04 23:26:51,020 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-20 090405.png
+2025-08-04 23:26:51,020 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-20 091345.png
+2025-08-04 23:26:51,020 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-20 095547.png
+2025-08-04 23:26:51,020 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-20 103528.png
+2025-08-04 23:26:51,020 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-20 105536.png
+2025-08-04 23:26:51,020 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-20 110553.png
+2025-08-04 23:26:51,021 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-20 122610.png
+2025-08-04 23:26:51,021 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-20 122632.png
+2025-08-04 23:26:51,021 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-20 123621.png
+2025-08-04 23:26:51,021 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-20 125106.png
+2025-08-04 23:26:51,021 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-20 130234.png
+2025-08-04 23:26:51,021 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-20 130625.png
+2025-08-04 23:26:51,021 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-20 131036.png
+2025-08-04 23:26:51,021 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-20 131224.png
+2025-08-04 23:26:51,021 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-20 131539.png
+2025-08-04 23:26:51,022 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-20 131544.png
+2025-08-04 23:26:51,022 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-20 133902.png
+2025-08-04 23:26:51,022 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-20 134421.png
+2025-08-04 23:26:51,022 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-20 134949.png
+2025-08-04 23:26:51,022 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-20 164038.png
+2025-08-04 23:26:51,022 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-20 164909.png
+2025-08-04 23:26:51,022 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-20 165610.png
+2025-08-04 23:26:51,022 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-20 170737.png
+2025-08-04 23:26:51,022 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-20 171023.png
+2025-08-04 23:26:51,022 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-20 174458.png
+2025-08-04 23:26:51,022 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-20 175404.png
+2025-08-04 23:26:51,023 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-20 175827.png
+2025-08-04 23:26:51,023 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-20 184531.png
+2025-08-04 23:26:51,023 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-20 185141.png
+2025-08-04 23:26:51,023 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-20 205234.png
+2025-08-04 23:26:51,023 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-20 205803.png
+2025-08-04 23:26:51,023 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-20 205953.png
+2025-08-04 23:26:51,023 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-20 210152.png
+2025-08-04 23:26:51,023 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-20 211100.png
+2025-08-04 23:26:51,024 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-20 212001.png
+2025-08-04 23:26:51,024 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-20 212550.png
+2025-08-04 23:26:51,024 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-20 212708.png
+2025-08-04 23:26:51,024 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-20 213303.png
+2025-08-04 23:26:51,024 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-20 214257.png
+2025-08-04 23:26:51,024 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-21 140119.png
+2025-08-04 23:26:51,025 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-21 194742.png
+2025-08-04 23:26:51,025 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-21 202247.png
+2025-08-04 23:26:51,025 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-22 083538.png
+2025-08-04 23:26:51,025 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-22 215439.png
+2025-08-04 23:26:51,025 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-23 100728.png
+2025-08-04 23:26:51,025 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-23 115837.png
+2025-08-04 23:26:51,025 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-23 120015.png
+2025-08-04 23:26:51,025 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-23 125618.png
+2025-08-04 23:26:51,025 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-23 125732.png
+2025-08-04 23:26:51,025 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-23 125859.png
+2025-08-04 23:26:51,026 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-23 130722.png
+2025-08-04 23:26:51,026 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-23 131652.png
+2025-08-04 23:26:51,026 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-23 131758.png
+2025-08-04 23:26:51,026 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-23 132757.png
+2025-08-04 23:26:51,026 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-23 133351.png
+2025-08-04 23:26:51,026 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-23 201343.png
+2025-08-04 23:26:51,026 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-23 202101.png
+2025-08-04 23:26:51,026 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-23 203557.png
+2025-08-04 23:26:51,026 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-23 204108.png
+2025-08-04 23:26:51,026 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-23 205612.png
+2025-08-04 23:26:51,026 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-23 210507.png
+2025-08-04 23:26:51,027 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-23 210543.png
+2025-08-04 23:26:51,027 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-23 210632.png
+2025-08-04 23:26:51,027 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-24 205848.png
+2025-08-04 23:26:51,027 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-24 210047.png
+2025-08-04 23:26:51,027 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-25 090526.png
+2025-08-04 23:26:51,027 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-25 090749.png
+2025-08-04 23:26:51,027 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-25 090906.png
+2025-08-04 23:26:51,027 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-25 090923.png
+2025-08-04 23:26:51,027 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-25 091857.png
+2025-08-04 23:26:51,027 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-25 092426.png
+2025-08-04 23:26:51,028 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-25 092948.png
+2025-08-04 23:26:51,028 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-25 093007.png
+2025-08-04 23:26:51,028 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-25 093048.png
+2025-08-04 23:26:51,028 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-25 093127.png
+2025-08-04 23:26:51,028 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-25 093143.png
+2025-08-04 23:26:51,028 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-25 094458.png
+2025-08-04 23:26:51,028 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-25 095122.png
+2025-08-04 23:26:51,028 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-25 095703.png
+2025-08-04 23:26:51,028 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-25 095903.png
+2025-08-04 23:26:51,028 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-25 100206.png
+2025-08-04 23:26:51,028 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-25 101240.png
+2025-08-04 23:26:51,028 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-25 102554.png
+2025-08-04 23:26:51,028 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-25 103528.png
+2025-08-04 23:26:51,028 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-25 114716.png
+2025-08-04 23:26:51,028 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-25 171818.png
+2025-08-04 23:26:51,030 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-26 104903.png
+2025-08-04 23:26:51,030 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-26 164935.png
+2025-08-04 23:26:51,030 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-26 172615.png
+2025-08-04 23:26:51,030 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-26 172915.png
+2025-08-04 23:26:51,030 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-27 091453.png
+2025-08-04 23:26:51,030 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-27 143023.png
+2025-08-04 23:26:51,030 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-27 200353.png
+2025-08-04 23:26:51,030 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-28 091939.png
+2025-08-04 23:26:51,030 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-28 182628.png
+2025-08-04 23:26:51,030 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-28 212826.png
+2025-08-04 23:26:51,030 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-28 213047.png
+2025-08-04 23:26:51,030 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-30 111056.png
+2025-08-04 23:26:51,030 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-30 162253.png
+2025-08-04 23:26:51,031 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-30 174228.png
+2025-08-04 23:26:51,031 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-30 174457.png
+2025-08-04 23:26:51,031 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-30 175051.png
+2025-08-04 23:26:51,031 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-30 175126.png
+2025-08-04 23:26:51,031 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-30 175210.png
+2025-08-04 23:26:51,031 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-30 183245.png
+2025-08-04 23:26:51,031 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-30 202821.png
+2025-08-04 23:26:51,031 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-31 081231.png
+2025-08-04 23:26:51,031 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-31 084219.png
+2025-08-04 23:26:51,031 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-31 125208.png
+2025-08-04 23:26:51,032 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-31 173823.png
+2025-08-04 23:26:51,032 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-31 201340.png
+2025-08-04 23:26:51,032 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-31 203955.png
+2025-08-04 23:26:51,032 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-31 204320.png
+2025-08-04 23:26:51,032 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-07-31 220134.png
+2025-08-04 23:26:51,032 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-08-01 100300.png
+2025-08-04 23:26:51,032 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-08-01 100519.png
+2025-08-04 23:26:51,032 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-08-01 103105.png
+2025-08-04 23:26:51,032 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-08-01 113522.png
+2025-08-04 23:26:51,032 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-08-01 120255.png
+2025-08-04 23:26:51,032 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-08-01 141615.png
+2025-08-04 23:26:51,033 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-08-01 170403.png
+2025-08-04 23:26:51,033 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-08-01 183619.png
+2025-08-04 23:26:51,033 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-08-01 200100.png
+2025-08-04 23:26:51,033 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-08-01 204107.png
+2025-08-04 23:26:51,033 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-08-01 210733.png
+2025-08-04 23:26:51,033 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-08-01 211102.png
+2025-08-04 23:26:51,033 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-08-01 211608.png
+2025-08-04 23:26:51,033 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-08-01 211829.png
+2025-08-04 23:26:51,033 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-08-02 074738.png
+2025-08-04 23:26:51,033 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-08-02 080158.png
+2025-08-04 23:26:51,034 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-08-02 080339.png
+2025-08-04 23:26:51,034 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-08-02 080734.png
+2025-08-04 23:26:51,034 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-08-02 080931.png
+2025-08-04 23:26:51,034 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-08-02 081129.png
+2025-08-04 23:26:51,034 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-08-02 081705.png
+2025-08-04 23:26:51,034 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-08-02 082211.png
+2025-08-04 23:26:51,034 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-08-02 082442.png
+2025-08-04 23:26:51,034 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-08-02 082613.png
+2025-08-04 23:26:51,034 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-08-02 082649.png
+2025-08-04 23:26:51,034 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-08-02 083632.png
+2025-08-04 23:26:51,034 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-08-02 083703.png
+2025-08-04 23:26:51,035 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-08-02 083856.png
+2025-08-04 23:26:51,035 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-08-02 084828.png
+2025-08-04 23:26:51,035 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-08-02 101819.png
+2025-08-04 23:26:51,035 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-08-02 102750.png
+2025-08-04 23:26:51,035 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-08-02 102820.png
+2025-08-04 23:26:51,035 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-08-02 143107.png
+2025-08-04 23:26:51,035 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-08-02 151411.png
+2025-08-04 23:26:51,035 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-08-02 152946.png
+2025-08-04 23:26:51,035 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-08-02 182659.png
+2025-08-04 23:26:51,035 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-08-02 183434.png
+2025-08-04 23:26:51,035 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-08-03 071606.png
+2025-08-04 23:26:51,035 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-08-03 071947.png
+2025-08-04 23:26:51,035 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-08-03 073410.png
+2025-08-04 23:26:51,035 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-08-03 073550.png
+2025-08-04 23:26:51,035 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-08-03 075124.png
+2025-08-04 23:26:51,036 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-08-03 143921.png
+2025-08-04 23:26:51,036 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-08-03 144133.png
+2025-08-04 23:26:51,036 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-08-03 144816.png
+2025-08-04 23:26:51,036 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-08-03 145354.png
+2025-08-04 23:26:51,036 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-08-03 150848.png
+2025-08-04 23:26:51,036 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-08-03 152233.png
+2025-08-04 23:26:51,036 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-08-03 154813.png
+2025-08-04 23:26:51,036 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-08-03 155750.png
+2025-08-04 23:26:51,036 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-08-03 160424.png
+2025-08-04 23:26:51,036 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-08-03 214444.png
+2025-08-04 23:26:51,036 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-08-03 214632.png
+2025-08-04 23:26:51,036 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-08-03 215107.png
+2025-08-04 23:26:51,036 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-08-03 215604.png
+2025-08-04 23:26:51,036 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-08-03 220017.png
+2025-08-04 23:26:51,036 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-08-03 220359.png
+2025-08-04 23:26:51,037 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-08-03 220845.png
+2025-08-04 23:26:51,037 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-08-03 220949.png
+2025-08-04 23:26:51,037 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-08-03 221151.png
+2025-08-04 23:26:51,037 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-08-03 222031.png
+2025-08-04 23:26:51,037 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-08-03 222229.png
+2025-08-04 23:26:51,037 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-08-03 222556.png
+2025-08-04 23:26:51,037 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-08-04 085004.png
+2025-08-04 23:26:51,037 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-08-04 090335.png
+2025-08-04 23:26:51,037 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-08-04 163142.png
+2025-08-04 23:26:51,037 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-08-04 163549.png
+2025-08-04 23:26:51,037 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-08-04 170819.png
+2025-08-04 23:26:51,037 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-08-04 171610.png
+2025-08-04 23:26:51,037 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-08-04 172451.png
+2025-08-04 23:26:51,037 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-08-04 181848.png
+2025-08-04 23:26:51,037 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-08-04 181851.png
+2025-08-04 23:26:51,038 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-08-04 181924.png
+2025-08-04 23:26:51,038 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-08-04 185504.png
+2025-08-04 23:26:51,038 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-08-04 185902.png
+2025-08-04 23:26:51,038 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-08-04 205222.png
+2025-08-04 23:26:51,038 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-08-04 213032.png
+2025-08-04 23:26:51,047 [INFO] Foto getoond: C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-02-21 064222.png
+2025-08-04 23:26:54,077 [INFO] Foto getoond: C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-02-22 122819.png
+2025-08-04 23:26:57,102 [INFO] Foto getoond: C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-02-22 124502.png
+2025-08-04 23:26:58,124 [INFO] Foto getoond: C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-02-22 124623.png
+2025-08-04 23:26:59,141 [INFO] Foto getoond: C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-02-22 125122.png
+2025-08-04 23:27:00,157 [INFO] Foto getoond: C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-02-22 125357.png
+2025-08-04 23:27:01,163 [INFO] Foto getoond: C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-02-22 125502.png
+2025-08-04 23:27:02,177 [INFO] Foto getoond: C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-02-22 165328.png
+2025-08-04 23:27:03,201 [INFO] Foto getoond: C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-02-23 104742.png
+2025-08-04 23:27:04,243 [INFO] Foto getoond: C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-02-23 162222.png
+2025-08-04 23:27:05,261 [INFO] Foto getoond: C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-02-24 073529.png
+2025-08-04 23:27:06,287 [INFO] Foto getoond: C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-02-24 080312.png
+2025-08-04 23:27:07,312 [INFO] Foto getoond: C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-02-24 213421.png
+2025-08-04 23:27:08,346 [INFO] Foto getoond: C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-02-24 213916.png
+2025-08-04 23:27:09,375 [INFO] Foto getoond: C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-02-25 181010.png
+2025-08-04 23:27:10,389 [INFO] Foto getoond: C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-02-25 181218.png
+2025-08-04 23:27:11,429 [INFO] Foto getoond: C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-02-25 182001.png
+2025-08-04 23:27:12,447 [INFO] Foto getoond: C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-02-25 183117.png
+2025-08-04 23:27:13,464 [INFO] Foto getoond: C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-02-25 183327.png
+2025-08-04 23:27:14,479 [INFO] Foto getoond: C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-02-25 193933.png
+2025-08-04 23:27:15,487 [INFO] Foto getoond: C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-02-25 194304.png
+2025-08-04 23:27:16,514 [INFO] Foto getoond: C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-02-26 065735.png
+2025-08-04 23:27:17,547 [INFO] Foto getoond: C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-02-26 070037.png
+2025-08-04 23:27:18,564 [INFO] Foto getoond: C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-02-26 201602.png
+2025-08-04 23:27:19,585 [INFO] Foto getoond: C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-02-26 202124.png
+2025-08-04 23:27:20,605 [INFO] Foto getoond: C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-02-26 202217.png
+2025-08-04 23:27:21,614 [INFO] Foto getoond: C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-02-26 202449.png
+2025-08-04 23:27:22,629 [INFO] Foto getoond: C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-02-26 202807.png
+2025-08-04 23:27:23,670 [INFO] Foto getoond: C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-02-26 203223.png
+2025-08-04 23:27:24,700 [INFO] Foto getoond: C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-02-26 205747.png
+2025-08-04 23:27:25,763 [INFO] Foto getoond: C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-02-26 210134.png
+2025-08-04 23:27:26,798 [INFO] Foto getoond: C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-02-26 210338.png
+2025-08-04 23:27:27,814 [INFO] Foto getoond: C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-02-26 210842.png
+2025-08-04 23:27:28,845 [INFO] Foto getoond: C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-02-26 210906.png
+2025-08-04 23:27:29,876 [INFO] Foto getoond: C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-02-26 211404.png
+2025-08-04 23:27:30,889 [INFO] Foto getoond: C:/Users/SamVandenLangenbergh/Pictures\Screenshots\Schermafbeelding 2025-02-26 212814.png
+2025-08-04 23:27:31,812 [INFO] Afspeellijst gestopt.
+2025-08-04 23:28:33,173 [INFO] Filtertype geselecteerd: Films
+2025-08-04 23:28:33,174 [INFO] Totaal gevonden bestanden: 3
+2025-08-04 23:28:33,176 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Camera Roll\WIN_20250211_12_10_12_Pro.mp4
+2025-08-04 23:28:33,176 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Camera Roll\WIN_20250214_17_27_44_Pro.mp4
+2025-08-04 23:28:33,177 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Camera Roll\WIN_20250214_19_31_45_Pro.mp4
+2025-08-04 23:28:33,178 [WARNING] Index buiten bereik.
+2025-08-04 23:28:35,835 [INFO] Map verwijderd: C:/Users/SamVandenLangenbergh/Pictures\Screenshots
+2025-08-04 23:28:37,800 [INFO] Filtertype geselecteerd: Films
+2025-08-04 23:28:37,801 [INFO] Totaal gevonden bestanden: 3
+2025-08-04 23:28:37,801 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Camera Roll\WIN_20250211_12_10_12_Pro.mp4
+2025-08-04 23:28:37,802 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Camera Roll\WIN_20250214_17_27_44_Pro.mp4
+2025-08-04 23:28:37,802 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Camera Roll\WIN_20250214_19_31_45_Pro.mp4
+2025-08-04 23:28:37,803 [WARNING] Index buiten bereik.
+2025-08-04 23:28:40,587 [INFO] Filtertype geselecteerd: Foto's
+2025-08-04 23:28:40,588 [INFO] Totaal gevonden bestanden: 8
+2025-08-04 23:28:40,589 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Camera Roll\WIN_20250214_17_24_12_Pro.jpg
+2025-08-04 23:28:40,589 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Camera Roll\WIN_20250214_17_31_22_Pro.jpg
+2025-08-04 23:28:40,590 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Camera Roll\WIN_20250214_19_21_10_Pro.jpg
+2025-08-04 23:28:40,591 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Camera Roll\WIN_20250214_19_21_12_Pro.jpg
+2025-08-04 23:28:40,591 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Camera Roll\WIN_20250214_19_21_26_Pro.jpg
+2025-08-04 23:28:40,592 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Camera Roll\WIN_20250214_19_32_38_Pro.jpg
+2025-08-04 23:28:40,592 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Camera Roll\WIN_20250214_19_35_57_Pro.jpg
+2025-08-04 23:28:40,593 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Camera Roll\WIN_20250214_19_35_59_Pro.jpg
+2025-08-04 23:28:40,594 [WARNING] Index buiten bereik.
+2025-08-04 23:28:44,902 [INFO] Filtertype geselecteerd: Beide
+2025-08-04 23:28:44,904 [INFO] Totaal gevonden bestanden: 11
+2025-08-04 23:28:44,904 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Camera Roll\WIN_20250211_12_10_12_Pro.mp4
+2025-08-04 23:28:44,905 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Camera Roll\WIN_20250214_17_24_12_Pro.jpg
+2025-08-04 23:28:44,905 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Camera Roll\WIN_20250214_17_27_44_Pro.mp4
+2025-08-04 23:28:44,906 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Camera Roll\WIN_20250214_17_31_22_Pro.jpg
+2025-08-04 23:28:44,906 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Camera Roll\WIN_20250214_19_21_10_Pro.jpg
+2025-08-04 23:28:44,906 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Camera Roll\WIN_20250214_19_21_12_Pro.jpg
+2025-08-04 23:28:44,907 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Camera Roll\WIN_20250214_19_21_26_Pro.jpg
+2025-08-04 23:28:44,908 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Camera Roll\WIN_20250214_19_31_45_Pro.mp4
+2025-08-04 23:28:44,908 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Camera Roll\WIN_20250214_19_32_38_Pro.jpg
+2025-08-04 23:28:44,909 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Camera Roll\WIN_20250214_19_35_57_Pro.jpg
+2025-08-04 23:28:44,909 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Camera Roll\WIN_20250214_19_35_59_Pro.jpg
+2025-08-04 23:28:44,910 [WARNING] Index buiten bereik.
+2025-08-04 23:28:53,065 [INFO] Map verwijderd: C:/Users/SamVandenLangenbergh/Pictures\Camera Roll
+2025-08-04 23:28:54,683 [INFO] Filtertype geselecteerd: Beide
+2025-08-04 23:28:54,685 [INFO] Totaal gevonden bestanden: 11
+2025-08-04 23:28:54,686 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Camera Roll\WIN_20250211_12_10_12_Pro.mp4
+2025-08-04 23:28:54,686 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Camera Roll\WIN_20250214_17_24_12_Pro.jpg
+2025-08-04 23:28:54,687 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Camera Roll\WIN_20250214_17_27_44_Pro.mp4
+2025-08-04 23:28:54,688 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Camera Roll\WIN_20250214_17_31_22_Pro.jpg
+2025-08-04 23:28:54,688 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Camera Roll\WIN_20250214_19_21_10_Pro.jpg
+2025-08-04 23:28:54,689 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Camera Roll\WIN_20250214_19_21_12_Pro.jpg
+2025-08-04 23:28:54,689 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Camera Roll\WIN_20250214_19_21_26_Pro.jpg
+2025-08-04 23:28:54,689 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Camera Roll\WIN_20250214_19_31_45_Pro.mp4
+2025-08-04 23:28:54,690 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Camera Roll\WIN_20250214_19_32_38_Pro.jpg
+2025-08-04 23:28:54,690 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Camera Roll\WIN_20250214_19_35_57_Pro.jpg
+2025-08-04 23:28:54,691 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures\Camera Roll\WIN_20250214_19_35_59_Pro.jpg
+2025-08-04 23:28:54,692 [WARNING] Index buiten bereik.
+2025-08-04 23:29:38,557 [INFO] Gekozen map: C:/Users/SamVandenLangenbergh/Videos
+2025-08-04 23:29:40,816 [INFO] Zoekactie voltooid – 0 resultaten gevonden
+2025-08-04 23:29:42,696 [INFO] Zoekactie voltooid – 0 resultaten gevonden
+2025-08-04 23:29:44,568 [INFO] Zoekactie voltooid – 0 resultaten gevonden
+2025-08-04 23:29:47,740 [INFO] Zoekactie voltooid – 0 resultaten gevonden
+2025-08-04 23:29:48,846 [INFO] Zoekactie voltooid – 0 resultaten gevonden
+2025-08-04 23:29:51,524 [INFO] Zoekactie voltooid – 0 resultaten gevonden
+2025-08-04 23:30:20,444 [INFO] Zoekactie voltooid – 0 resultaten gevonden
+2025-08-04 23:30:30,928 [INFO] Zoekactie voltooid – 0 resultaten gevonden
+2025-08-04 23:30:39,832 [INFO] main.py gestart
+2025-08-04 23:30:39,913 [INFO] FotoBeheerApp UI is geïnitialiseerd.
+2025-08-04 23:30:45,570 [INFO] Gekozen map: C:/Users/SamVandenLangenbergh/Videos
+2025-08-04 23:30:46,964 [INFO] Zoekactie voltooid – 0 resultaten gevonden
+2025-08-04 23:33:48,275 [INFO] Zoekactie voltooid – 0 resultaten gevonden
+2025-08-04 23:34:01,433 [INFO] Zoekactie voltooid – 0 resultaten gevonden
