@@ -463,3 +463,9 @@
 
 
 --- 2025-08-04 23:39:59 | core\media_utils.py ---
+
+
+--- 2025-08-04 23:39:59 | core\media_utils.py ---
+
+
+--- 2025-08-04 23:45:47 | core\FotoBeheerApp.py ---
