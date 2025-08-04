@@ -24,3 +24,16 @@
 2025-08-04 13:27:30,325 [INFO] Map toevoegen geklikt
 2025-08-04 13:27:30,820 [INFO] Map verwijderen geklikt
 2025-08-04 13:27:31,095 [INFO] Map verwijderen geklikt
+2025-08-04 13:33:35,552 [INFO] main.py gestart
+2025-08-04 13:33:38,255 [INFO] btnStartMainwindow geklikt – hoofdvenster openen
+2025-08-04 13:33:38,323 [INFO] FotoBeheerApp UI is geïnitialiseerd.
+2025-08-04 13:33:50,174 [INFO] Map toegevoegd: C:/Users/SamVandenLangenbergh/Pictures/tjoapack
+2025-08-04 13:33:53,777 [INFO] Filtertype geselecteerd: Foto's
+2025-08-04 13:33:53,777 [INFO] Totaal gevonden bestanden: 3
+2025-08-04 13:33:53,777 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures/tjoapack\IMG-20250321-WA0000.jpg
+2025-08-04 13:33:53,777 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures/tjoapack\IMG-20250321-WA0001.jpg
+2025-08-04 13:33:53,777 [INFO]  → C:/Users/SamVandenLangenbergh/Pictures/tjoapack\IMG-20250321-WA0002.jpg
+2025-08-04 13:33:54,231 [INFO] Foto getoond: C:/Users/SamVandenLangenbergh/Pictures/tjoapack\IMG-20250321-WA0000.jpg
+2025-08-04 13:33:57,248 [INFO] Foto getoond: C:/Users/SamVandenLangenbergh/Pictures/tjoapack\IMG-20250321-WA0001.jpg
+2025-08-04 13:34:00,307 [INFO] Foto getoond: C:/Users/SamVandenLangenbergh/Pictures/tjoapack\IMG-20250321-WA0002.jpg
+2025-08-04 13:34:02,137 [INFO] Afspeellijst gestopt.
