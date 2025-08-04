@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1363</width>
+    <width>1514</width>
     <height>870</height>
    </rect>
   </property>
@@ -104,10 +104,10 @@
   <widget class="QListWidget" name="listFoundedItemsNok">
    <property name="geometry">
     <rect>
-     <x>880</x>
-     <y>200</y>
-     <width>341</width>
-     <height>451</height>
+     <x>390</x>
+     <y>80</y>
+     <width>591</width>
+     <height>81</height>
     </rect>
    </property>
    <property name="sizePolicy">
@@ -143,10 +143,10 @@
   <widget class="QTreeWidget" name="listFoundedItems">
    <property name="geometry">
     <rect>
-     <x>50</x>
-     <y>151</y>
-     <width>782</width>
-     <height>631</height>
+     <x>10</x>
+     <y>290</y>
+     <width>1331</width>
+     <height>531</height>
     </rect>
    </property>
    <property name="editTriggers">

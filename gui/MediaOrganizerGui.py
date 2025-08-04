@@ -12,7 +12,7 @@ from PyQt6 import QtCore, QtGui, QtWidgets
 class Ui_Dialog(object):
     def setupUi(self, Dialog):
         Dialog.setObjectName("Dialog")
-        Dialog.resize(1363, 870)
+        Dialog.resize(1514, 870)
         self.btnSearchAll = QtWidgets.QPushButton(parent=Dialog)
         self.btnSearchAll.setGeometry(QtCore.QRect(40, 10, 120, 30))
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Policy.Fixed, QtWidgets.QSizePolicy.Policy.Fixed)
@@ -49,7 +49,7 @@ class Ui_Dialog(object):
         self.comboSelectTypeMain.addItem("")
         self.comboSelectTypeMain.addItem("")
         self.listFoundedItemsNok = QtWidgets.QListWidget(parent=Dialog)
-        self.listFoundedItemsNok.setGeometry(QtCore.QRect(880, 200, 341, 451))
+        self.listFoundedItemsNok.setGeometry(QtCore.QRect(390, 80, 591, 81))
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Policy.Fixed, QtWidgets.QSizePolicy.Policy.Expanding)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
@@ -63,7 +63,7 @@ class Ui_Dialog(object):
         self.btnBladerenLocation.setGeometry(QtCore.QRect(560, 40, 80, 20))
         self.btnBladerenLocation.setObjectName("btnBladerenLocation")
         self.listFoundedItems = QtWidgets.QTreeWidget(parent=Dialog)
-        self.listFoundedItems.setGeometry(QtCore.QRect(50, 151, 782, 631))
+        self.listFoundedItems.setGeometry(QtCore.QRect(10, 290, 1331, 531))
         self.listFoundedItems.setEditTriggers(QtWidgets.QAbstractItemView.EditTrigger.NoEditTriggers)
         self.listFoundedItems.setSelectionMode(QtWidgets.QAbstractItemView.SelectionMode.ExtendedSelection)
         self.listFoundedItems.setObjectName("listFoundedItems")
