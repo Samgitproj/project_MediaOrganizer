@@ -1,6 +1,6 @@
 import os
 from PyQt6.QtCore import QThread, pyqtSignal
-from core.media_utils import is_media_file, excluded_folders
+from core.FotoBeheerApp import is_media_file, excluded_folders
 
 
 class MediaSearchThread(QThread):
