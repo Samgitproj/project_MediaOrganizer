@@ -151,7 +151,6 @@ class FotoBeheerApp(QtWidgets.QMainWindow):
         self.ui.listFoundedItemsNok.clear()
         self.ui.btnSearchAll.setEnabled(False)
         self.ui.btnSearchSelectedLocation.setEnabled(False)
-        self.toon_statusdialoog("Bezig met zoeken...")
 
         self.search_thread = MediaSearchThread(pad, filtertype)
         self.search_thread.searchCompleted.connect(self.verwerk_resultaten)
@@ -171,13 +170,6 @@ class FotoBeheerApp(QtWidgets.QMainWindow):
     def sluit_statusdialoog(self):
         if hasattr(self, "status_dialoog"):
             self.status_dialoog.close()
-
-    def verwerk_resultaten(self, mappen, fouten):
-        self.ui.listFoundedItems.addItems(mappen)
-        self.ui.listFoundedItemsNok.addItems(fouten)
-        self.ui.btnSearchAll.setEnabled(True)
-        self.ui.btnSearchSelectedLocation.setEnabled(True)
-        self.sluit_statusdialoog()
 
     def add_folder(self):
         folder = QtWidgets.QFileDialog.getExistingDirectory(self, "Selecteer een map")
