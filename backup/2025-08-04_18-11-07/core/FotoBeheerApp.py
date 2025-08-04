@@ -71,7 +71,6 @@ class FotoBeheerApp(QtWidgets.QMainWindow):
         self.ui.btnNext.clicked.connect(self.play_next_media)
         self.ui.btnPrevious.clicked.connect(self.play_previous_media)
 
-        self.ui_dialog.listFoundedItems.itemExpanded.connect(self.item_expanded)
         self.ui_dialog.btnBladerenLocation.clicked.connect(self.blader_naar_locatie)
         self.ui_dialog.btnSearchAll.clicked.connect(self.start_search_all)
         self.ui_dialog.btnSearchSelectedLocation.clicked.connect(
@@ -166,17 +165,20 @@ class FotoBeheerApp(QtWidgets.QMainWindow):
         if hasattr(self, "status_dialoog"):
             self.status_dialoog.close()
 
-    def laad_subfolders(self, ouder_item: QtWidgets.QTreeWidgetItem, pad: str):
-        try:
-            for naam in os.listdir(pad):
-                volledige_map = os.path.join(pad, naam)
-                if not os.path.isdir(volledige_map):
-                    continue
+    def verwerk_resultaten(self, mappen, fouten):
+        logging.info(
+            f"Zoekactie voltooid – {len(mappen)} mappen gevonden, {len(fouten)} fouten"
+        )
 
-                foto_count = 0
-                video_count = 0
-                for bestand in os.listdir(volledige_map):
-                    full_path = os.path.join(volledige_map, bestand)
+        self.ui_dialog.listFoundedItems.clear()
+
+        for pad in mappen:
+            foto_count = 0
+            video_count = 0
+
+            try:
+                for bestand in os.listdir(pad):
+                    full_path = os.path.join(pad, bestand)
                     if not os.path.isfile(full_path):
                         continue
                     ext = os.path.splitext(bestand)[1].lower()
@@ -184,30 +186,23 @@ class FotoBeheerApp(QtWidgets.QMainWindow):
                         foto_count += 1
                     elif ext in self.supported_video_exts:
                         video_count += 1
+            except Exception as e:
+                logging.warning(f"Fout bij tellen in map {pad}: {e}")
+                fouten.append(f"{pad} – fout bij tellen: {e}")
+                continue
 
-                nieuw_item = QtWidgets.QTreeWidgetItem()
-                nieuw_item.setText(0, volledige_map)
-                nieuw_item.setText(1, str(foto_count))
-                nieuw_item.setText(2, str(video_count))
+            item = QtWidgets.QTreeWidgetItem()
+            item.setText(0, pad)
+            item.setText(1, str(foto_count))
+            item.setText(2, str(video_count))
+            self.ui_dialog.listFoundedItems.addTopLevelItem(item)
 
-                # Voeg dummy toe zodat ⯈ zichtbaar is
-                if any(
-                    os.path.isdir(os.path.join(volledige_map, x))
-                    for x in os.listdir(volledige_map)
-                ):
-                    dummy = QtWidgets.QTreeWidgetItem()
-                    nieuw_item.addChild(dummy)
+        self.ui_dialog.listFoundedItemsNok.clear()
+        self.ui_dialog.listFoundedItemsNok.addItems(fouten)
 
-                ouder_item.addChild(nieuw_item)
-        except Exception as e:
-            logging.warning(f"Fout bij laden subfolders van {pad}: {e}")
-
-    def item_expanded(self, item: QtWidgets.QTreeWidgetItem):
-        # Voorkom dat we subfolders telkens opnieuw laden
-        if item.childCount() == 1 and item.child(0).text(0) == "":
-            item.takeChildren()  # verwijder dummy
-            pad = item.text(0)
-            self.laad_subfolders(item, pad)
+        self.ui_dialog.btnSearchAll.setEnabled(True)
+        self.ui_dialog.btnSearchSelectedLocation.setEnabled(True)
+        self.sluit_statusdialoog()
 
     def add_folder(self):
         folder = QtWidgets.QFileDialog.getExistingDirectory(self, "Selecteer een map")
