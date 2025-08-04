@@ -112,17 +112,13 @@ class FotoBeheerApp(QtWidgets.QMainWindow):
             logging.info(f"Gekozen map: {folder}")
 
     def start_search_from_location(self):
-        folder = self.ui_dialog.lineScriptLocationMedia.text().strip()
-        if not folder:
-            QtWidgets.QMessageBox.warning(
-                self.dialog, "Geen map", "Selecteer eerst een map via de bladerknop."
-            )
-            logging.warning("Geen map opgegeven voor zoekactie.")
-            return
-
-        filter_gui = self.ui_dialog.comboSelectTypeMain.currentText()
-        filtertype = self.vertaal_filter(filter_gui)
-        self.start_zoekthread(folder, filtertype)
+        folder = QtWidgets.QFileDialog.getExistingDirectory(
+            self.dialog, "Selecteer map"
+        )
+        if folder:
+            filter_gui = self.ui_dialog.comboSelectTypeMain.currentText()
+            filtertype = self.vertaal_filter(filter_gui)
+            self.start_zoekthread(folder, filtertype)
 
     def vertaal_filter(self, keuze: str) -> str:
         if keuze == "Foto's":

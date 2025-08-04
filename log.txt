@@ -70,3 +70,8 @@
 2025-08-04 16:02:49,309 [INFO] Gekozen map: C:/Users/SamVandenLangenbergh/Vioprint
 2025-08-04 16:03:12,146 [INFO] Zoekthread gestart op pad: C:/Users/SamVandenLangenbergh/Vioprint, filtertype: all
 2025-08-04 16:03:12,149 [INFO] Zoekactie voltooid – 0 mappen gevonden, 0 fouten
+2025-08-04 16:11:14,430 [INFO] main.py gestart
+2025-08-04 16:11:14,503 [INFO] FotoBeheerApp UI is geïnitialiseerd.
+2025-08-04 16:11:27,249 [INFO] Gekozen map: C:/Users/SamVandenLangenbergh/Vioprint
+2025-08-04 16:11:33,221 [INFO] Zoekthread gestart op pad: C:/Users/SamVandenLangenbergh/Vioprint, filtertype: images
+2025-08-04 16:11:33,225 [INFO] Zoekactie voltooid – 0 mappen gevonden, 0 fouten

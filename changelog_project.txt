@@ -313,3 +313,9 @@
 
 
 --- 2025-08-04 16:11:08 | core\FotoBeheerApp.py ---
+
+
+--- 2025-08-04 16:14:27 | core\FotoBeheerApp.py ---
+
+
+--- 2025-08-04 16:14:27 | core\FotoBeheerApp.py ---
