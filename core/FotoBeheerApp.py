@@ -7,6 +7,7 @@ from PyQt6.QtCore import QUrl, QTimer
 from PyQt6.QtMultimedia import QMediaPlayer, QAudioOutput
 from PyQt6.QtMultimediaWidgets import QVideoWidget
 from gui.MainWindow import Ui_MainWindow
+from core.MediaSearchThread import MediaSearchThread
 
 logging.basicConfig(
     level=logging.INFO,
@@ -17,6 +18,46 @@ logging.basicConfig(
     ],
 )
 
+# Vaste extensies voor foto's en video's
+image_extensions = [".jpg", ".jpeg", ".png", ".bmp", ".gif", ".tiff", ".heic", ".webp"]
+video_extensions = [
+    ".mp4",
+    ".avi",
+    ".mkv",
+    ".mov",
+    ".wmv",
+    ".flv",
+    ".webm",
+    ".mpeg",
+    ".mpg",
+]
+
+# Folders die we bewust overslaan
+excluded_folders = [
+    r"C:\\$Recycle.Bin",
+    r"C:\\System Volume Information",
+    r"C:\\Recovery",
+    r"C:\\Config.Msi",
+    r"C:\\Program Files",
+    r"C:\\Program Files (x86)",
+    r"C:\\Windows",
+    r"C:\\PerfLogs",
+    r"C:\\ProgramData",
+    r"C:\\Intel",
+    r"C:\\MSOCache",
+]
+
+
+def is_media_file(filepath: str, filtertype: str) -> bool:
+    ext = os.path.splitext(filepath)[1].lower()
+    if filtertype == "images":
+        return ext in image_extensions
+    elif filtertype == "videos":
+        return ext in video_extensions
+    elif filtertype == "all":
+        return ext in image_extensions or ext in video_extensions
+    return False
+
 
 class FotoBeheerApp(QtWidgets.QMainWindow):
     def __init__(self):
@@ -26,8 +67,8 @@ class FotoBeheerApp(QtWidgets.QMainWindow):
 
         # Interne lijsten
         self.folder_paths: list[str] = []
-        self.supported_photo_exts = (".jpg", ".jpeg", ".png", ".bmp", ".gif")
-        self.supported_video_exts = (".mp4", ".avi", ".mov", ".mkv")
+        self.supported_photo_exts = tuple(image_extensions)
+        self.supported_video_exts = tuple(video_extensions)
         self.media_items: list[str] = []
         self.current_index = 0
         self.is_playing = False
@@ -63,6 +104,11 @@ class FotoBeheerApp(QtWidgets.QMainWindow):
         self.ui.btnNext.clicked.connect(self.play_next_media)
         self.ui.btnPrevious.clicked.connect(self.play_previous_media)
 
+        self.ui.btnSearchAll.clicked.connect(self.start_search_all)
+        self.ui.btnSearchSelectedLocation.clicked.connect(
+            self.start_search_from_location
+        )
+
         logging.info("FotoBeheerApp UI is geïnitialiseerd.")
 
     def resizeEvent(self, event):
@@ -79,6 +125,44 @@ class FotoBeheerApp(QtWidgets.QMainWindow):
                 QtCore.Qt.TransformationMode.SmoothTransformation,
             )
             self.image_label.setPixmap(scaled)
+
+    def start_search_all(self):
+        filter_gui = self.ui.comboSelectTypeMain.currentText()
+        filtertype = self.vertaal_filter(filter_gui)
+        self.start_zoekthread("C:\\", filtertype)
+
+    def start_search_from_location(self):
+        folder = QtWidgets.QFileDialog.getExistingDirectory(self, "Selecteer map")
+        if folder:
+            filter_gui = self.ui.comboSelectTypeMain.currentText()
+            filtertype = self.vertaal_filter(filter_gui)
+            self.start_zoekthread(folder, filtertype)
+
+    def vertaal_filter(self, keuze: str) -> str:
+        if keuze == "Foto's":
+            return "images"
+        elif keuze == "Films":
+            return "videos"
+        else:
+            return "all"
+
+    def start_zoekthread(self, pad, filtertype):
+        self.ui.listFoundedItems.clear()
+        self.ui.listFoundedItemsNok.clear()
+        self.ui.btnSearchAll.setEnabled(False)
+        self.ui.btnSearchSelectedLocation.setEnabled(False)
+
+        self.search_thread = MediaSearchThread(pad, filtertype)
+        self.search_thread.searchCompleted.connect(self.verwerk_resultaten)
+        self.search_thread.start()
+
+    def verwerk_resultaten(self, mappen, fouten):
+        self.ui.listFoundedItems.addItems(mappen)
+        self.ui.listFoundedItemsNok.addItems(fouten)
+        self.ui.btnSearchAll.setEnabled(True)
+        self.ui.btnSearchSelectedLocation.setEnabled(True)
+
+    # ... (rest van de bestaande methods blijven ongewijzigd)
 
     def add_folder(self):
         folder = QtWidgets.QFileDialog.getExistingDirectory(self, "Selecteer een map")
