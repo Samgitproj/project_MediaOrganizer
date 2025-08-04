@@ -23,7 +23,6 @@ class MainAppWindow(QMainWindow):
         super().__init__()
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
-        start_fotobeheer(self.ui)
 
 
 try:
