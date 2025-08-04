@@ -1,4 +1,4 @@
-from core.FotoBeheerApp import FotoBeheerApp
+from core.FotoBeheerApp import start_fotobeheer
 import logging
 import sys
 from PyQt6 import QtWidgets, QtCore
@@ -18,9 +18,12 @@ logging.basicConfig(
 
 
 # Klasse voor het tweede venster (MainWindow)
-class MainAppWindow(FotoBeheerApp):
+class MainAppWindow(QMainWindow):
     def __init__(self):
         super().__init__()
+        self.ui = Ui_MainWindow()
+        self.ui.setupUi(self)
+        start_fotobeheer(self.ui)
 
 
 try:

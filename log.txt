@@ -7,3 +7,20 @@
 2025-08-04 12:28:55,271 [INFO] main.py gestart via FotoBeheerApp
 2025-08-04 12:28:55,273 [INFO] Script FotoBeheerApp is gestart.
 2025-08-04 12:28:55,427 [INFO] FotoBeheerApp UI is geïnitialiseerd.
+2025-08-04 13:26:49,037 [INFO] main.py gestart
+2025-08-04 13:26:53,007 [INFO] btnStartMainwindow geklikt – hoofdvenster openen
+2025-08-04 13:26:53,029 [INFO] start_fotobeheer() gestart – GUI gekoppeld
+2025-08-04 13:26:56,611 [INFO] Map toevoegen geklikt
+2025-08-04 13:26:59,083 [INFO] Map toevoegen geklikt
+2025-08-04 13:26:59,751 [INFO] Map toevoegen geklikt
+2025-08-04 13:27:00,178 [INFO] Map toevoegen geklikt
+2025-08-04 13:27:01,911 [INFO] Start geklikt
+2025-08-04 13:27:02,490 [INFO] Pauze geklikt
+2025-08-04 13:27:02,877 [INFO] Stop geklikt
+2025-08-04 13:27:15,978 [INFO] main.py gestart
+2025-08-04 13:27:26,705 [INFO] btnStartMainwindow geklikt – hoofdvenster openen
+2025-08-04 13:27:26,716 [INFO] start_fotobeheer() gestart – GUI gekoppeld
+2025-08-04 13:27:29,780 [INFO] Map toevoegen geklikt
+2025-08-04 13:27:30,325 [INFO] Map toevoegen geklikt
+2025-08-04 13:27:30,820 [INFO] Map verwijderen geklikt
+2025-08-04 13:27:31,095 [INFO] Map verwijderen geklikt
