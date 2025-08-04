@@ -127,3 +127,13 @@
 2025-08-04 20:36:50,529 [INFO] Gekozen map: C:/OneDrive/Vioprint/OneDrive - Vioprint/leveranciers
 2025-08-04 20:37:36,956 [INFO] Mediatree geëxporteerd naar: C:\\OneDrive\\Vioprint\\OneDrive - Vioprint\\software projecten\\MediaOrganizer\\documents\\mediatree_export.csv
 2025-08-04 20:58:48,063 [INFO] Gekozen map: C:/OneDrive/Vioprint/OneDrive - Vioprint/leveranciers
+2025-08-04 21:54:57,180 [INFO] main.py gestart
+2025-08-04 21:54:57,268 [ERROR] Er trad een fout op in main.py:
+Traceback (most recent call last):
+  File "C:\OneDrive\Vioprint\OneDrive - Vioprint\software projecten\MediaOrganizer\main.py", line 22, in <module>
+    app_controller = FotoBeheerApp()
+                     ^^^^^^^^^^^^^^^
+  File "C:\OneDrive\Vioprint\OneDrive - Vioprint\software projecten\MediaOrganizer\core\FotoBeheerApp.py", line 69, in __init__
+    self.ui_dialog.btnSearchAll.clicked.connect(self.exporteer_naar_documentmap)
+                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'FotoBeheerApp' object has no attribute 'exporteer_naar_documentmap'
