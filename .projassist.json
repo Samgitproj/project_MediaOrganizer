@@ -42,6 +42,10 @@
         {
             "path": "gui\\MediaOrganizerGui.py",
             "github_url": "https://github.com/Samgitproj/project_MediaOrganizer/blob/main/gui/MediaOrganizerGui.py"
+        },
+        {
+            "path": "core\\MediaSearchThread.py",
+            "github_url": "https://github.com/Samgitproj/project_MediaOrganizer/blob/main/core/MediaSearchThread.py"
         }
     ],
     "changelogs": [
