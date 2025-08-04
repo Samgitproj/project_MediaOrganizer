@@ -105,3 +105,6 @@
 2025-08-04 18:27:45,340 [INFO] main.py gestart
 2025-08-04 18:27:45,444 [INFO] FotoBeheerApp UI is geïnitialiseerd.
 2025-08-04 18:27:52,400 [INFO] Gekozen map: C:/OneDrive/Vioprint/OneDrive - Vioprint/Sam
+2025-08-04 18:30:13,494 [INFO] main.py gestart
+2025-08-04 18:30:13,594 [INFO] FotoBeheerApp UI is geïnitialiseerd.
+2025-08-04 18:30:19,766 [INFO] Gekozen map: C:/OneDrive/Vioprint/OneDrive - Vioprint/Sam
