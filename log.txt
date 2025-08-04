@@ -64,3 +64,9 @@
 2025-08-04 15:49:56,641 [INFO] main.py gestart
 2025-08-04 15:50:13,026 [INFO] btnStartMainwindow geklikt – hoofdvenster openen
 2025-08-04 15:50:13,053 [INFO] FotoBeheerApp UI is geïnitialiseerd.
+2025-08-04 16:02:35,710 [INFO] main.py gestart
+2025-08-04 16:02:35,780 [INFO] FotoBeheerApp UI is geïnitialiseerd.
+2025-08-04 16:02:40,780 [INFO] Geen map geselecteerd.
+2025-08-04 16:02:49,309 [INFO] Gekozen map: C:/Users/SamVandenLangenbergh/Vioprint
+2025-08-04 16:03:12,146 [INFO] Zoekthread gestart op pad: C:/Users/SamVandenLangenbergh/Vioprint, filtertype: all
+2025-08-04 16:03:12,149 [INFO] Zoekactie voltooid – 0 mappen gevonden, 0 fouten
