@@ -137,3 +137,6 @@ Traceback (most recent call last):
     self.ui_dialog.btnSearchAll.clicked.connect(self.exporteer_naar_documentmap)
                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 AttributeError: 'FotoBeheerApp' object has no attribute 'exporteer_naar_documentmap'
+2025-08-04 21:57:32,939 [INFO] main.py gestart
+2025-08-04 21:57:33,015 [INFO] FotoBeheerApp UI is geïnitialiseerd.
+2025-08-04 21:57:44,337 [INFO] Gekozen map: C:/OneDrive/Vioprint/OneDrive - Vioprint/leveranciers

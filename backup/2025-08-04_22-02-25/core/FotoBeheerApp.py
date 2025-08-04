@@ -136,12 +136,7 @@ class FotoBeheerApp(QtWidgets.QMainWindow):
 
         self.ui_dialog.listFoundedItems.clear()
         resultaten = self.zoek_media_in_map(folder)
-        for pad in resultaten:
-            item = QtWidgets.QTreeWidgetItem()
-            item.setText(0, pad)
-            item.setText(1, "")  # kolom voor foto's blijft leeg
-            item.setText(2, "")  # kolom voor video's blijft leeg
-            self.ui_dialog.listFoundedItems.addTopLevelItem(item)
+        self.ui_dialog.listFoundedItems.addItems(resultaten)
         logging.info(f"Zoekactie voltooid – {len(resultaten)} resultaten gevonden")
 
     def add_folder(self):
@@ -292,4 +287,14 @@ class FotoBeheerApp(QtWidgets.QMainWindow):
 def main():
     logging.info("Script FotoBeheerApp is gestart.")
     app = QtWidgets.QApplication([])
-    main_window = F
+    main_window = FotoBeheerApp()
+    main_window.setWindowState(
+        QtWidgets.QMainWindow().windowState()
+        | QtWidgets.QMainWindow().windowState().WindowMaximized
+    )
+    main_window.show()
+    app.exec()
+
+
+if __name__ == "__main__":
+    main()
