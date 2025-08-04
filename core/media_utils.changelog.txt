@@ -1,0 +1,93 @@
+
+
+--- 2025-08-04 14:56:28 ---
+--- 
++++ 
+@@ -0,0 +1,44 @@
++import os
+
++
+
++# Vaste extensies voor afbeeldingen
+
++image_extensions = [".jpg", ".jpeg", ".png", ".bmp", ".gif", ".tiff", ".heic", ".webp"]
+
++
+
++# Vaste extensies voor video's
+
++video_extensions = [
+
++    ".mp4",
+
++    ".avi",
+
++    ".mkv",
+
++    ".mov",
+
++    ".wmv",
+
++    ".flv",
+
++    ".webm",
+
++    ".mpeg",
+
++    ".mpg",
+
++]
+
++
+
++# Folders die bewust worden overgeslagen bij zoekacties
+
++excluded_folders = [
+
++    r"C:\$Recycle.Bin",
+
++    r"C:\System Volume Information",
+
++    r"C:\Recovery",
+
++    r"C:\Config.Msi",
+
++    r"C:\Program Files",
+
++    r"C:\Program Files (x86)",
+
++    r"C:\Windows",
+
++    r"C:\PerfLogs",
+
++    r"C:\ProgramData",
+
++    r"C:\Intel",
+
++    r"C:\MSOCache",
+
++]
+
++
+
++
+
++# Controleer of een bestand een media-item is volgens opgegeven filtertype
+
++def is_media_file(filepath: str, filtertype: str) -> bool:
+
++    ext = os.path.splitext(filepath)[1].lower()
+
++    if filtertype == "images":
+
++        return ext in image_extensions
+
++    elif filtertype == "videos":
+
++        return ext in video_extensions
+
++    elif filtertype == "all":
+
++        return ext in image_extensions or ext in video_extensions
+
++    return False
