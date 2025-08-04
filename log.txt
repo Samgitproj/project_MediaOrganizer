@@ -37,3 +37,5 @@
 2025-08-04 13:33:57,248 [INFO] Foto getoond: C:/Users/SamVandenLangenbergh/Pictures/tjoapack\IMG-20250321-WA0001.jpg
 2025-08-04 13:34:00,307 [INFO] Foto getoond: C:/Users/SamVandenLangenbergh/Pictures/tjoapack\IMG-20250321-WA0002.jpg
 2025-08-04 13:34:02,137 [INFO] Afspeellijst gestopt.
+2025-08-04 15:05:12,574 [INFO] main.py gestart
+2025-08-04 15:06:03,235 [INFO] btnStartMainwindow geklikt – hoofdvenster openen

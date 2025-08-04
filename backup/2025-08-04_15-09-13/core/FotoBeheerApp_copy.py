@@ -5,7 +5,7 @@ from PyQt6.QtGui import QPixmap
 from PyQt6.QtCore import QUrl, QTimer
 from PyQt6.QtMultimedia import QMediaPlayer, QAudioOutput
 from PyQt6.QtMultimediaWidgets import QVideoWidget
-from gui.MediaOrganizerGui import Ui_Dialog
+from gui.MainWindow import Ui_MainWindow
 
 logging.basicConfig(
     level=logging.INFO,
@@ -20,7 +20,7 @@ logging.basicConfig(
 class FotoBeheerApp(QtWidgets.QMainWindow):
     def __init__(self):
         super().__init__()
-        self.ui = Ui_Dialog()
+        self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
 
         self.folder_paths: list[str] = []
