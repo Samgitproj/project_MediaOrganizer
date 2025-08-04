@@ -131,6 +131,47 @@ class FotoBeheerApp(QtWidgets.QMainWindow):
             ouder_item.addChild(item)
         return item
 
+    def vertaal_filter(self, keuze: str) -> str:
+        if keuze == "Foto's":
+            return "images"
+        elif keuze == "Films":
+            return "videos"
+        else:
+            return "all"
+
+    def start_zoekthread(self, pad, filtertype):
+        self.ui_dialog.listFoundedItems.clear()
+        self.ui_dialog.listFoundedItemsNok.clear()
+        self.ui_dialog.btnSearchAll.setEnabled(False)
+        self.ui_dialog.btnSearchSelectedLocation.setEnabled(False)
+        self.toon_statusdialoog("Bezig met zoeken...")
+
+        # Stop oude thread als die nog draait
+        if self.search_thread and self.search_thread.isRunning():
+            self.search_thread.quit()
+            self.search_thread.wait()
+
+        # Start nieuwe zoekthread
+        self.search_thread = MediaSearchThread(pad, filtertype)
+        self.search_thread.searchCompleted.connect(self.verwerk_resultaten)
+        self.search_thread.start()
+        logging.info(f"Zoekthread gestart op pad: {pad}, filtertype: {filtertype}")
+
+    def toon_statusdialoog(self, tekst="Bezig met zoeken..."):
+        self.status_dialoog = QtWidgets.QDialog(self.dialog)
+        self.status_dialoog.setWindowTitle("Status")
+        layout = QtWidgets.QVBoxLayout()
+        label = QtWidgets.QLabel(tekst)
+        layout.addWidget(label)
+        self.status_dialoog.setLayout(layout)
+        self.status_dialoog.setModal(True)
+        self.status_dialoog.setFixedSize(200, 80)
+        self.status_dialoog.show()
+
+    def sluit_statusdialoog(self):
+        if hasattr(self, "status_dialoog"):
+            self.status_dialoog.close()
+
     def add_folder(self):
         folder = QtWidgets.QFileDialog.getExistingDirectory(self, "Selecteer een map")
         if folder and folder not in self.folder_paths:
