@@ -88,3 +88,16 @@
 ✅ GitHub-URL is toegekend in JSON
 ✅ Script staat in lijstweergave (GUI): gui/MediaOrganizerGui.py
 ✅ GitHub: bestand is zichtbaar in repo
+
+--- Controle TOEVOEGEN voor core/MediaSearchThread.py @ 2025-08-04 14:14:29 ---
+✅ Bestand bestaat op schijf: C:/OneDrive/Vioprint/OneDrive - Vioprint/software projecten/MediaOrganizer/core\MediaSearchThread.py
+✅ Script staat in .projassist.json: core/MediaSearchThread.py
+✅ GitHub-URL is toegekend in JSON
+✅ Script staat in lijstweergave (GUI): core/MediaSearchThread.py
+✅ GitHub: bestand is zichtbaar in repo
+
+
+--- 2025-08-04 14:21:02 | main.py ---
+
+
+--- 2025-08-04 14:21:02 | main.py ---
