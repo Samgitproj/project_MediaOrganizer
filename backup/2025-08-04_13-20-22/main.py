@@ -1,4 +1,3 @@
-from core.FotoBeheerApp import start_fotobeheer
 import logging
 import sys
 from PyQt6 import QtWidgets, QtCore
