@@ -57,3 +57,7 @@
 2025-08-04 15:25:29,313 [INFO] Foto getoond: C:/Users/SamVandenLangenbergh/Pictures/tjoapack\IMG-20250321-WA0001.jpg
 2025-08-04 15:25:31,575 [INFO] Afspeellijst gestopt.
 2025-08-04 15:26:59,813 [INFO] main.py gestart
+2025-08-04 15:38:38,951 [INFO] main.py gestart
+2025-08-04 15:38:45,875 [INFO] btnStartMainwindow geklikt – hoofdvenster openen
+2025-08-04 15:38:45,929 [INFO] FotoBeheerApp UI is geïnitialiseerd.
+2025-08-04 15:38:50,137 [INFO] Geen map geselecteerd.
