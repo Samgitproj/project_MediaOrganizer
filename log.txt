@@ -152,3 +152,7 @@ AttributeError: 'FotoBeheerApp' object has no attribute 'exporteer_naar_document
 2025-08-04 22:11:11,743 [INFO] Zoekactie voltooid – 125 resultaten gevonden
 2025-08-04 22:11:39,624 [INFO] Gekozen map: C:/OneDrive/Vioprint/OneDrive - Vioprint/leveranciers/Wipotec
 2025-08-04 22:11:43,113 [INFO] Zoekactie voltooid – 6 resultaten gevonden
+2025-08-04 22:17:53,122 [INFO] main.py gestart
+2025-08-04 22:17:53,197 [INFO] FotoBeheerApp UI is geïnitialiseerd.
+2025-08-04 22:18:00,822 [INFO] Gekozen map: C:/OneDrive/Vioprint/OneDrive - Vioprint/leveranciers/Wipotec
+2025-08-04 22:18:02,371 [INFO] Zoekactie voltooid – 1 resultaten gevonden
