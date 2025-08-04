@@ -1,0 +1,7 @@
+
+--- Controle TOEVOEGEN voor core/FotoBeheerApp.py @ 2025-08-04 11:11:18 ---
+✅ Bestand bestaat op schijf: C:/OneDrive/Vioprint/OneDrive - Vioprint/software projecten/MediaOrganizer/core/FotoBeheerApp.py
+✅ Script staat in .projassist.json: core/FotoBeheerApp.py
+✅ GitHub-URL is toegekend in JSON
+✅ Script staat in lijstweergave (GUI): core/FotoBeheerApp.py
+✅ GitHub: bestand is zichtbaar in repo
