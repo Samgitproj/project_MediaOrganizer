@@ -102,14 +102,6 @@ class FotoBeheerApp(QtWidgets.QMainWindow):
         filtertype = self.vertaal_filter(filter_gui)
         self.start_zoekthread("C:\\", filtertype)
 
-    def blader_naar_locatie(self):
-        folder = QtWidgets.QFileDialog.getExistingDirectory(
-            self.dialog, "Selecteer map"
-        )
-        if folder:
-            self.ui_dialog.lineScriptLocationMedia.setText(folder)
-            logging.info(f"Gekozen map: {folder}")
-
     def start_search_from_location(self):
         folder = QtWidgets.QFileDialog.getExistingDirectory(
             self.dialog, "Selecteer map"
