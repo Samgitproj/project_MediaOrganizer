@@ -130,9 +130,8 @@ class FotoBeheerApp(QtWidgets.QMainWindow):
             return
 
         geselecteerde_pad = geselecteerde_items[0].text(0)
-        self.folder_paths.append(geselecteerde_pad)
-        self.ui.listFolders.addItem(geselecteerde_pad)
-        self.show()
+        self.mainwindow.ui.listFolders.addItem(geselecteerde_pad)
+        self.mainwindow.show()
 
     def start_search_from_location(self):
         folder = self.ui_dialog.lineScriptLocationMedia.text().strip()
