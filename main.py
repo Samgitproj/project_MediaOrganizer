@@ -1,7 +1,6 @@
+
 import logging
-import sys
-from PyQt6 import QtWidgets, QtCore
-from gui.MainWindow import Ui_MainWindow
+from core.FotoBeheerApp import main  # Start de applicatie via de juiste klasse
 
 logging.basicConfig(
     level=logging.DEBUG,
@@ -13,15 +12,9 @@ logging.basicConfig(
 )
 
 try:
-    logging.info("main.py gestart")
-
-    app = QtWidgets.QApplication(sys.argv)
-    main_window = QtWidgets.QMainWindow()
-    ui = Ui_MainWindow()
-    ui.setupUi(main_window)
-    main_window.setWindowState(QtCore.Qt.WindowState.WindowMaximized)
-    main_window.show()
-    sys.exit(app.exec())
+    logging.info("main.py gestart via FotoBeheerApp")
+    main()
 
 except Exception as e:
     logging.exception("Er trad een fout op in main.py:")
+
