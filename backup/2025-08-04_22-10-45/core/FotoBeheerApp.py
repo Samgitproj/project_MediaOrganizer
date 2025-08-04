@@ -90,7 +90,9 @@ class FotoBeheerApp(QtWidgets.QMainWindow):
             logging.info(f"Gekozen map: {folder}")
 
     def zoek_media_in_map(self, map_pad):
-        geselecteerd_type = self.ui_dialog.comboSelectTypeMain.currentText().lower()
+        index = (
+            self.ui_dialog.comboSelectTypeMain.currentIndex()
+        )  # 0 = foto's, 1 = video's, 2 = beide
         resultaten = []
 
         for root, dirs, files in os.walk(map_pad):
@@ -104,11 +106,12 @@ class FotoBeheerApp(QtWidgets.QMainWindow):
                     video_count += 1
 
             if (
-                (geselecteerd_type == "foto" and foto_count > 0)
-                or (geselecteerd_type == "video" and video_count > 0)
-                or (geselecteerd_type == "beide" and (foto_count + video_count) > 0)
+                (index == 0 and foto_count > 0)
+                or (index == 1 and video_count > 0)
+                or (index == 2 and (foto_count + video_count) > 0)
             ):
                 resultaten.append(root)
+
         return resultaten
 
     def verwerk_selectie_en_start_mainwindow(self):
