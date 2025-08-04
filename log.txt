@@ -1,0 +1,9 @@
+2025-08-04 11:58:22,627 [INFO] main.py gestart via FotoBeheerApp
+2025-08-04 11:58:22,628 [INFO] Script FotoBeheerApp is gestart.
+2025-08-04 11:58:23,053 [INFO] FotoBeheerApp UI is geïnitialiseerd.
+2025-08-04 12:00:29,581 [INFO] main.py gestart via FotoBeheerApp
+2025-08-04 12:00:29,581 [INFO] Script FotoBeheerApp is gestart.
+2025-08-04 12:00:29,654 [INFO] FotoBeheerApp UI is geïnitialiseerd.
+2025-08-04 12:28:55,271 [INFO] main.py gestart via FotoBeheerApp
+2025-08-04 12:28:55,273 [INFO] Script FotoBeheerApp is gestart.
+2025-08-04 12:28:55,427 [INFO] FotoBeheerApp UI is geïnitialiseerd.

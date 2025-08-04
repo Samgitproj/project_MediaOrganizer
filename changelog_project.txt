@@ -5,3 +5,16 @@
 ✅ GitHub-URL is toegekend in JSON
 ✅ Script staat in lijstweergave (GUI): core/FotoBeheerApp.py
 ✅ GitHub: bestand is zichtbaar in repo
+
+--- Controle TOEVOEGEN voor gui/MainWindow.py @ 2025-08-04 11:32:08 ---
+✅ Bestand bestaat op schijf: C:/OneDrive/Vioprint/OneDrive - Vioprint/software projecten/MediaOrganizer/gui/MainWindow.py
+✅ Script staat in .projassist.json: gui/MainWindow.py
+✅ GitHub-URL is toegekend in JSON
+✅ Script staat in lijstweergave (GUI): gui/MainWindow.py
+✅ GitHub: bestand is zichtbaar in repo
+
+
+--- 2025-08-04 12:31:14 | gui\MainWindow.py ---
+
+
+--- 2025-08-04 12:31:14 | gui\MainWindow.py ---

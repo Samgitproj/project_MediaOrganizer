@@ -1,4 +1,3 @@
-# Nieuw script: FotoBeheerApp
 import logging
 import os
 from PyQt6 import QtWidgets, QtCore
@@ -24,7 +23,6 @@ class FotoBeheerApp(QtWidgets.QMainWindow):
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
 
-        # Interne lijsten
         self.folder_paths: list[str] = []
         self.supported_photo_exts = (".jpg", ".jpeg", ".png", ".bmp", ".gif")
         self.supported_video_exts = (".mp4", ".avi", ".mov", ".mkv")
@@ -33,11 +31,9 @@ class FotoBeheerApp(QtWidgets.QMainWindow):
         self.is_playing = False
         self.is_paused = False
 
-        # Timer voor foto's
         self.timer = QTimer()
         self.timer.timeout.connect(self.play_next_media)
 
-        # MediaPlayer en widgets
         self.player = QMediaPlayer(self)
         self.audio_output = QAudioOutput()
         self.player.setAudioOutput(self.audio_output)
@@ -50,11 +46,10 @@ class FotoBeheerApp(QtWidgets.QMainWindow):
 
         self.image_label = QtWidgets.QLabel(self.ui.mediaFrame)
         self.image_label.setGeometry(self.ui.mediaFrame.rect())
-        self.image_label.setScaledContents(False)  # Niet vervormen
+        self.image_label.setScaledContents(False)
         self.image_label.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
         self.image_label.setVisible(False)
 
-        # Knoppen koppelen
         self.ui.btnAddFolder.clicked.connect(self.add_folder)
         self.ui.btnRemoveFolder.clicked.connect(self.remove_selected_folder)
         self.ui.btnStart.clicked.connect(self.start_slideshow)
@@ -70,7 +65,6 @@ class FotoBeheerApp(QtWidgets.QMainWindow):
         self.image_label.setGeometry(self.ui.mediaFrame.rect())
         self.video_widget.setGeometry(self.ui.mediaFrame.rect())
 
-        # Als er al een afbeelding getoond wordt, herschalen we opnieuw
         if not self.image_label.pixmap().isNull():
             available_size = self.ui.mediaFrame.size()
             scaled = self.image_label.pixmap().scaled(
@@ -146,7 +140,6 @@ class FotoBeheerApp(QtWidgets.QMainWindow):
         self.player.stop()
         self.timer.stop()
 
-        # ⬇️ Dynamisch formaat instellen
         self.image_label.setGeometry(self.ui.mediaFrame.rect())
         self.video_widget.setGeometry(self.ui.mediaFrame.rect())
 
@@ -244,7 +237,3 @@ def main():
     )
     main_window.show()
     app.exec()
-
-
-if __name__ == "__main__":
-    main()
