@@ -86,6 +86,37 @@
     <string>Start voorstelling</string>
    </property>
   </widget>
+  <widget class="QComboBox" name="comboSelectTypeMain">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>110</y>
+     <width>150</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <item>
+    <property name="text">
+     <string>Foto's</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Films</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Beide</string>
+    </property>
+   </item>
+  </widget>
  </widget>
  <resources/>
  <connections/>
