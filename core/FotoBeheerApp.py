@@ -13,9 +13,10 @@ logging.basicConfig(
     format="%(asctime)s [%(levelname)s] %(message)s",
     handlers=[
         logging.FileHandler("log.txt", mode="a", encoding="utf-8"),
-        logging.StreamHandler()
-    ]
+        logging.StreamHandler(),
+    ],
 )
+
 
 class FotoBeheerApp(QtWidgets.QMainWindow):
     def __init__(self):
@@ -25,8 +26,8 @@ class FotoBeheerApp(QtWidgets.QMainWindow):
 
         # Interne lijsten
         self.folder_paths: list[str] = []
-        self.supported_photo_exts = ('.jpg', '.jpeg', '.png', '.bmp', '.gif')
-        self.supported_video_exts = ('.mp4', '.avi', '.mov', '.mkv')
+        self.supported_photo_exts = (".jpg", ".jpeg", ".png", ".bmp", ".gif")
+        self.supported_video_exts = (".mp4", ".avi", ".mov", ".mkv")
         self.media_items: list[str] = []
         self.current_index = 0
         self.is_playing = False
@@ -75,7 +76,7 @@ class FotoBeheerApp(QtWidgets.QMainWindow):
             scaled = self.image_label.pixmap().scaled(
                 available_size,
                 QtCore.Qt.AspectRatioMode.KeepAspectRatio,
-                QtCore.Qt.TransformationMode.SmoothTransformation
+                QtCore.Qt.TransformationMode.SmoothTransformation,
             )
             self.image_label.setPixmap(scaled)
 
@@ -118,7 +119,9 @@ class FotoBeheerApp(QtWidgets.QMainWindow):
                     self.media_items.append(full_path)
                 elif selected_type == "Films" and ext in self.supported_video_exts:
                     self.media_items.append(full_path)
-                elif selected_type == "Beide" and (ext in self.supported_photo_exts or ext in self.supported_video_exts):
+                elif selected_type == "Beide" and (
+                    ext in self.supported_photo_exts or ext in self.supported_video_exts
+                ):
                     self.media_items.append(full_path)
 
         logging.info(f"Totaal gevonden bestanden: {len(self.media_items)}")
@@ -153,7 +156,7 @@ class FotoBeheerApp(QtWidgets.QMainWindow):
             scaled = pixmap.scaled(
                 available_size,
                 QtCore.Qt.AspectRatioMode.KeepAspectRatio,
-                QtCore.Qt.TransformationMode.SmoothTransformation
+                QtCore.Qt.TransformationMode.SmoothTransformation,
             )
             self.image_label.setPixmap(scaled)
             self.image_label.setVisible(True)
@@ -220,20 +223,47 @@ class FotoBeheerApp(QtWidgets.QMainWindow):
         self.ui.lblStatus.setText("Gestopt.")
 
     def handle_media_status(self, status):
-        if status == QMediaPlayer.MediaStatus.EndOfMedia and self.is_playing and not self.is_paused:
+        if (
+            status == QMediaPlayer.MediaStatus.EndOfMedia
+            and self.is_playing
+            and not self.is_paused
+        ):
             self.play_next_media()
         elif status == QMediaPlayer.MediaStatus.InvalidMedia:
             logging.error("Mediabestand is ongeldig of kan niet worden afgespeeld.")
             self.ui.lblStatus.setText("Fout: mediabestand ongeldig")
 
+
 def main():
     logging.info("Script FotoBeheerApp is gestart.")
     app = QtWidgets.QApplication([])
     main_window = FotoBeheerApp()
-    main_window.setWindowState(QtWidgets.QMainWindow().windowState() | QtWidgets.QMainWindow().windowState().WindowMaximized)
+    main_window.setWindowState(
+        QtWidgets.QMainWindow().windowState()
+        | QtWidgets.QMainWindow().windowState().WindowMaximized
+    )
     main_window.show()
     app.exec()
 
 
-if __name__ == '__main__':
+def start_fotobeheer(ui):
+    logging.info("start_fotobeheer() gestart – GUI gekoppeld")
+
+    # Voeg hier je knoplogica toe, bijvoorbeeld:
+    ui.btnStart.clicked.connect(lambda: logging.info("Start geklikt"))
+    ui.btnStop.clicked.connect(lambda: logging.info("Stop geklikt"))
+    ui.btnPause.clicked.connect(lambda: logging.info("Pauze geklikt"))
+    ui.btnNext.clicked.connect(lambda: logging.info("Volgende geklikt"))
+    ui.btnPrevious.clicked.connect(lambda: logging.info("Vorige geklikt"))
+    ui.btnAddFolder.clicked.connect(lambda: logging.info("Map toevoegen geklikt"))
+    ui.btnRemoveFolder.clicked.connect(lambda: logging.info("Map verwijderen geklikt"))
+    ui.chkLoop.toggled.connect(
+        lambda checked: logging.info(f"Loop {'aan' if checked else 'uit'}")
+    )
+    ui.spinPhotoDelay.valueChanged.connect(
+        lambda v: logging.info(f"Fotovertraging ingesteld op {v} seconden")
+    )
+
+
+if __name__ == "__main__":
     main()
