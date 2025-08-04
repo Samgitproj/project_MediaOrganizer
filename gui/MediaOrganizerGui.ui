@@ -47,6 +47,15 @@
      <verstretch>0</verstretch>
     </sizepolicy>
    </property>
+   <property name="editTriggers">
+    <set>QAbstractItemView::EditTrigger::NoEditTriggers</set>
+   </property>
+   <property name="selectionMode">
+    <enum>QAbstractItemView::SelectionMode::ExtendedSelection</enum>
+   </property>
+   <property name="textElideMode">
+    <enum>Qt::TextElideMode::ElideNone</enum>
+   </property>
   </widget>
   <widget class="QPushButton" name="btnSearchSelectedLocation">
    <property name="geometry">
