@@ -99,3 +99,6 @@
 2025-08-04 17:24:06,455 [INFO] Gekozen map: C:/OneDrive/Vioprint/OneDrive - Vioprint/Sam
 2025-08-04 17:24:10,083 [INFO] Zoekthread gestart op pad: C:/OneDrive/Vioprint/OneDrive - Vioprint/Sam, filtertype: images
 2025-08-04 17:24:10,501 [INFO] Zoekactie voltooid – 75 mappen gevonden, 0 fouten
+2025-08-04 18:17:40,019 [INFO] main.py gestart
+2025-08-04 18:17:40,121 [INFO] FotoBeheerApp UI is geïnitialiseerd.
+2025-08-04 18:17:46,743 [INFO] Gekozen map: C:/OneDrive/Vioprint/OneDrive - Vioprint/Sam
