@@ -96,6 +96,27 @@ class FotoBeheerApp(QtWidgets.QMainWindow):
         resultaten = []
 
         try:
+            # Controleer eerst de rootmap zelf
+            foto_count = 0
+            video_count = 0
+            for f in os.listdir(map_pad):
+                full_path = os.path.join(map_pad, f)
+                if not os.path.isfile(full_path):
+                    continue
+                ext = os.path.splitext(f)[1].lower()
+                if ext in self.supported_photo_exts:
+                    foto_count += 1
+                elif ext in self.supported_video_exts:
+                    video_count += 1
+
+            if (
+                (index == 0 and foto_count > 0)
+                or (index == 1 and video_count > 0)
+                or (index == 2 and (foto_count + video_count) > 0)
+            ):
+                resultaten.append((map_pad, foto_count, video_count))
+
+            # Daarna: submappen controleren
             for naam in sorted(os.listdir(map_pad)):
                 volledige_map = os.path.join(map_pad, naam)
                 if not os.path.isdir(volledige_map):
@@ -116,6 +137,7 @@ class FotoBeheerApp(QtWidgets.QMainWindow):
                     or (index == 2 and (foto_count + video_count) > 0)
                 ):
                     resultaten.append((volledige_map, foto_count, video_count))
+
         except Exception as e:
             logging.warning(f"Fout bij het lezen van {map_pad}: {e}")
 
