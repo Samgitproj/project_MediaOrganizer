@@ -18,35 +18,6 @@ logging.basicConfig(
     ],
 )
 
-# Vaste extensies voor foto's en video's
-image_extensions = [".jpg", ".jpeg", ".png", ".bmp", ".gif", ".tiff", ".heic", ".webp"]
-video_extensions = [
-    ".mp4",
-    ".avi",
-    ".mkv",
-    ".mov",
-    ".wmv",
-    ".flv",
-    ".webm",
-    ".mpeg",
-    ".mpg",
-]
-
-# Folders die we bewust overslaan
-excluded_folders = [
-    r"C:\\$Recycle.Bin",
-    r"C:\\System Volume Information",
-    r"C:\\Recovery",
-    r"C:\\Config.Msi",
-    r"C:\\Program Files",
-    r"C:\\Program Files (x86)",
-    r"C:\\Windows",
-    r"C:\\PerfLogs",
-    r"C:\\ProgramData",
-    r"C:\\Intel",
-    r"C:\\MSOCache",
-]
-
 
 def is_media_file(filepath: str, filtertype: str) -> bool:
     ext = os.path.splitext(filepath)[1].lower()
