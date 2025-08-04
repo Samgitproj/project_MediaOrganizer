@@ -72,7 +72,9 @@ class FotoBeheerApp(QtWidgets.QMainWindow):
         self.ui_dialog.btnSearchSelectedLocation.clicked.connect(
             self.start_search_from_location
         )
-        self.ui_dialog.btnStartMainwindow.clicked.connect(self.toon_mainwindow)
+        self.ui_dialog.btnStartMainwindow.clicked.connect(
+            self.verwerk_selectie_en_start_mainwindow
+        )
 
         logging.info("FotoBeheerApp UI is geïnitialiseerd.")
 
@@ -89,15 +91,19 @@ class FotoBeheerApp(QtWidgets.QMainWindow):
 
     def start_search_from_location(self):
         folder = self.ui_dialog.lineScriptLocationMedia.text().strip()
-        if not folder:
+        if not folder or not os.path.isdir(folder):
             QtWidgets.QMessageBox.warning(
-                self.dialog, "Geen map", "Selecteer eerst een map via de bladerknop."
+                self.dialog,
+                "Geen map",
+                "Selecteer eerst een geldige map via de bladerknop.",
             )
             logging.warning("Geen map opgegeven voor zoekactie.")
             return
+
         self.ui_dialog.listFoundedItems.clear()
-        root_item = self.voeg_map_toe_aan_tree(folder)
-        self.ui_dialog.listFoundedItems.addTopLevelItem(root_item)
+        resultaten = self.zoek_media_in_map(folder)
+        self.ui_dialog.listFoundedItems.addItems(resultaten)
+        logging.info(f"Zoekactie voltooid – {len(resultaten)} resultaten gevonden")
 
     def voeg_map_toe_aan_tree(
         self, pad: str, ouder_item=None
@@ -105,14 +111,16 @@ class FotoBeheerApp(QtWidgets.QMainWindow):
         foto_count = 0
         video_count = 0
         subitems = []
+
         try:
             for naam in sorted(os.listdir(pad)):
                 volledige_map = os.path.join(pad, naam)
                 if os.path.isdir(volledige_map):
                     child_item = self.voeg_map_toe_aan_tree(volledige_map)
-                    subitems.append(child_item)
-                    foto_count += int(child_item.text(1))
-                    video_count += int(child_item.text(2))
+                    if child_item:
+                        subitems.append(child_item)
+                        foto_count += int(child_item.text(1))
+                        video_count += int(child_item.text(2))
                 elif os.path.isfile(volledige_map):
                     ext = os.path.splitext(naam)[1].lower()
                     if ext in self.supported_photo_exts:
@@ -126,6 +134,7 @@ class FotoBeheerApp(QtWidgets.QMainWindow):
         item.setText(0, pad)
         item.setText(1, str(foto_count))
         item.setText(2, str(video_count))
+
         for child in subitems:
             item.addChild(child)
         if ouder_item:
@@ -323,3 +332,37 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+    def zoek_media_in_map(self, map_pad):
+        geselecteerd_type = self.ui_dialog.comboSelectTypeMain.currentText().lower()
+        resultaten = []
+
+        for root, dirs, files in os.walk(map_pad):
+            foto_count = 0
+            video_count = 0
+            for f in files:
+                ext = os.path.splitext(f)[1].lower()
+                if ext in self.supported_photo_exts:
+                    foto_count += 1
+                elif ext in self.supported_video_exts:
+                    video_count += 1
+
+            if (
+                (geselecteerd_type == "foto" and foto_count > 0)
+                or (geselecteerd_type == "video" and video_count > 0)
+                or (geselecteerd_type == "beide" and (foto_count + video_count) > 0)
+            ):
+                resultaten.append(root)
+        return resultaten
+
+    def verwerk_selectie_en_start_mainwindow(self):
+        geselecteerde_items = self.ui_dialog.listFoundedItems.selectedItems()
+        if not geselecteerde_items:
+            QtWidgets.QMessageBox.warning(
+                self.dialog, "Geen selectie", "Selecteer eerst een map."
+            )
+            return
+
+        geselecteerde_pad = geselecteerde_items[0].text()
+        self.mainwindow.ui.listFolders.addItem(geselecteerde_pad)
+        self.mainwindow.show()
