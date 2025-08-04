@@ -178,22 +178,6 @@ class FotoBeheerApp(QtWidgets.QMainWindow):
         if hasattr(self, "status_dialoog"):
             self.status_dialoog.close()
 
-    def tel_media_inclusief_submappen(self, pad: str) -> tuple[int, int]:
-        totaal_fotos = 0
-        totaal_videos = 0
-        try:
-            for root, dirs, files in os.walk(pad):
-                for bestand in files:
-                    full_path = os.path.join(root, bestand)
-                    ext = os.path.splitext(bestand)[1].lower()
-                    if ext in self.supported_photo_exts:
-                        totaal_fotos += 1
-                    elif ext in self.supported_video_exts:
-                        totaal_videos += 1
-        except Exception as e:
-            logging.warning(f"Fout bij tellen van media in {pad}: {e}")
-        return totaal_fotos, totaal_videos
-
     def laad_subfolders(self, ouder_item: QtWidgets.QTreeWidgetItem, pad: str):
         try:
             for naam in os.listdir(pad):
