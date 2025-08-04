@@ -7,6 +7,7 @@ from PyQt6.QtCore import QUrl, QTimer
 from PyQt6.QtMultimedia import QMediaPlayer, QAudioOutput
 from PyQt6.QtMultimediaWidgets import QVideoWidget
 from gui.MainWindow import Ui_MainWindow
+from gui.MediaOrganizerGui import Ui_Dialog
 from core.MediaSearchThread import MediaSearchThread
 from core import media_utils
 
@@ -26,7 +27,10 @@ class FotoBeheerApp(QtWidgets.QMainWindow):
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
 
-        # Interne lijsten
+        self.dialog = QtWidgets.QDialog()
+        self.ui_dialog = Ui_Dialog()
+        self.ui_dialog.setupUi(self.dialog)
+
         self.folder_paths: list[str] = []
         self.supported_photo_exts = tuple(media_utils.image_extensions)
         self.supported_video_exts = tuple(media_utils.video_extensions)
@@ -52,7 +56,7 @@ class FotoBeheerApp(QtWidgets.QMainWindow):
 
         self.image_label = QtWidgets.QLabel(self.ui.mediaFrame)
         self.image_label.setGeometry(self.ui.mediaFrame.rect())
-        self.image_label.setScaledContents(False)  # Niet vervormen
+        self.image_label.setScaledContents(False)
         self.image_label.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
         self.image_label.setVisible(False)
 
@@ -65,12 +69,16 @@ class FotoBeheerApp(QtWidgets.QMainWindow):
         self.ui.btnNext.clicked.connect(self.play_next_media)
         self.ui.btnPrevious.clicked.connect(self.play_previous_media)
 
-        self.ui.btnSearchAll.clicked.connect(self.start_search_all)
-        self.ui.btnSearchSelectedLocation.clicked.connect(
+        self.ui_dialog.btnSearchAll.clicked.connect(self.start_search_all)
+        self.ui_dialog.btnSearchSelectedLocation.clicked.connect(
             self.start_search_from_location
         )
+        self.ui_dialog.btnStartMainwindow.clicked.connect(self.toon_mainwindow)
 
         logging.info("FotoBeheerApp UI is geïnitialiseerd.")
+
+    def toon_mainwindow(self):
+        self.show()
 
     def resizeEvent(self, event):
         super().resizeEvent(event)
@@ -88,14 +96,16 @@ class FotoBeheerApp(QtWidgets.QMainWindow):
             self.image_label.setPixmap(scaled)
 
     def start_search_all(self):
-        filter_gui = self.ui.comboSelectTypeMain.currentText()
+        filter_gui = self.ui_dialog.comboSelectTypeMain.currentText()
         filtertype = self.vertaal_filter(filter_gui)
         self.start_zoekthread("C:\\", filtertype)
 
     def start_search_from_location(self):
-        folder = QtWidgets.QFileDialog.getExistingDirectory(self, "Selecteer map")
+        folder = QtWidgets.QFileDialog.getExistingDirectory(
+            self.dialog, "Selecteer map"
+        )
         if folder:
-            filter_gui = self.ui.comboSelectTypeMain.currentText()
+            filter_gui = self.ui_dialog.comboSelectTypeMain.currentText()
             filtertype = self.vertaal_filter(filter_gui)
             self.start_zoekthread(folder, filtertype)
 
@@ -108,10 +118,10 @@ class FotoBeheerApp(QtWidgets.QMainWindow):
             return "all"
 
     def start_zoekthread(self, pad, filtertype):
-        self.ui.listFoundedItems.clear()
-        self.ui.listFoundedItemsNok.clear()
-        self.ui.btnSearchAll.setEnabled(False)
-        self.ui.btnSearchSelectedLocation.setEnabled(False)
+        self.ui_dialog.listFoundedItems.clear()
+        self.ui_dialog.listFoundedItemsNok.clear()
+        self.ui_dialog.btnSearchAll.setEnabled(False)
+        self.ui_dialog.btnSearchSelectedLocation.setEnabled(False)
         self.toon_statusdialoog("Bezig met zoeken...")
 
         self.search_thread = MediaSearchThread(pad, filtertype)
@@ -119,7 +129,7 @@ class FotoBeheerApp(QtWidgets.QMainWindow):
         self.search_thread.start()
 
     def toon_statusdialoog(self, tekst="Bezig met zoeken..."):
-        self.status_dialoog = QtWidgets.QDialog(self)
+        self.status_dialoog = QtWidgets.QDialog(self.dialog)
         self.status_dialoog.setWindowTitle("Status")
         layout = QtWidgets.QVBoxLayout()
         label = QtWidgets.QLabel(tekst)
@@ -134,10 +144,10 @@ class FotoBeheerApp(QtWidgets.QMainWindow):
             self.status_dialoog.close()
 
     def verwerk_resultaten(self, mappen, fouten):
-        self.ui.listFoundedItems.addItems(mappen)
-        self.ui.listFoundedItemsNok.addItems(fouten)
-        self.ui.btnSearchAll.setEnabled(True)
-        self.ui.btnSearchSelectedLocation.setEnabled(True)
+        self.ui_dialog.listFoundedItems.addItems(mappen)
+        self.ui_dialog.listFoundedItemsNok.addItems(fouten)
+        self.ui_dialog.btnSearchAll.setEnabled(True)
+        self.ui_dialog.btnSearchSelectedLocation.setEnabled(True)
         self.sluit_statusdialoog()
 
     def add_folder(self):
