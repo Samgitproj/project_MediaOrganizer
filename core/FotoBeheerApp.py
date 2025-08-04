@@ -66,7 +66,7 @@ class FotoBeheerApp(QtWidgets.QMainWindow):
         self.ui.btnPause.clicked.connect(self.pause_slideshow)
         self.ui.btnStop.clicked.connect(self.stop_slideshow)
         self.ui.btnNext.clicked.connect(self.play_next_media)
-        self.ui_dialog.btnSearchAll.clicked.connect(self.exporteer_naar_documentmap)
+        self.ui_dialog.btnSearchAll.clicked.connect(self.start_search_from_location)
         self.ui.btnPrevious.clicked.connect(self.play_previous_media)
         self.ui_dialog.btnBladerenLocation.clicked.connect(self.blader_naar_locatie)
         self.ui_dialog.btnSearchSelectedLocation.clicked.connect(
