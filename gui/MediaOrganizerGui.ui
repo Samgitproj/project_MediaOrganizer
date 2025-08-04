@@ -35,10 +35,10 @@
   <widget class="QListWidget" name="listFoundedItems">
    <property name="geometry">
     <rect>
-     <x>220</x>
+     <x>230</x>
      <y>30</y>
-     <width>941</width>
-     <height>181</height>
+     <width>341</width>
+     <height>451</height>
     </rect>
    </property>
    <property name="sizePolicy">
@@ -70,8 +70,8 @@
   <widget class="QPushButton" name="btnStartMainwindow">
    <property name="geometry">
     <rect>
-     <x>50</x>
-     <y>260</y>
+     <x>40</x>
+     <y>150</y>
      <width>120</width>
      <height>30</height>
     </rect>
@@ -116,6 +116,22 @@
      <string>Beide</string>
     </property>
    </item>
+  </widget>
+  <widget class="QListWidget" name="listFoundedItemsNok">
+   <property name="geometry">
+    <rect>
+     <x>710</x>
+     <y>30</y>
+     <width>341</width>
+     <height>451</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Expanding">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
   </widget>
  </widget>
  <resources/>
