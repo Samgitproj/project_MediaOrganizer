@@ -38,6 +38,10 @@
         {
             "path": "gui\\MainWindow.py",
             "github_url": "https://github.com/Samgitproj/project_MediaOrganizer/blob/main/gui/MainWindow.py"
+        },
+        {
+            "path": "gui\\MediaOrganizerGui.py",
+            "github_url": "https://github.com/Samgitproj/project_MediaOrganizer/blob/main/gui/MediaOrganizerGui.py"
         }
     ],
     "changelogs": [
