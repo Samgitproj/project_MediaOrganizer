@@ -140,9 +140,9 @@ class FotoBeheerApp(QtWidgets.QMainWindow):
         ):
             writer.writerow(
                 [
-                    "  " * niveau + item.text(0),
-                    str(item.data(1, 0)),
-                    str(item.data(2, 0)),
+                    "  " * niveau + item.text(0),  # indentatie voor boomstructuur
+                    item.text(1),  # foto's
+                    item.text(2),  # video's
                 ]
             )
             for i in range(item.childCount()):
