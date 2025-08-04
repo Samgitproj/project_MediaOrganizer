@@ -19,8 +19,6 @@ try:
     logging.info("main.py gestart")
 
     app = QtWidgets.QApplication(sys.argv)
-    app_controller = FotoBeheerApp()
-    app_controller.dialog.show()
 
     sys.exit(app.exec())
 
