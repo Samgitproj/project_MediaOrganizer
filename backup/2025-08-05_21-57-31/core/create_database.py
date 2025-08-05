@@ -1,11 +1,8 @@
 import sqlite3
 import os
 
-# Pad naar de databasebestand
-DB_PATH = os.path.join(
-    "C:/OneDrive/Vioprint/OneDrive - Vioprint/software projecten/MediaOrganizer",
-    "media_analyse.db"
-)
+# Pad naar de database (pas eventueel aan)
+DB_PATH = os.path.join("C:/OneDrive/Vioprint/OneDrive - Vioprint/software projecten/MediaOrganizer", "media_analyse.db")
 
 def create_database():
     conn = sqlite3.connect(DB_PATH)
@@ -31,8 +28,6 @@ def create_database():
     CREATE TABLE IF NOT EXISTS analyse (
         foto_id INTEGER PRIMARY KEY,
         bevat_gezicht BOOLEAN,
-        tags_ai TEXT,
-        ai_score REAL,
         FOREIGN KEY(foto_id) REFERENCES fotos(id)
     )
     """)

@@ -516,3 +516,10 @@
 
 
 --- 2025-08-05 11:35:39 | core\FotoBeheerApp.py ---
+
+--- Controle TOEVOEGEN voor core/create_database.py @ 2025-08-05 21:06:18 ---
+✅ Bestand bestaat op schijf: C:/OneDrive/Vioprint/OneDrive - Vioprint/software projecten/MediaOrganizer/core/create_database.py
+✅ Script staat in .projassist.json: core/create_database.py
+✅ GitHub-URL is toegekend in JSON
+✅ Script staat in lijstweergave (GUI): core/create_database.py
+✅ GitHub: bestand is zichtbaar in repo
