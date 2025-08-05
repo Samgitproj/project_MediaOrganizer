@@ -1,0 +1,131 @@
+
+# 📘 Handleiding – Media Organizer GUI
+
+Welkom bij de Media Organizer! Deze handleiding begeleidt je stap voor stap bij het gebruik van de applicatie. Of je nu foto's wil filteren op datum, reeksen wil herkennen, of beelden wil verplaatsen of verwijderen – alles begint vanuit dit centrale venster.
+
+---
+
+## 🖥️ Doel van het programma
+
+De Media Organizer is ontworpen om **grote hoeveelheden foto's en video's** op een overzichtelijke manier te **analyseren, filteren, organiseren en beheren**.
+
+Je kan:
+- Media filteren op **EXIF-datum**
+- **Mappenstructuren** visueel doorzoeken
+- **Virtuele fotolijsten** opbouwen (gegroepeerd per reeks)
+- Media verplaatsen naar een doelmap
+- Ongewenste beelden **verwijderen**
+- Alles netjes **exporteren naar CSV**
+
+---
+
+## 📋 Hoofdvenster overzicht
+
+Bij het starten van de applicatie krijg je dit overzicht:
+
+1. ▶️ **Start hoofdvenster**  
+   Opent het hoofdscherm van de slideshow-module.
+
+2. 🔄 **Mediatype**  
+   Kies of je wil zoeken naar:
+   - Alleen foto's
+   - Alleen video's
+   - Beide
+
+3. ✅ **Filter op datum (EXIF)**  
+   Vink aan om de media te beperken tot een bepaalde tijdsperiode.
+
+4. 📅 **Startdatum / Einddatum**  
+   Kies de gewenste datumbereiken via kalendervensters.
+
+5. 🕒 **Detecteer reeksen binnen … seconden**  
+   Bepaal hoeveel tijd maximaal tussen twee foto's mag zitten om ze als “reeks” te beschouwen.
+
+---
+
+## 🗂️ Tabs: Mappen & Fotolijst
+
+De interface bevat een **tabstructuur**:
+
+### 📁 Tab 1 – Mappenoverzicht
+- Hier zie je mappen waarin media werden gevonden.
+- Elke map bevat een checkbox om ze te selecteren voor verdere acties (zoals zoeken of verwijderen).
+
+### 🖼️ Tab 2 – Virtuele Fotolijst
+- Bevat individuele foto's uit alle mappen.
+- Kolommen: EXIF-datum, bestandsnaam, map, gezicht gedetecteerd, tags.
+- Handig voor selectie, filtering of sortering van foto’s.
+
+---
+
+## 🧰 Acties en knoppen
+
+### 🔍 **Zoekactie starten**
+Start een zoekopdracht in de geselecteerde mappen, rekening houdend met:
+- Mediatype (foto/video)
+- Datumfilter (indien geactiveerd)
+
+### ⏹️ **Zoekactie stoppen**
+Onderbreekt een lopende zoekactie.
+
+### 🔎 **Detecteer reeksen**
+Zoekt automatisch naar reeksen foto's die vlak na elkaar genomen zijn, volgens het ingestelde tijdsinterval.
+
+### 🖼️ **Start interactieve selectie**
+Start een **slideshow van één reeks**. Je beslist per foto:
+- ✅ Behouden
+- ❌ Verwijderen
+
+Aan het einde worden deze twee lijsten bewaard.
+
+### 📤 **Verplaats geselecteerde foto's**
+Verplaatst de aangevinkte of geselecteerde foto's naar een map die je zelf kiest.
+
+### ❌ **Verwijder gemarkeerde foto's**
+Verwijdert definitief alle foto's die in de verwijderlijst staan (met bevestiging).
+
+### 📄 **Exporteer naar CSV**
+Exporteert de huidige fotolijst naar een CSV-bestand, inclusief datum, bestandsnaam, tags...
+
+### ♻️ **Ververs lijst**
+Laadt alle gegevens opnieuw in (handig na wijzigingen).
+
+---
+
+## 📂 Doelmap instellen
+
+Onder de tabstructuur zie je:
+- Een **tekstvak** om de doelmap handmatig in te vullen
+- Een **'Blader naar doelmap'-knop** waarmee je via verkenner een map kiest
+
+Deze doelmap wordt gebruikt bij het **verplaatsen van foto's**.
+
+---
+
+## ✅ Voorbeeldscenario: snel reeksen selecteren
+
+1. Start de app
+2. Selecteer “Foto’s” als mediatype
+3. Vink “Filter op datum (EXIF)” aan en stel een periode in
+4. Klik op “Zoekactie starten”
+5. Ga naar de tab “Fotolijst”
+6. Klik op “Detecteer reeksen”
+7. Kies een reeks en klik “Start interactieve selectie”
+8. Markeer foto's om te behouden of te verwijderen
+9. Verwijder of verplaats geselecteerde foto's
+10. (Optioneel) Exporteer de lijst naar CSV
+
+---
+
+## ℹ️ Opmerkingen
+
+- De EXIF-datum komt uit het fotobestand zelf, niet uit de bestandsdatum van Windows.
+- Alleen foto's met een geldige EXIF-tijd worden gebruikt voor reeksen en filtering.
+- Alle verplaats- of verwijderacties vragen bevestiging of loggen het resultaat.
+
+---
+
+Heb je vragen of feedback? Dan kan je dit toevoegen via het feedbackkanaal van het programma.
+
+Veel succes met het organiseren van je media!
+

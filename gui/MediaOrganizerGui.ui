@@ -1,151 +1,199 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>Dialog</class>
- <widget class="QDialog" name="Dialog">
+ <class>MediaOrganizerGui</class>
+ <widget class="QDialog" name="MediaOrganizerGui">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1514</width>
-    <height>870</height>
+    <width>1164</width>
+    <height>877</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Dialog</string>
+   <string>Media Organizer</string>
   </property>
-  <widget class="QPushButton" name="btnExportList">
-   <property name="geometry">
-    <rect>
-     <x>10</x>
-     <y>250</y>
-     <width>120</width>
-     <height>30</height>
-    </rect>
-   </property>
-   <property name="sizePolicy">
-    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-     <horstretch>0</horstretch>
-     <verstretch>0</verstretch>
-    </sizepolicy>
-   </property>
-   <property name="text">
-    <string>Resultaat opslaan</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="btnSearchSelectedLocation">
-   <property name="geometry">
-    <rect>
-     <x>40</x>
-     <y>70</y>
-     <width>120</width>
-     <height>30</height>
-    </rect>
-   </property>
-   <property name="sizePolicy">
-    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-     <horstretch>0</horstretch>
-     <verstretch>0</verstretch>
-    </sizepolicy>
-   </property>
-   <property name="text">
-    <string>Zoek in locatie</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="btnStartMainwindow">
-   <property name="geometry">
-    <rect>
-     <x>860</x>
-     <y>40</y>
-     <width>120</width>
-     <height>30</height>
-    </rect>
-   </property>
-   <property name="sizePolicy">
-    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-     <horstretch>0</horstretch>
-     <verstretch>0</verstretch>
-    </sizepolicy>
-   </property>
-   <property name="text">
-    <string>Start voorstelling</string>
-   </property>
-  </widget>
-  <widget class="QListWidget" name="listFoundedItemsNok">
-   <property name="geometry">
-    <rect>
-     <x>390</x>
-     <y>80</y>
-     <width>591</width>
-     <height>81</height>
-    </rect>
-   </property>
-   <property name="sizePolicy">
-    <sizepolicy hsizetype="Fixed" vsizetype="Expanding">
-     <horstretch>0</horstretch>
-     <verstretch>0</verstretch>
-    </sizepolicy>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="lineScriptLocationMedia">
-   <property name="geometry">
-    <rect>
-     <x>40</x>
-     <y>40</y>
-     <width>511</width>
-     <height>20</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="btnBladerenLocation">
-   <property name="geometry">
-    <rect>
-     <x>560</x>
-     <y>40</y>
-     <width>80</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Bladeren</string>
-   </property>
-  </widget>
-  <widget class="QTreeWidget" name="listFoundedItems">
-   <property name="geometry">
-    <rect>
-     <x>10</x>
-     <y>290</y>
-     <width>1331</width>
-     <height>531</height>
-    </rect>
-   </property>
-   <property name="editTriggers">
-    <set>QAbstractItemView::EditTrigger::NoEditTriggers</set>
-   </property>
-   <property name="selectionMode">
-    <enum>QAbstractItemView::SelectionMode::ExtendedSelection</enum>
-   </property>
-   <property name="sortingEnabled">
-    <bool>true</bool>
-   </property>
-   <attribute name="headerVisible">
-    <bool>true</bool>
-   </attribute>
-   <column>
-    <property name="text">
-     <string>Map</string>
-    </property>
-   </column>
-   <column>
-    <property name="text">
-     <string>Aantal foto's</string>
-    </property>
-   </column>
-   <column>
-    <property name="text">
-     <string>Aantal video's</string>
-    </property>
-   </column>
-  </widget>
+  <layout class="QVBoxLayout" name="mainLayout">
+   <item>
+    <layout class="QHBoxLayout" name="layoutTop">
+     <item>
+      <widget class="QPushButton" name="btnStartMainwindow">
+       <property name="text">
+        <string>Start hoofdvenster</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="comboSelectTypeMain"/>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="layoutDatumFilter">
+     <item>
+      <widget class="QCheckBox" name="checkFilterDatum">
+       <property name="text">
+        <string>Filter op datum (EXIF)</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QDateEdit" name="dateEditStartDatum">
+       <property name="calendarPopup">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QDateEdit" name="dateEditEindDatum">
+       <property name="calendarPopup">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="labelTijdsinterval">
+       <property name="text">
+        <string>Detecteer reeksen binnen</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QSpinBox" name="spinTijdsintervalReeks">
+       <property name="minimum">
+        <number>1</number>
+       </property>
+       <property name="maximum">
+        <number>3600</number>
+       </property>
+       <property name="value">
+        <number>30</number>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="labelSeconden">
+       <property name="text">
+        <string>seconden</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QTabWidget" name="tabWidget">
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="tabMappen">
+      <attribute name="title">
+       <string>Mappenoverzicht</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="layoutTabMappen">
+       <item>
+        <widget class="QTreeWidget" name="listFoundedItems">
+         <column>
+          <property name="text">
+           <string notr="true">1</string>
+          </property>
+         </column>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tabFotos">
+      <attribute name="title">
+       <string>Fotolijst</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="layoutTabFotos">
+       <item>
+        <widget class="QTreeWidget" name="treeVirtueleFotos">
+         <column>
+          <property name="text">
+           <string notr="true">1</string>
+          </property>
+         </column>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="layoutDoelmap">
+     <item>
+      <widget class="QLineEdit" name="lineDoelmapPad"/>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btnBladerDoelmap">
+       <property name="text">
+        <string>Blader naar doelmap</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QGridLayout" name="layoutKnoppen">
+     <item row="0" column="0">
+      <widget class="QPushButton" name="btnSearchAll">
+       <property name="text">
+        <string>Zoekactie starten</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QPushButton" name="btnStopSearch">
+       <property name="text">
+        <string>Zoekactie stoppen</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QPushButton" name="btnDetecteerReeksen">
+       <property name="text">
+        <string>Detecteer reeksen</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QPushButton" name="btnStartInteractieveSelectie">
+       <property name="text">
+        <string>Start interactieve selectie</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QPushButton" name="btnVerplaatsFotos">
+       <property name="text">
+        <string>Verplaats geselecteerde foto's</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QPushButton" name="btnVerwijderFotos">
+       <property name="text">
+        <string>Verwijder gemarkeerde foto's</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QPushButton" name="btnExporteerCSV">
+       <property name="text">
+        <string>Exporteer naar CSV</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QPushButton" name="btnVerversLijst">
+       <property name="text">
+        <string>Ververs lijst</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
  </widget>
  <resources/>
  <connections/>

@@ -50,10 +50,6 @@
         {
             "path": "core\\media_utils.py",
             "github_url": "https://github.com/Samgitproj/project_MediaOrganizer/blob/main/core/media_utils.py"
-        },
-        {
-            "path": "core\\create_database.py",
-            "github_url": "https://github.com/Samgitproj/project_MediaOrganizer/blob/main/core/create_database.py"
         }
     ],
     "changelogs": [
