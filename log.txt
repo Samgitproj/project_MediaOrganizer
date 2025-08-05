@@ -1195,3 +1195,11 @@ AttributeError: 'FotoBeheerApp' object has no attribute 'exporteer_naar_document
 2025-08-05 10:36:08,131 [INFO] Zoekactie voltooid – 2 resultaten gevonden
 2025-08-05 10:37:09,578 [INFO] Zoekactie voltooid – 4 resultaten gevonden
 2025-08-05 11:03:47,602 [INFO] Zoekactie voltooid – 4 resultaten gevonden
+2025-08-05 11:20:37,995 [INFO] main.py gestart
+2025-08-05 11:20:38,142 [INFO] FotoBeheerApp UI is geïnitialiseerd.
+2025-08-05 11:20:44,191 [INFO] Gekozen map: C:/Users/SamVandenLangenbergh/Pictures
+2025-08-05 11:20:48,164 [INFO] Zoekactie voltooid – 5 resultaten gevonden
+2025-08-05 11:21:07,091 [INFO] Zoekactie voltooid – 5 resultaten gevonden
+2025-08-05 11:21:08,859 [INFO] Zoekactie voltooid – 5 resultaten gevonden
+2025-08-05 11:21:09,812 [INFO] Zoekactie voltooid – 5 resultaten gevonden
+2025-08-05 11:21:12,144 [INFO] Zoekactie voltooid – 2 resultaten gevonden
