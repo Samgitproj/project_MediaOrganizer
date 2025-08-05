@@ -13,14 +13,14 @@ class Ui_Dialog(object):
     def setupUi(self, Dialog):
         Dialog.setObjectName("Dialog")
         Dialog.resize(1514, 870)
-        self.btnSearchAll = QtWidgets.QPushButton(parent=Dialog)
-        self.btnSearchAll.setGeometry(QtCore.QRect(40, 10, 120, 30))
+        self.btnExportList = QtWidgets.QPushButton(parent=Dialog)
+        self.btnExportList.setGeometry(QtCore.QRect(10, 250, 120, 30))
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Policy.Fixed, QtWidgets.QSizePolicy.Policy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.btnSearchAll.sizePolicy().hasHeightForWidth())
-        self.btnSearchAll.setSizePolicy(sizePolicy)
-        self.btnSearchAll.setObjectName("btnSearchAll")
+        sizePolicy.setHeightForWidth(self.btnExportList.sizePolicy().hasHeightForWidth())
+        self.btnExportList.setSizePolicy(sizePolicy)
+        self.btnExportList.setObjectName("btnExportList")
         self.btnSearchSelectedLocation = QtWidgets.QPushButton(parent=Dialog)
         self.btnSearchSelectedLocation.setGeometry(QtCore.QRect(40, 70, 120, 30))
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Policy.Fixed, QtWidgets.QSizePolicy.Policy.Fixed)
@@ -57,9 +57,6 @@ class Ui_Dialog(object):
         self.listFoundedItems.setSelectionMode(QtWidgets.QAbstractItemView.SelectionMode.ExtendedSelection)
         self.listFoundedItems.setObjectName("listFoundedItems")
         self.listFoundedItems.header().setVisible(True)
-        self.comboSelectTypeMain = QtWidgets.QComboBox(parent=Dialog)
-        self.comboSelectTypeMain.setGeometry(QtCore.QRect(180, 70, 171, 31))
-        self.comboSelectTypeMain.setObjectName("comboSelectTypeMain")
 
         self.retranslateUi(Dialog)
         QtCore.QMetaObject.connectSlotsByName(Dialog)
@@ -67,7 +64,7 @@ class Ui_Dialog(object):
     def retranslateUi(self, Dialog):
         _translate = QtCore.QCoreApplication.translate
         Dialog.setWindowTitle(_translate("Dialog", "Dialog"))
-        self.btnSearchAll.setText(_translate("Dialog", "Zoek in computer"))
+        self.btnExportList.setText(_translate("Dialog", "Resultaat opslaan"))
         self.btnSearchSelectedLocation.setText(_translate("Dialog", "Zoek in locatie"))
         self.btnStartMainwindow.setText(_translate("Dialog", "Start voorstelling"))
         self.btnBladerenLocation.setText(_translate("Dialog", "Bladeren"))

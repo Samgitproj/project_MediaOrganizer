@@ -13,11 +13,11 @@
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
-  <widget class="QPushButton" name="btnSearchAll">
+  <widget class="QPushButton" name="btnExportList">
    <property name="geometry">
     <rect>
-     <x>40</x>
-     <y>10</y>
+     <x>10</x>
+     <y>250</y>
      <width>120</width>
      <height>30</height>
     </rect>
@@ -29,7 +29,7 @@
     </sizepolicy>
    </property>
    <property name="text">
-    <string>Zoek in computer</string>
+    <string>Resultaat opslaan</string>
    </property>
   </widget>
   <widget class="QPushButton" name="btnSearchSelectedLocation">
@@ -145,16 +145,6 @@
      <string>Aantal video's</string>
     </property>
    </column>
-  </widget>
-  <widget class="QComboBox" name="comboSelectTypeMain">
-   <property name="geometry">
-    <rect>
-     <x>180</x>
-     <y>70</y>
-     <width>171</width>
-     <height>31</height>
-    </rect>
-   </property>
   </widget>
  </widget>
  <resources/>
