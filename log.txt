@@ -1168,3 +1168,30 @@ AttributeError: 'FotoBeheerApp' object has no attribute 'exporteer_naar_document
 2025-08-04 23:46:11,752 [INFO] Zoekactie voltooid – 0 resultaten gevonden
 2025-08-04 23:46:38,071 [INFO] Zoekactie voltooid – 1 resultaten gevonden
 2025-08-04 23:46:57,572 [INFO] Zoekactie voltooid – 1 resultaten gevonden
+2025-08-05 10:20:04,998 [INFO] main.py gestart
+2025-08-05 10:20:05,124 [INFO] FotoBeheerApp UI is geïnitialiseerd.
+2025-08-05 10:20:20,716 [INFO] Gekozen map: C:/Users/SamVandenLangenbergh/Pictures
+2025-08-05 10:20:36,989 [INFO] Zoekactie voltooid – 4 resultaten gevonden
+2025-08-05 10:20:51,602 [INFO] Zoekactie voltooid – 4 resultaten gevonden
+2025-08-05 10:20:53,333 [INFO] Zoekactie voltooid – 4 resultaten gevonden
+2025-08-05 10:20:56,596 [INFO] Zoekactie voltooid – 2 resultaten gevonden
+2025-08-05 10:21:01,692 [INFO] Zoekactie voltooid – 2 resultaten gevonden
+2025-08-05 10:21:05,547 [INFO] Zoekactie voltooid – 4 resultaten gevonden
+2025-08-05 10:21:22,781 [INFO] Gekozen map: C:/Users/SamVandenLangenbergh/Pictures
+2025-08-05 10:21:26,234 [INFO] Zoekactie voltooid – 4 resultaten gevonden
+2025-08-05 10:21:27,484 [INFO] Zoekactie voltooid – 4 resultaten gevonden
+2025-08-05 10:21:29,860 [INFO] Zoekactie voltooid – 2 resultaten gevonden
+2025-08-05 10:21:36,124 [INFO] Zoekactie voltooid – 4 resultaten gevonden
+2025-08-05 10:22:31,886 [INFO] main.py gestart
+2025-08-05 10:22:31,998 [INFO] FotoBeheerApp UI is geïnitialiseerd.
+2025-08-05 10:22:53,606 [INFO] Gekozen map: C:/Users/SamVandenLangenbergh/Pictures
+2025-08-05 10:22:56,772 [INFO] Zoekactie voltooid – 4 resultaten gevonden
+2025-08-05 10:25:06,791 [INFO] Zoekactie voltooid – 2 resultaten gevonden
+2025-08-05 10:25:42,144 [INFO] Zoekactie voltooid – 4 resultaten gevonden
+2025-08-05 10:34:50,441 [INFO] main.py gestart
+2025-08-05 10:34:50,550 [INFO] FotoBeheerApp UI is geïnitialiseerd.
+2025-08-05 10:35:05,418 [INFO] Gekozen map: C:/Users/SamVandenLangenbergh/Pictures
+2025-08-05 10:35:12,122 [INFO] Zoekactie voltooid – 4 resultaten gevonden
+2025-08-05 10:36:08,131 [INFO] Zoekactie voltooid – 2 resultaten gevonden
+2025-08-05 10:37:09,578 [INFO] Zoekactie voltooid – 4 resultaten gevonden
+2025-08-05 11:03:47,602 [INFO] Zoekactie voltooid – 4 resultaten gevonden
