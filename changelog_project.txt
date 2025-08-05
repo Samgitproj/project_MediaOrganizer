@@ -497,3 +497,13 @@
 
 
 --- 2025-08-05 11:26:15 | core\FotoBeheerApp.py ---
+
+--- Controle TOEVOEGEN voor gui/MediaOrganizerGui.py @ 2025-08-05 11:29:07 ---
+✅ Bestand bestaat op schijf: C:/OneDrive/Vioprint/OneDrive - Vioprint/software projecten/MediaOrganizer/gui/MediaOrganizerGui.py
+✅ Script staat in .projassist.json: gui/MediaOrganizerGui.py
+✅ GitHub-URL is toegekend in JSON
+✅ Script staat in lijstweergave (GUI): gui/MediaOrganizerGui.py
+✅ GitHub: bestand is zichtbaar in repo
+
+
+--- 2025-08-05 11:33:43 | core\FotoBeheerApp.py ---
