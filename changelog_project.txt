@@ -626,3 +626,9 @@
 
 
 --- 2025-08-06 11:56:41 | core\media_scanner.py ---
+
+
+--- 2025-08-06 11:56:51 | core\media_scanner.py ---
+
+
+--- 2025-08-06 11:56:51 | core\media_scanner.py ---
