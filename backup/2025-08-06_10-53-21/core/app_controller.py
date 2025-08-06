@@ -26,6 +26,19 @@ class MediaAppController:
         self.ui_dialog = Ui_MediaOrganizerGui()
         self.ui_dialog.setupUi(self.dialog)
 
+        # ✅ Kolomnamen instellen voor boomstructuren
+        self.ui_dialog.listFoundedItems.setHeaderLabels(
+            ["📁 Map", "📸 Foto's", "🎬 Video's"]
+        )
+        self.ui_dialog.treeVirtueleFotos.setHeaderLabels(
+            ["📅 Datum", "🖼️ Bestandsnaam", "📁 Map", "👤 Gezicht?", "📌 Tags?"]
+        )
+
+        # ✅ Voorbeelditem met checkbox (later dynamisch vullen)
+        voorbeeld_item = QtWidgets.QTreeWidgetItem(["C:/foto’s/reis", "120", "4"])
+        voorbeeld_item.setCheckState(0, QtCore.Qt.CheckState.Unchecked)
+        self.ui_dialog.listFoundedItems.addTopLevelItem(voorbeeld_item)
+
         # --- Data-opslag ---
         self.folder_paths: list[str] = []
         self.media_items: list[str] = []
