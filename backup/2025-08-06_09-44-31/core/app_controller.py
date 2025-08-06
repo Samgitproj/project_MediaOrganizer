@@ -66,17 +66,6 @@ class MediaAppController:
         self.ui.btnNext.clicked.connect(self.media_player.play_next_media)
         self.ui.btnAddFolder.clicked.connect(self.add_folder)
         self.ui.btnRemoveFolder.clicked.connect(self.remove_selected_folder)
-        self.ui.btnPrevious.clicked.connect(self.play_previous_media)
-        self.ui_dialog.btnStartMainwindow.clicked.connect(
-            self.verwerk_selectie_en_start_mainwindow
-        )
-        self.ui_dialog.btnBladerenLocation.clicked.connect(self.blader_naar_locatie)
-        self.ui_dialog.btnSearchSelectedLocation.clicked.connect(
-            self.start_search_from_location
-        )
-        self.ui_dialog.btnExportList.clicked.connect(
-            self.exporteer_gevonden_mappen_naar_csv
-        )
 
         logging.info("MediaAppController: UI en componenten geïnitialiseerd.")
 
@@ -111,63 +100,3 @@ class MediaAppController:
                 self.folder_paths.remove(folder)
             self.ui.listFolders.takeItem(self.ui.listFolders.row(item))
             logging.info(f"Map verwijderd: {folder}")
-
-    def play_previous_media(self):
-        if not self.media_items:
-            logging.info("Geen media om terug te gaan.")
-            return
-
-        self.current_index = (self.current_index - 1) % len(self.media_items)
-        pad = self.media_items[self.current_index]
-        self.media_player.play_media(pad)
-
-    def verwerk_selectie_en_start_mainwindow(self):
-        if not self.folder_paths:
-            QtWidgets.QMessageBox.warning(
-                self.dialog, "Geen mappen", "Selecteer minstens één map."
-            )
-            return
-
-        # TODO: hier kan later preprocessing komen
-        self.dialog.close()
-        self.main_window.show()
-
-    def blader_naar_locatie(self):
-        folder = QtWidgets.QFileDialog.getExistingDirectory(
-            self.dialog, "Selecteer map om te doorzoeken"
-        )
-        if folder:
-            self.ui_dialog.lineLocation.setText(folder)
-            logging.info(f"Zoeklocatie ingesteld op: {folder}")
-
-    def start_search_from_location(self):
-        location = self.ui_dialog.lineLocation.text()
-        if location and os.path.exists(location):
-            logging.info(f"Start zoekactie vanuit: {location}")
-            # TODO: start thread of scanfunctie
-        else:
-            QtWidgets.QMessageBox.warning(
-                self.dialog,
-                "Ongeldige map",
-                "Selecteer een geldige map om te doorzoeken.",
-            )
-
-    def exporteer_gevonden_mappen_naar_csv(self):
-        if not self.folder_paths:
-            QtWidgets.QMessageBox.information(
-                self.dialog, "Geen mappen", "Geen mappen om te exporteren."
-            )
-            return
-
-        bestand, _ = QtWidgets.QFileDialog.getSaveFileName(
-            self.dialog, "CSV opslaan", "", "CSV-bestanden (*.csv)"
-        )
-        if bestand:
-            try:
-                with open(bestand, "w", encoding="utf-8") as f:
-                    f.write("Map\n")
-                    for folder in self.folder_paths:
-                        f.write(f"{folder}\n")
-                logging.info(f"CSV opgeslagen: {bestand}")
-            except Exception as e:
-                logging.exception("Fout bij opslaan van CSV:")
