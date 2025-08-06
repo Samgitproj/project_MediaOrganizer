@@ -620,3 +620,9 @@
 
 
 --- 2025-08-06 11:08:10 | core\app_controller.py ---
+
+
+--- 2025-08-06 11:56:41 | core\media_scanner.py ---
+
+
+--- 2025-08-06 11:56:41 | core\media_scanner.py ---
