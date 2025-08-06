@@ -220,6 +220,53 @@ class FotoBeheerApp(QtWidgets.QMainWindow):
         for path in self.media_items:
             logging.info(f" → {path}")
 
+    def play_media(self, index: int):
+        if not (0 <= index < len(self.media_items)):
+            logging.warning("Index buiten bereik.")
+            return
+        self.current_index = index
+        path = self.media_items[index]
+        if not os.path.exists(path):
+            logging.warning(f"Bestand niet gevonden: {path}")
+            self.ui.lblStatus.setText(f"Bestand niet gevonden: {path}")
+            return
+        ext = os.path.splitext(path)[1].lower()
+        self.image_label.hide()
+        self.video_widget.hide()
+        self.player.stop()
+        self.timer.stop()
+        self.image_label.setGeometry(self.ui.mediaFrame.rect())
+        self.video_widget.setGeometry(self.ui.mediaFrame.rect())
+        if ext in self.supported_photo_exts:
+            available_size = self.ui.mediaFrame.size()
+            pixmap = QPixmap(path)
+            scaled = pixmap.scaled(
+                available_size,
+                QtCore.Qt.AspectRatioMode.KeepAspectRatio,
+                QtCore.Qt.TransformationMode.SmoothTransformation,
+            )
+            self.image_label.setPixmap(scaled)
+            self.image_label.setVisible(True)
+            logging.info(f"Foto getoond: {path}")
+            self.ui.lblStatus.setText(f"Foto: {os.path.basename(path)}")
+            if self.is_playing and not self.is_paused:
+                self.timer.start(self.ui.spinPhotoDelay.value() * 1000)
+        elif ext in self.supported_video_exts:
+            self.video_widget.setVisible(True)
+            self.player.setSource(QUrl.fromLocalFile(path))
+            self.player.play()
+            logging.info(f"Video afgespeeld: {path}")
+            self.ui.lblStatus.setText(f"Video: {os.path.basename(path)}")
+
+    def play_next_media(self):
+        if not self.media_items:
+            return
+        if self.ui.chkLoop.isChecked():
+            self.play_media(self.current_index)
+        else:
+            self.current_index = (self.current_index + 1) % len(self.media_items)
+            self.play_media(self.current_index)
+
     def play_previous_media(self):
         if not self.media_items:
             return
