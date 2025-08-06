@@ -581,3 +581,12 @@
 
 
 --- 2025-08-06 09:24:19 | core\media_player.py ---
+
+
+--- 2025-08-06 09:24:19 | core\media_player.py ---
+
+
+--- 2025-08-06 09:29:42 | core\app_controller.py ---
+
+
+--- 2025-08-06 09:29:42 | core\app_controller.py ---

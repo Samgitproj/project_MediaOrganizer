@@ -18,6 +18,8 @@ class MediaPlayer:
         self.media_paths = []
         self.slideshow_timer = QTimer()
         self.slideshow_timer.timeout.connect(self.play_next_media)
+        self.is_playing = False
+        self.is_paused = False
         logging.debug("MediaPlayer: geïnitialiseerd")
 
     def play_media(self, filepath: str):
@@ -47,3 +49,30 @@ class MediaPlayer:
         )
         volgende_pad = self.media_paths[self.current_media_index]
         self.play_media(volgende_pad)
+
+    def start_slideshow(self, interval_secs=5):
+        if not self.media_paths:
+            logging.info("Geen mediabestanden om slideshow te starten.")
+            return
+
+        self.is_playing = True
+        self.is_paused = False
+        self.slideshow_timer.start(interval_secs * 1000)
+        self.play_media(self.media_paths[self.current_media_index])
+        logging.info("Slideshow gestart.")
+
+    def pause_slideshow(self):
+        if self.is_playing:
+            if self.is_paused:
+                self.slideshow_timer.start()
+                logging.info("Slideshow hervat.")
+            else:
+                self.slideshow_timer.stop()
+                logging.info("Slideshow gepauzeerd.")
+            self.is_paused = not self.is_paused
+
+    def stop_slideshow(self):
+        self.slideshow_timer.stop()
+        self.is_playing = False
+        self.is_paused = False
+        logging.info("Slideshow gestopt.")

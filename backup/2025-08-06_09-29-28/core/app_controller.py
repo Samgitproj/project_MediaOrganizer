@@ -29,10 +29,17 @@ class MediaAppController:
         # --- Data-opslag ---
         self.folder_paths: list[str] = []
         self.media_items: list[str] = []
+        self.current_index = 0
+        self.is_playing = False
+        self.is_paused = False
 
         # --- Ondersteunde extensies ---
         self.supported_photo_exts = tuple(media_utils.image_extensions)
         self.supported_video_exts = tuple(media_utils.video_extensions)
+
+        # --- Timer voor foto's ---
+        self.timer = QTimer()
+        self.timer.timeout.connect(self.play_next_media)
 
         # --- MediaPlayer setup ---
         self.player = QMediaPlayer(self.main_window)
@@ -51,19 +58,6 @@ class MediaAppController:
         self.image_label.setScaledContents(False)
         self.image_label.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
         self.image_label.setVisible(False)
-
-        # --- MediaPlayer aanmaken ---
-        self.media_player = MediaPlayer(
-            media_label=self.image_label,
-            video_widget=self.video_widget,
-            player=self.player,
-        )
-
-        # --- Koppeling knoppen ---
-        self.ui.btnStart.clicked.connect(lambda: self.media_player.start_slideshow())
-        self.ui.btnPause.clicked.connect(self.media_player.pause_slideshow)
-        self.ui.btnStop.clicked.connect(self.media_player.stop_slideshow)
-        self.ui.btnNext.clicked.connect(self.media_player.play_next_media)
 
         logging.info("MediaAppController: UI en componenten geïnitialiseerd.")
 
