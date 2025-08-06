@@ -65,7 +65,6 @@ class MediaAppController:
         self.ui.btnStop.clicked.connect(self.media_player.stop_slideshow)
         self.ui.btnNext.clicked.connect(self.media_player.play_next_media)
         self.ui.btnAddFolder.clicked.connect(self.add_folder)
-        self.ui.btnRemoveFolder.clicked.connect(self.remove_selected_folder)
 
         logging.info("MediaAppController: UI en componenten geïnitialiseerd.")
 
@@ -91,12 +90,3 @@ class MediaAppController:
             logging.info(f"Map toegevoegd: {folder}")
         else:
             logging.info("Geen nieuwe map toegevoegd.")
-
-    def remove_selected_folder(self):
-        selected_items = self.ui.listFolders.selectedItems()
-        for item in selected_items:
-            folder = item.text()
-            if folder in self.folder_paths:
-                self.folder_paths.remove(folder)
-            self.ui.listFolders.takeItem(self.ui.listFolders.row(item))
-            logging.info(f"Map verwijderd: {folder}")
