@@ -689,3 +689,12 @@
 
 
 --- 2025-08-06 15:43:49 | ai\onscherpte_detectie.py ---
+
+
+--- 2025-08-06 15:43:49 | ai\onscherpte_detectie.py ---
+
+
+--- 2025-08-06 16:05:52 | ai\onscherpte_detectie.py ---
+
+
+--- 2025-08-06 16:05:52 | ai\onscherpte_detectie.py ---
