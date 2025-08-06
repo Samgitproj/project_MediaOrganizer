@@ -1228,3 +1228,7 @@ AttributeError: 'Ui_Dialog' object has no attribute 'btnSearchAll'
 2025-08-05 11:36:02,757 [INFO] Gekozen map: C:/Users/SamVandenLangenbergh/Pictures
 2025-08-05 11:36:05,334 [INFO] Zoekactie voltooid – 5 resultaten gevonden
 2025-08-05 11:36:28,015 [INFO] CSV succesvol opgeslagen naar: C:/OneDrive/Vioprint/OneDrive - Vioprint/software projecten/MediaOrganizer/documents/tets.csv
+2025-08-06 09:03:24,179 [INFO] main.py gestart
+2025-08-06 09:03:24,180 [INFO] MediaAppController gestart
+2025-08-06 09:03:24,652 [INFO] MediaAppController: UI en componenten geïnitialiseerd.
+2025-08-06 09:03:24,653 [INFO] Toont startdialoog (MediaOrganizerGui)
