@@ -26,6 +26,10 @@ class FotoBeheerApp(QtWidgets.QMainWindow):
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
 
+        self.dialog = QtWidgets.QDialog()
+        self.ui_dialog = Ui_Dialog()
+        self.ui_dialog.setupUi(self.dialog)
+
         self.folder_paths: list[str] = []
         self.supported_photo_exts = tuple(media_utils.image_extensions)
         self.supported_video_exts = tuple(media_utils.video_extensions)
