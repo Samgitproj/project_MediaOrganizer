@@ -632,3 +632,9 @@
 
 
 --- 2025-08-06 11:56:51 | core\media_scanner.py ---
+
+
+--- 2025-08-06 12:49:17 | ai\onscherpte_detectie.py ---
+
+
+--- 2025-08-06 12:49:17 | ai\onscherpte_detectie.py ---
