@@ -706,3 +706,5 @@
 [2025-08-06 23:28:25] Wijzigingen in: ai\onscherpte_detectie.py
 [2025-08-06 23:30:17] Wijzigingen in: ai\onscherpte_detectie.py
 [2025-08-06 23:30:17] Wijzigingen in: ai\onscherpte_detectie.py
+[2025-08-06 23:35:23] Wijzigingen in: ai\onscherpte_detectie.py
+[2025-08-06 23:35:24] Wijzigingen in: ai\onscherpte_detectie.py
