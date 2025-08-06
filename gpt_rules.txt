@@ -21,3 +21,5 @@ Geef bij meerdere wijzigingen meerdere blokken in de juiste volgorde.
 Geef nooit de volledige functie of het volledige bestand terug tenzij uitdrukkelijk gevraagd.  
 
 Handhaaf deze regels consequent bij elke codewijziging die je voorstelt.
+
+Geef je antwoord zonder markdown-codeblokken, alleen pure code zonder ```python of ``` markers.
