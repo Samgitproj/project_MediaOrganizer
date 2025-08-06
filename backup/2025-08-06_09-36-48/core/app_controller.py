@@ -64,7 +64,6 @@ class MediaAppController:
         self.ui.btnPause.clicked.connect(self.media_player.pause_slideshow)
         self.ui.btnStop.clicked.connect(self.media_player.stop_slideshow)
         self.ui.btnNext.clicked.connect(self.media_player.play_next_media)
-        self.ui.btnAddFolder.clicked.connect(self.add_folder)
 
         logging.info("MediaAppController: UI en componenten geïnitialiseerd.")
 
@@ -79,14 +78,3 @@ class MediaAppController:
 
     def handle_media_status(self, status):
         pass
-
-    def add_folder(self):
-        folder = QtWidgets.QFileDialog.getExistingDirectory(
-            self.main_window, "Selecteer map"
-        )
-        if folder and folder not in self.folder_paths:
-            self.folder_paths.append(folder)
-            self.ui.listFolders.addItem(folder)
-            logging.info(f"Map toegevoegd: {folder}")
-        else:
-            logging.info("Geen nieuwe map toegevoegd.")
