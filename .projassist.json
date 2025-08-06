@@ -47,7 +47,6 @@
             "path": "core/FotoBeheerApp.py",
             "github_url": "https://github.com/Samgitproj/project_MediaOrganizer/blob/main/core/FotoBeheerApp.py"
         },
-
         {
             "path": "threads/__init__.py",
             "github_url": "https://github.com/Samgitproj/project_MediaOrganizer/blob/main/threads/__init__.py"
@@ -56,7 +55,6 @@
             "path": "threads/MediaSearchThread.py",
             "github_url": "https://github.com/Samgitproj/project_MediaOrganizer/blob/main/threads/MediaSearchThread.py"
         },
-
         {
             "path": "gui/__init__.py",
             "github_url": "https://github.com/Samgitproj/project_MediaOrganizer/blob/main/gui/__init__.py"
@@ -73,7 +71,6 @@
             "path": "gui/MainWindow.ui",
             "github_url": "https://github.com/Samgitproj/project_MediaOrganizer/blob/main/gui/MainWindow.ui"
         },
-
         {
             "path": "ai/detecteer_donkerheid.py",
             "github_url": "https://github.com/Samgitproj/project_MediaOrganizer/blob/main/ai/detecteer_donkerheid.py"
@@ -86,7 +83,6 @@
             "path": "ai/onscherpte_detectie.py",
             "github_url": "https://github.com/Samgitproj/project_MediaOrganizer/blob/main/ai/onscherpte_detectie.py"
         },
-
         {
             "path": "backup/__init__.py",
             "github_url": "https://github.com/Samgitproj/project_MediaOrganizer/blob/main/backup/__init__.py"
@@ -98,6 +94,10 @@
         {
             "path": "resources/__init__.py",
             "github_url": "https://github.com/Samgitproj/project_MediaOrganizer/blob/main/resources/__init__.py"
+        },
+        {
+            "path": "core\\app_controller.py",
+            "github_url": "https://github.com/Samgitproj/project_MediaOrganizer/blob/main/core/app_controller.py"
         }
     ],
     "changelogs": [

@@ -1,0 +1,74 @@
+import logging
+from PyQt6 import QtWidgets, QtCore
+from PyQt6.QtMultimedia import QMediaPlayer, QAudioOutput
+from PyQt6.QtMultimediaWidgets import QVideoWidget
+from PyQt6.QtGui import QPixmap
+from PyQt6.QtCore import QTimer, QUrl
+
+from gui.MainWindow import Ui_MainWindow
+from gui.MediaOrganizerGui import Ui_Dialog
+from core import media_utils
+
+
+class MediaAppController:
+    def __init__(self):
+        logging.info("MediaAppController gestart")
+
+        # Start Qt-applicatie
+        self.app = QtWidgets.QApplication([])
+
+        # --- GUI-opbouw ---
+        self.main_window = QtWidgets.QMainWindow()
+        self.ui = Ui_MainWindow()
+        self.ui.setupUi(self.main_window)
+
+        self.dialog = QtWidgets.QDialog()
+        self.ui_dialog = Ui_Dialog()
+        self.ui_dialog.setupUi(self.dialog)
+
+        # --- Data-opslag ---
+        self.folder_paths: list[str] = []
+        self.media_items: list[str] = []
+        self.current_index = 0
+        self.is_playing = False
+        self.is_paused = False
+
+        # --- Ondersteunde extensies ---
+        self.supported_photo_exts = tuple(media_utils.image_extensions)
+        self.supported_video_exts = tuple(media_utils.video_extensions)
+
+        # --- Timer voor foto's ---
+        self.timer = QTimer()
+        self.timer.timeout.connect(self.play_next_media)
+
+        # --- MediaPlayer setup ---
+        self.player = QMediaPlayer(self.main_window)
+        self.audio_output = QAudioOutput()
+        self.player.setAudioOutput(self.audio_output)
+        self.player.mediaStatusChanged.connect(self.handle_media_status)
+
+        # --- Widgets in hoofdvenster ---
+        self.video_widget = QVideoWidget(self.ui.mediaFrame)
+        self.video_widget.setGeometry(self.ui.mediaFrame.rect())
+        self.video_widget.setVisible(False)
+        self.player.setVideoOutput(self.video_widget)
+
+        self.image_label = QtWidgets.QLabel(self.ui.mediaFrame)
+        self.image_label.setGeometry(self.ui.mediaFrame.rect())
+        self.image_label.setScaledContents(False)
+        self.image_label.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
+        self.image_label.setVisible(False)
+
+        logging.info("MediaAppController: UI en componenten geïnitialiseerd.")
+
+    def start(self):
+        logging.info("Toont startdialoog (MediaOrganizerGui)")
+        self.dialog.show()
+        self.app.exec()
+
+    # Dummy-methode voor connectie
+    def play_next_media(self):
+        pass
+
+    def handle_media_status(self, status):
+        pass
