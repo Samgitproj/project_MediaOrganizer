@@ -638,3 +638,9 @@
 
 
 --- 2025-08-06 12:49:17 | ai\onscherpte_detectie.py ---
+
+
+--- 2025-08-06 13:09:28 | ai\detecteer_donkerheid.py ---
+
+
+--- 2025-08-06 13:09:28 | ai\detecteer_donkerheid.py ---
