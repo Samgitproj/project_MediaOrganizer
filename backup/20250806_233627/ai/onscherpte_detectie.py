@@ -1,5 +1,5 @@
 ```python
-
+import math
 import datetime
 
 import json
@@ -23,7 +23,6 @@ class DataProcessor:
         return result
 
     def greet(name):
-        logging.info("Asking for name")
         print(f"Hello, {name}!")
 
     def ask_name():
