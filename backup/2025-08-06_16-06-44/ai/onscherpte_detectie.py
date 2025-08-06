@@ -11,20 +11,17 @@ import logging
 
 class DataProcessor:
     def __init__(self, data):
-
         self.data = data
 
     def process(self):
-        logging.info("Starting data processing")
+        # Basisverwerking (kan uitgebreid worden)
         result = [d * 2 for d in self.data]
-
         return result
 
     def greet(name):
         print(f"Hello, {name}!")
 
     def ask_name():
-        logging.info("Asking for name")
         name = input("Please enter your name: ")
         return name
 
@@ -40,5 +37,4 @@ class DataProcessor:
 
 
 if __name__ == "__main__":
-
     main()

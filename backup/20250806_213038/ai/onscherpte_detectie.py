@@ -1,5 +1,5 @@
 import datetime
-
+import math
 import json
 
 import sys
@@ -11,13 +11,13 @@ import logging
 
 class DataProcessor:
     def __init__(self, data):
-
+        logging.info("Initializing DataProcessor")
         self.data = data
 
     def process(self):
         logging.info("Starting data processing")
         result = [d * 2 for d in self.data]
-
+        logging.info(f"Data processed: {result}")
         return result
 
     def greet(name):
@@ -40,5 +40,5 @@ class DataProcessor:
 
 
 if __name__ == "__main__":
-
+    logging.basicConfig(level=logging.INFO)
     main()

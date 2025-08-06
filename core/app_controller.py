@@ -1,4 +1,5 @@
 import logging
+import math
 from PyQt6 import QtWidgets, QtCore
 from PyQt6.QtMultimedia import QMediaPlayer, QAudioOutput
 from PyQt6.QtMultimediaWidgets import QVideoWidget
