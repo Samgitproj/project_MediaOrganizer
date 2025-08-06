@@ -1,7 +1,9 @@
 ```python
-def ask_name():
-    name = input("Wat is je naam? ")
-    return name
+def greet(name):
+    print(f"Hallo, {name}!")
+
+def farewell(name):
+    print(f"Dag, {name}!")
 
 def main():
     greet("Wereld")
