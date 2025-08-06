@@ -575,3 +575,9 @@
 
 
 --- 2025-08-06 09:21:56 | core\FotoBeheerApp.py ---
+
+
+--- 2025-08-06 09:21:56 | core\FotoBeheerApp.py ---
+
+
+--- 2025-08-06 09:24:19 | core\media_player.py ---
