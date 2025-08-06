@@ -523,3 +523,6 @@
 ✅ GitHub-URL is toegekend in JSON
 ✅ Script staat in lijstweergave (GUI): core/create_database.py
 ✅ GitHub: bestand is zichtbaar in repo
+
+
+--- 2025-08-06 08:26:44 | core\app_controller.py ---
