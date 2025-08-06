@@ -7,6 +7,7 @@ from PyQt6.QtCore import QUrl, QTimer
 from PyQt6.QtMultimedia import QMediaPlayer, QAudioOutput
 from PyQt6.QtMultimediaWidgets import QVideoWidget
 from gui.MainWindow import Ui_MainWindow
+from gui.MediaOrganizerGui import Ui_Dialog
 from core import media_utils
 
 logging.basicConfig(
