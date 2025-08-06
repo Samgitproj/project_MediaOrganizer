@@ -6,7 +6,7 @@ from PyQt6.QtGui import QPixmap
 from PyQt6.QtCore import QTimer, QUrl
 
 from gui.MainWindow import Ui_MainWindow
-from gui.MediaOrganizerGui import Ui_MediaOrganizerGui
+from gui.MediaOrganizerGui import Ui_Dialog
 from core import media_utils
 
 
@@ -23,7 +23,7 @@ class MediaAppController:
         self.ui.setupUi(self.main_window)
 
         self.dialog = QtWidgets.QDialog()
-        self.ui_dialog = Ui_MediaOrganizerGui()
+        self.ui_dialog = Ui_Dialog()
         self.ui_dialog.setupUi(self.dialog)
 
         # --- Data-opslag ---
