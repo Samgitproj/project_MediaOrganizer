@@ -656,3 +656,6 @@
 
 
 --- 2025-08-06 13:14:12 | ai\detecteer_donkerheid.py ---
+
+
+--- 2025-08-06 13:19:16 | ai\detecteer_donkerheid.py ---
