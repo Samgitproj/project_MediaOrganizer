@@ -1,11 +1,3 @@
-import sys
-import os
-
-# Voeg projectroot toe aan sys.path (maakt core/ importeerbaar)
-project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-if project_root not in sys.path:
-    sys.path.insert(0, project_root)
-
 from core.app_controller import MediaAppController
 import logging
 import sys
