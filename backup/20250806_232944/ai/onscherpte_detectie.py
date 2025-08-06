@@ -21,7 +21,6 @@ class DataProcessor:
         return result
 
     def greet(name):
-        logging.info("Greeting the user")
         print(f"Hello, {name}!")
 
     def ask_name():
