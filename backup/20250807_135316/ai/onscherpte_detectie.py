@@ -10,8 +10,6 @@ import os
 # Algemene helper imports
 import logging
 
-logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
-
 
 class DataProcessor:
     def __init__(self, data):
@@ -46,4 +44,3 @@ class DataProcessor:
 if __name__ == "__main__":
 
     main()
-```
