@@ -1,3 +1,4 @@
+# [SECTION: Imports]
 import logging
 import math
 from PyQt6 import QtWidgets, QtCore
@@ -11,14 +12,16 @@ from gui.MediaOrganizerGui import Ui_MediaOrganizerGui
 from core import media_utils
 
 
+# [END: Imports]
+# [CLASS: MediaAppController]
 class MediaAppController:
+# [FUNC: __init__]
     def __init__(self):
         logging.info("MediaAppController gestart")
 
         # Start Qt-applicatie
         self.app = QtWidgets.QApplication([])
 
-        # --- GUI-opbouw ---
         self.main_window = QtWidgets.QMainWindow()
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self.main_window)
@@ -40,21 +43,17 @@ class MediaAppController:
         voorbeeld_item.setCheckState(0, QtCore.Qt.CheckState.Unchecked)
         self.ui_dialog.listFoundedItems.addTopLevelItem(voorbeeld_item)
 
-        # --- Data-opslag ---
         self.folder_paths: list[str] = []
         self.media_items: list[str] = []
 
-        # --- Ondersteunde extensies ---
         self.supported_photo_exts = tuple(media_utils.image_extensions)
         self.supported_video_exts = tuple(media_utils.video_extensions)
 
-        # --- MediaPlayer setup ---
         self.player = QMediaPlayer(self.main_window)
         self.audio_output = QAudioOutput()
         self.player.setAudioOutput(self.audio_output)
         self.player.mediaStatusChanged.connect(self.handle_media_status)
 
-        # --- Widgets in hoofdvenster ---
         self.video_widget = QVideoWidget(self.ui.mediaFrame)
         self.video_widget.setGeometry(self.ui.mediaFrame.rect())
         self.video_widget.setVisible(False)
@@ -66,14 +65,12 @@ class MediaAppController:
         self.image_label.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
         self.image_label.setVisible(False)
 
-        # --- MediaPlayer aanmaken ---
         self.media_player = MediaPlayer(
             media_label=self.image_label,
             video_widget=self.video_widget,
             player=self.player,
         )
 
-        # --- Koppeling knoppen ---
         self.ui.btnStart.clicked.connect(lambda: self.media_player.start_slideshow())
         self.ui.btnPause.clicked.connect(self.media_player.pause_slideshow)
         self.ui.btnStop.clicked.connect(self.media_player.stop_slideshow)
@@ -94,22 +91,30 @@ class MediaAppController:
 
         logging.info("MediaAppController: UI en componenten geïnitialiseerd.")
 
+# [END: __init__]
+# [FUNC: start]
     def start(self):
         logging.info("Toont startdialoog (MediaOrganizerGui)")
         self.dialog.show()
         self.app.exec()
 
+# [END: start]
     # Dummy-methode voor connectie
+# [FUNC: play_next_media]
     def play_next_media(self):
         logging.info("play_next_media")
 
         pass
 
+# [END: play_next_media]
+# [FUNC: handle_media_status]
     def handle_media_status(self, status):
         logging.info("handle_media_status")
 
         pass
 
+# [END: handle_media_status]
+# [FUNC: add_folder]
     def add_folder(self):
         logging.info("add_folder")
 
@@ -123,6 +128,8 @@ class MediaAppController:
         else:
             logging.info("Geen nieuwe map toegevoegd.")
 
+# [END: add_folder]
+# [FUNC: remove_selected_folder]
     def remove_selected_folder(self):
         logging.info("remove_selected_folder")
 
@@ -134,6 +141,8 @@ class MediaAppController:
             self.ui.listFolders.takeItem(self.ui.listFolders.row(item))
             logging.info(f"Map verwijderd: {folder}")
 
+# [END: remove_selected_folder]
+# [FUNC: play_previous_media]
     def play_previous_media(self):
         logging.info("play_previous_media")
 
@@ -145,6 +154,8 @@ class MediaAppController:
         pad = self.media_items[self.current_index]
         self.media_player.play_media(pad)
 
+# [END: play_previous_media]
+# [FUNC: verwerk_selectie_en_start_mainwindow]
     def verwerk_selectie_en_start_mainwindow(self):
         logging.info("verwerk_selectie_en_start_mainwindow")
 
@@ -158,6 +169,8 @@ class MediaAppController:
         self.dialog.close()
         self.main_window.show()
 
+# [END: verwerk_selectie_en_start_mainwindow]
+# [FUNC: blader_naar_locatie]
     def blader_naar_locatie(self):
         logging.info("blader_naar_locatie")
 
@@ -168,6 +181,8 @@ class MediaAppController:
             self.ui_dialog.lineLocation.setText(folder)
             logging.info(f"Zoeklocatie ingesteld op: {folder}")
 
+# [END: blader_naar_locatie]
+# [FUNC: start_search_from_location]
     def start_search_from_location(self):
         logging.info("start_search_from_location")
 
@@ -182,6 +197,8 @@ class MediaAppController:
                 "Selecteer een geldige map om te doorzoeken.",
             )
 
+# [END: start_search_from_location]
+# [FUNC: exporteer_gevonden_mappen_naar_csv]
     def exporteer_gevonden_mappen_naar_csv(self):
         logging.info("exporteer_gevonden_mappen_naar_csv")
 
@@ -203,3 +220,5 @@ class MediaAppController:
                 logging.info(f"CSV opgeslagen: {bestand}")
             except Exception as e:
                 logging.exception("Fout bij opslaan van CSV:")
+# [END: MediaAppController]
+# [END: exporteer_gevonden_mappen_naar_csv]
