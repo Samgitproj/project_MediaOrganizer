@@ -1,12 +1,15 @@
+# [SECTION: Imports]
 import sqlite3
 import os
 
+# [END: Imports]
 # Pad naar de databasebestand
 DB_PATH = os.path.join(
     "C:/OneDrive/Vioprint/OneDrive - Vioprint/software projecten/MediaOrganizer",
     "media_analyse.db"
 )
 
+# [FUNC: create_database]
 def create_database():
     conn = sqlite3.connect(DB_PATH)
     cursor = conn.cursor()
@@ -77,5 +80,8 @@ def create_database():
     conn.close()
     print(f"[INFO] Database aangemaakt of bijgewerkt op: {DB_PATH}")
 
+# [END: create_database]
+# [SECTION: CLI / Entrypoint]
 if __name__ == "__main__":
     create_database()
+# [END: CLI / Entrypoint]
