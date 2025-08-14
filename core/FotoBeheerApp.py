@@ -1,4 +1,5 @@
 # Nieuw script: FotoBeheerApp
+# [SECTION: Imports]
 import logging
 import os
 from PyQt6 import QtWidgets, QtCore
@@ -9,6 +10,7 @@ from PyQt6.QtMultimediaWidgets import QVideoWidget
 from gui.MainWindow import Ui_MainWindow
 from core import media_utils
 
+# [END: Imports]
 logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s [%(levelname)s] %(message)s",
@@ -19,7 +21,9 @@ logging.basicConfig(
 )
 
 
+# [CLASS: FotoBeheerApp]
 class FotoBeheerApp(QtWidgets.QMainWindow):
+# [FUNC: __init__]
     def __init__(self):
         super().__init__()
         self.ui = Ui_MainWindow()
@@ -75,9 +79,13 @@ class FotoBeheerApp(QtWidgets.QMainWindow):
 
         logging.info("FotoBeheerApp UI is geïnitialiseerd.")
 
+# [END: __init__]
+# [FUNC: toon_mainwindow]
     def toon_mainwindow(self):
         self.show()
 
+# [END: toon_mainwindow]
+# [FUNC: blader_naar_locatie]
     def blader_naar_locatie(self):
         folder = QtWidgets.QFileDialog.getExistingDirectory(
             self.dialog, "Selecteer map"
@@ -86,6 +94,8 @@ class FotoBeheerApp(QtWidgets.QMainWindow):
             self.ui_dialog.lineScriptLocationMedia.setText(folder)
             logging.info(f"Gekozen map: {folder}")
 
+# [END: blader_naar_locatie]
+# [FUNC: zoek_media_in_map]
     def zoek_media_in_map(self, map_pad):
         resultaten = []
         reeds_verwerkt = set()
@@ -113,6 +123,8 @@ class FotoBeheerApp(QtWidgets.QMainWindow):
 
         return resultaten
 
+# [END: zoek_media_in_map]
+# [FUNC: verwerk_selectie_en_start_mainwindow]
     def verwerk_selectie_en_start_mainwindow(self):
         geselecteerde_items = self.ui_dialog.listFoundedItems.selectedItems()
         if not geselecteerde_items:
@@ -126,6 +138,8 @@ class FotoBeheerApp(QtWidgets.QMainWindow):
         self.ui.listFolders.addItem(geselecteerde_pad)
         self.show()
 
+# [END: verwerk_selectie_en_start_mainwindow]
+# [FUNC: start_search_from_location]
     def start_search_from_location(self):
         folder = self.ui_dialog.lineScriptLocationMedia.text().strip()
         if not folder or not os.path.isdir(folder):
@@ -147,6 +161,8 @@ class FotoBeheerApp(QtWidgets.QMainWindow):
             self.ui_dialog.listFoundedItems.addTopLevelItem(item)
         logging.info(f"Zoekactie voltooid – {len(resultaten)} resultaten gevonden")
 
+# [END: start_search_from_location]
+# [FUNC: exporteer_gevonden_mappen_naar_csv]
     def exporteer_gevonden_mappen_naar_csv(self):
         pad, _ = QtWidgets.QFileDialog.getSaveFileName(
             self, "Exporteer naar CSV", "", "CSV-bestanden (*.csv)"
@@ -170,6 +186,8 @@ class FotoBeheerApp(QtWidgets.QMainWindow):
             logging.error(f"Fout bij export: {e}")
             QtWidgets.QMessageBox.critical(self, "Fout", f"Export mislukt:\n{e}")
 
+# [END: exporteer_gevonden_mappen_naar_csv]
+# [FUNC: add_folder]
     def add_folder(self):
         folder = QtWidgets.QFileDialog.getExistingDirectory(self, "Selecteer een map")
         if folder and folder not in self.folder_paths:
@@ -181,6 +199,8 @@ class FotoBeheerApp(QtWidgets.QMainWindow):
         else:
             logging.info("Geen map geselecteerd.")
 
+# [END: add_folder]
+# [FUNC: remove_selected_folder]
     def remove_selected_folder(self):
         selected_items = self.ui.listFolders.selectedItems()
         for item in selected_items:
@@ -189,6 +209,8 @@ class FotoBeheerApp(QtWidgets.QMainWindow):
             self.ui.listFolders.takeItem(row)
             logging.info(f"Map verwijderd: {item.text()}")
 
+# [END: remove_selected_folder]
+# [FUNC: scan_folders_for_media]
     def scan_folders_for_media(self):
         self.media_items.clear()
         selected_type = self.ui.comboSelectType.currentText()
@@ -215,12 +237,16 @@ class FotoBeheerApp(QtWidgets.QMainWindow):
         for path in self.media_items:
             logging.info(f" → {path}")
 
+# [END: scan_folders_for_media]
+# [FUNC: play_previous_media]
     def play_previous_media(self):
         if not self.media_items:
             return
         self.current_index = (self.current_index - 1) % len(self.media_items)
         self.play_media(self.current_index)
 
+# [END: play_previous_media]
+# [FUNC: start_slideshow]
     def start_slideshow(self):
         self.scan_folders_for_media()
         if not self.media_items:
@@ -231,6 +257,8 @@ class FotoBeheerApp(QtWidgets.QMainWindow):
         self.is_paused = False
         self.play_media(self.current_index)
 
+# [END: start_slideshow]
+# [FUNC: pause_slideshow]
     def pause_slideshow(self):
         self.is_paused = not self.is_paused
         if self.is_paused:
@@ -246,6 +274,8 @@ class FotoBeheerApp(QtWidgets.QMainWindow):
             logging.info("Afspeellijst hervat.")
             self.ui.lblStatus.setText("Hervat.")
 
+# [END: pause_slideshow]
+# [FUNC: stop_slideshow]
     def stop_slideshow(self):
         self.is_playing = False
         self.is_paused = False
@@ -256,6 +286,8 @@ class FotoBeheerApp(QtWidgets.QMainWindow):
         logging.info("Afspeellijst gestopt.")
         self.ui.lblStatus.setText("Gestopt.")
 
+# [END: stop_slideshow]
+# [FUNC: handle_media_status]
     def handle_media_status(self, status):
         if (
             status == QMediaPlayer.MediaStatus.EndOfMedia
@@ -267,7 +299,10 @@ class FotoBeheerApp(QtWidgets.QMainWindow):
             logging.error("Mediabestand is ongeldig of kan niet worden afgespeeld.")
             self.ui.lblStatus.setText("Fout: mediabestand ongeldig")
 
+# [END: handle_media_status]
+# [END: FotoBeheerApp]
 
+# [FUNC: main]
 def main():
     logging.info("Script FotoBeheerApp is gestart.")
     app = QtWidgets.QApplication([])
@@ -279,6 +314,9 @@ def main():
     main_window.show()
     app.exec()
 
+# [END: main]
 
+# [SECTION: CLI / Entrypoint]
 if __name__ == "__main__":
     main()
+# [END: CLI / Entrypoint]
