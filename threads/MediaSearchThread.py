@@ -1,12 +1,16 @@
+# [SECTION: Imports]
 import os
 from PyQt6.QtCore import QThread, pyqtSignal
 from core.media_utils import is_media_file, excluded_folders
 
 
+# [END: Imports]
+# [CLASS: MediaSearchThread]
 class MediaSearchThread(QThread):
     # Signalen naar GUI: lijsten met resultaten en fouten
     searchCompleted = pyqtSignal(list, list)
 
+# [FUNC: __init__]
     def __init__(self, start_path: str, filter_type: str):
         super().__init__()
         self.start_path = start_path
@@ -14,6 +18,8 @@ class MediaSearchThread(QThread):
         self.gevonden_mappen = set()
         self.foutmeldingen = []
 
+# [END: __init__]
+# [FUNC: run]
     def run(self):
         for root, dirs, files in os.walk(self.start_path):
             # Normaliseer pad voor vergelijking
@@ -39,3 +45,5 @@ class MediaSearchThread(QThread):
 
         # Sorteer en zend resultaten terug naar GUI
         self.searchCompleted.emit(sorted(self.gevonden_mappen), self.foutmeldingen)
+# [END: MediaSearchThread]
+# [END: run]
