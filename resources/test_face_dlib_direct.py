@@ -1,8 +1,10 @@
+# [SECTION: Imports]
 import os
 import dlib
 from PIL import Image
 from PIL.ExifTags import TAGS
 
+# [END: Imports]
 FOTO_PATH = "voorbeeldfoto.jpg"
 MODEL_DIR = os.path.join("face_recognition_models", "models")
 SHAPE_PREDICTOR_PATH = os.path.join(MODEL_DIR, "shape_predictor_68_face_landmarks.dat")
