@@ -1,6 +1,8 @@
+# [SECTION: Imports]
 import sys
 import os
 
+# [END: Imports]
 # Voeg projectroot toe aan sys.path (maakt core/ importeerbaar)
 project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 if project_root not in sys.path:
