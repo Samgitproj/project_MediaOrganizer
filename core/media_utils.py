@@ -1,5 +1,7 @@
+# [SECTION: Imports]
 import os
 
+# [END: Imports]
 # Vaste extensies voor afbeeldingen
 image_extensions = [".jpg", ".jpeg", ".png", ".bmp", ".gif", ".tiff", ".heic", ".webp"]
 
@@ -33,6 +35,7 @@ excluded_folders = [
 
 
 # Controleer of een bestand een media-item is volgens opgegeven filtertype
+# [FUNC: is_media_file]
 def is_media_file(filepath: str, filtertype: str) -> bool:
     ext = os.path.splitext(filepath)[1].lower()
     print(f"[DEBUG] Bestand: {filepath}, extensie: {ext}, filtertype: {filtertype}")
@@ -48,3 +51,4 @@ def is_media_file(filepath: str, filtertype: str) -> bool:
 
     print(f"[DEBUG] → match: {match}")
     return match
+# [END: is_media_file]
