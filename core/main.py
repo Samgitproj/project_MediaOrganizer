@@ -1,32 +1,47 @@
-# [SECTION: Imports]
-import sys
+# [SECTION: IMPORTS]
 import os
+import sys
+import logging
 
-# [END: Imports]
-# Voeg projectroot toe aan sys.path (maakt core/ importeerbaar)
-project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+# Zorg dat 'core/' en 'gui/' importeerbaar zijn (main.py staat in de project-root)
+project_root = os.path.dirname(os.path.abspath(__file__))
 if project_root not in sys.path:
     sys.path.insert(0, project_root)
 
+from core.logging_setup import init_logging  # centrale logging
 from core.app_controller import MediaAppController
-import logging
-import sys
+# [END: SECTION: IMPORTS]
 
-# Logging instellen
-logging.basicConfig(
-    level=logging.INFO,
-    format="%(asctime)s [%(levelname)s] %(message)s",
-    handlers=[
-        logging.FileHandler("log.txt", mode="a", encoding="utf-8"),
-        logging.StreamHandler(),
-    ],
-)
 
-try:
-    logging.info("main.py gestart")
+# [SECTION: CONSTANTS]
+PROJECT_NAME = "MediaOrganizer"
+LOG_DIR = "logs"  # logging_setup maakt/benut deze map
+# [END: SECTION: CONSTANTS]
 
-    controller = MediaAppController()
-    controller.start()
 
-except Exception as e:
-    logging.exception("Er trad een fout op in main.py:")
+# [FUNC: main]
+def main() -> int:
+    """
+    Entrypoint van de applicatie:
+    - Initialiseert centrale logging (txt + jsonl)
+    - Start de controller (Qt-app + GUI)
+    """
+    init_logging(PROJECT_NAME, LOG_DIR)
+    logger = logging.getLogger(__name__)
+
+    try:
+        logger.info("Start %s", PROJECT_NAME)
+        controller = MediaAppController()
+        controller.start()
+        logger.info("Stop %s", PROJECT_NAME)
+        return 0
+    except Exception:
+        logger.exception("Onverwachte fout in main()")
+        return 1
+# [END: FUNC: main]
+
+
+# [SECTION: MAIN]
+if __name__ == "__main__":
+    raise SystemExit(main())
+# [END: SECTION: MAIN]
