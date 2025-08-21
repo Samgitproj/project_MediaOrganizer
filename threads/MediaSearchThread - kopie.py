@@ -17,7 +17,6 @@ except Exception:  # fallback pad
 logger = logging.getLogger(__name__)
 # [END: SECTION: LOGGER]
 
-
 # [CLASS: MediaSearchThread]
 class MediaSearchThread(QtCore.QThread):
     """
@@ -59,6 +58,7 @@ class MediaSearchThread(QtCore.QThread):
         )
 
 # [END: FUNC: def __init__]
+
 # [FUNC: def run]
     def run(self) -> None:
         try:
@@ -97,6 +97,7 @@ class MediaSearchThread(QtCore.QThread):
             self.error.emit(str(e))
 
 # [END: FUNC: def run]
+
 # [FUNC: def stop]
     def stop(self):
         """Publieke stopmethode voor controller: roept requestInterruption en wacht."""
@@ -105,6 +106,7 @@ class MediaSearchThread(QtCore.QThread):
         self.wait(2000)
 
 # [END: FUNC: def stop]
+
 # [FUNC: def _iter_media_paths]
     def _iter_media_paths(self, root: Path) -> Iterable[Path]:
         """
@@ -156,6 +158,7 @@ class MediaSearchThread(QtCore.QThread):
                     continue
 
 # [END: FUNC: def _iter_media_paths]
+
 # [FUNC: def _match_date]
     def _match_date(self, path: Path) -> bool:
         start, end = self._date_range  # type: ignore[assignment]
@@ -185,6 +188,7 @@ class MediaSearchThread(QtCore.QThread):
             return True
 
 # [END: FUNC: def _match_date]
+
 # [END: CLASS: MediaSearchThread]
 
 # [FUNC: def os_walk]
@@ -208,7 +212,6 @@ if __name__ == "__main__":
     logging.basicConfig(level=logging.INFO)
     from datetime import date
 
-# [END: SECTION: MAIN]
     def _on_found(items):
         print(f"[found] {len(items)} items…")
 
@@ -233,3 +236,5 @@ if __name__ == "__main__":
     t.progress.connect(_on_progress)
     t.start()
     sys.exit(app.exec())
+# [END: SECTION: MAIN]
+
