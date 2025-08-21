@@ -7,16 +7,18 @@ from typing import Iterable, List, Optional, Tuple
 
 from PyQt6 import QtCore
 
-# [END: SECTION: IMPORTS]
 try:
     from core import media_utils  # type: ignore
 except Exception:  # fallback pad
     import media_utils  # type: ignore
+# [END: SECTION: IMPORTS]
 
+# [SECTION: LOGGER]
 logger = logging.getLogger(__name__)
+# [END: SECTION: LOGGER]
 
 
-# [SECTION: CLASS: MediaSearchThread]
+# [CLASS: MediaSearchThread]
 class MediaSearchThread(QtCore.QThread):
     """
     Asynchrone scan van een startpad met filters.
@@ -36,7 +38,7 @@ class MediaSearchThread(QtCore.QThread):
 
     BATCH_SIZE = 50
 
-# [FUNC: __init__]
+# [FUNC: def __init__]
     def __init__(
         self,
         start_path: str | Path,
@@ -56,8 +58,8 @@ class MediaSearchThread(QtCore.QThread):
             self._date_range,
         )
 
-# [END: FUNC: __init__]
-# [FUNC: run]
+# [END: FUNC: def __init__]
+# [FUNC: def run]
     def run(self) -> None:
         try:
             if not self._root.exists():
@@ -94,16 +96,16 @@ class MediaSearchThread(QtCore.QThread):
             logger.exception("Fout tijdens scan: %s", e)
             self.error.emit(str(e))
 
-# [END: FUNC: run]
-# [FUNC: stop]
+# [END: FUNC: def run]
+# [FUNC: def stop]
     def stop(self):
         """Publieke stopmethode voor controller: roept requestInterruption en wacht."""
         logger.info("Stopverzoek ontvangen voor zoekthread")
         self.requestInterruption()
         self.wait(2000)
 
-# [END: FUNC: stop]
-# [FUNC: _iter_media_paths]
+# [END: FUNC: def stop]
+# [FUNC: def _iter_media_paths]
     def _iter_media_paths(self, root: Path) -> Iterable[Path]:
         """
         Recursieve iteratie over mappen met correcte uitsluiting:
@@ -153,8 +155,8 @@ class MediaSearchThread(QtCore.QThread):
                     # Veilig overslaan van onleesbare/rare bestanden
                     continue
 
-# [END: FUNC: _iter_media_paths]
-# [FUNC: _match_date]
+# [END: FUNC: def _iter_media_paths]
+# [FUNC: def _match_date]
     def _match_date(self, path: Path) -> bool:
         start, end = self._date_range  # type: ignore[assignment]
         in_range = None
@@ -182,10 +184,10 @@ class MediaSearchThread(QtCore.QThread):
         except Exception:
             return True
 
-# [END: FUNC: _match_date]
-# [END: SECTION: CLASS: MediaSearchThread]
+# [END: FUNC: def _match_date]
+# [END: CLASS: MediaSearchThread]
 
-# [FUNC: os_walk]
+# [FUNC: def os_walk]
 def os_walk(root: Path):
     """
     Losse wrapper rond os.walk zodat we Path kunnen blijven gebruiken en
@@ -196,7 +198,7 @@ def os_walk(root: Path):
     for dirpath, dirnames, filenames in os.walk(str(root)):
         yield dirpath, dirnames, filenames
 
-# [END: FUNC: os_walk]
+# [END: FUNC: def os_walk]
 
 # [SECTION: MAIN]
 if __name__ == "__main__":
