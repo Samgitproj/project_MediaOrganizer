@@ -1,94 +1,171 @@
-# [SECTION: Imports]
-import os
+# [SECTION: IMPORTS]
 import logging
-from PyQt6.QtCore import QTimer
+import os
 from PyQt6.QtGui import QPixmap
-from PyQt6.QtMultimedia import QMediaPlayer, QAudioOutput, QMediaContent
-from PyQt6.QtMultimediaWidgets import QVideoWidget
-from PyQt6.QtWidgets import QLabel
+from PyQt6.QtCore import Qt, QUrl
 
 
-# [END: Imports]
+# [END: SECTION: IMPORTS]
+logger = logging.getLogger(__name__)
+
+
 # [CLASS: MediaPlayer]
+# [SECTION: CLASS: MediaPlayer]
 class MediaPlayer:
 # [FUNC: __init__]
-    def __init__(
-        self, media_label: QLabel, video_widget: QVideoWidget, player: QMediaPlayer
-    ):
+    def __init__(self, media_label, video_widget, player):
+        logger.debug("MediaPlayer __init__ gestart")
         self.media_label = media_label
         self.video_widget = video_widget
         self.player = player
-        self.current_media_index = 0
-        self.media_paths = []
-        self.slideshow_timer = QTimer()
-        self.slideshow_timer.timeout.connect(self.play_next_media)
-        self.is_playing = False
-        self.is_paused = False
-        logging.debug("MediaPlayer: geïnitialiseerd")
 
-# [END: __init__]
-# [FUNC: play_media]
-    def play_media(self, filepath: str):
-        logging.debug(f"MediaPlayer: speelt af {filepath}")
+        self.media_list: list[str] = []
+        self.current_index: int = -1  # vóór eerste item
+        self.slideshow_running: bool = False
+        self.loop_enabled: bool = False
+        self.delay_ms: int = 3000
 
-        if filepath.lower().endswith((".jpg", ".jpeg", ".png")):
-            self.player.stop()
-            self.video_widget.hide()
-            self.media_label.show()
-            pixmap = QPixmap(filepath)
-            self.media_label.setPixmap(pixmap)
-        elif filepath.lower().endswith((".mp4", ".avi")):
-            self.media_label.hide()
-            self.video_widget.show()
-            self.player.setSource(QMediaContent(filepath))
-            self.player.play()
-        else:
-            logging.warning(f"Ongeldig mediabestand: {filepath}")
+        # Timer voor afbeeldingen
+        from PyQt6.QtCore import QTimer  # lokale import om globale imports intact te laten
+        self._timer = QTimer(self.media_label)
+        self._timer.setSingleShot(False)
+        self._timer.timeout.connect(self._on_timeout)
 
-# [END: play_media]
-# [FUNC: play_next_media]
-    def play_next_media(self):
-        if not self.media_paths:
-            logging.info("MediaPlayer: geen media te tonen")
-            return
+        # Bij video-einde → volgende item wanneer slideshow actief
+        try:
+            from PyQt6.QtMultimedia import QMediaPlayer as _QMP  # type: ignore
+            self._QMP = _QMP
+            self.player.mediaStatusChanged.connect(self._on_media_status_changed)
+        except Exception:
+            self._QMP = None
 
-        self.current_media_index = (self.current_media_index + 1) % len(
-            self.media_paths
-        )
-        volgende_pad = self.media_paths[self.current_media_index]
-        self.play_media(volgende_pad)
+# [END: FUNC: __init__]
+# [FUNC: set_loop]
+    def set_loop(self, enabled: bool) -> None:
+        logger.info("Loop ingesteld → %s", enabled)
+        self.loop_enabled = bool(enabled)
 
-# [END: play_next_media]
+# [END: FUNC: set_loop]
+# [FUNC: set_delay]
+    def set_delay(self, ms: int) -> None:
+        ms = max(250, int(ms))  # minimaal 250 ms
+        logger.info("Delay ingesteld → %d ms", ms)
+        self.delay_ms = ms
+        if self._timer.isActive():
+            self._timer.start(self.delay_ms)  # interval live bijstellen
+
+# [END: FUNC: set_delay]
 # [FUNC: start_slideshow]
-    def start_slideshow(self, interval_secs=5):
-        if not self.media_paths:
-            logging.info("Geen mediabestanden om slideshow te starten.")
+    def start_slideshow(self):
+        logger.info("Slideshow gestart")
+        if not self.media_list:
+            logger.warning("Slideshow kan niet starten: media_list is leeg")
             return
+        self.slideshow_running = True
+        self.play_next_media()
 
-        self.is_playing = True
-        self.is_paused = False
-        self.slideshow_timer.start(interval_secs * 1000)
-        self.play_media(self.media_paths[self.current_media_index])
-        logging.info("Slideshow gestart.")
-
-# [END: start_slideshow]
+# [END: FUNC: start_slideshow]
 # [FUNC: pause_slideshow]
     def pause_slideshow(self):
-        if self.is_playing:
-            if self.is_paused:
-                self.slideshow_timer.start()
-                logging.info("Slideshow hervat.")
-            else:
-                self.slideshow_timer.stop()
-                logging.info("Slideshow gepauzeerd.")
-            self.is_paused = not self.is_paused
+        logger.info("Slideshow gepauzeerd")
+        self.slideshow_running = False
+        self._timer.stop()
+        try:
+            self.player.pause()
+        except Exception:
+            pass
 
-# [END: pause_slideshow]
+# [END: FUNC: pause_slideshow]
 # [FUNC: stop_slideshow]
     def stop_slideshow(self):
-        self.slideshow_timer.stop()
-        self.is_playing = False
-        self.is_paused = False
-        logging.info("Slideshow gestopt.")
-# [END: MediaPlayer]
-# [END: stop_slideshow]
+        logger.info("Slideshow gestopt")
+        self.slideshow_running = False
+        self._timer.stop()
+        try:
+            self.player.stop()
+        except Exception:
+            pass
+        self.media_label.clear()
+        self.media_label.setVisible(False)
+        self.video_widget.setVisible(False)
+
+# [END: FUNC: stop_slideshow]
+# [FUNC: play_next_media]
+    def play_next_media(self):
+        if not self.media_list:
+            logger.warning("Geen media in de lijst om af te spelen")
+            return
+
+        # Zonder loop: stop aan het einde
+        if not self.loop_enabled and self.current_index + 1 >= len(self.media_list):
+            logger.info("Einde afspeellijst (loop uit) → stop slideshow")
+            self.stop_slideshow()
+            return
+
+        self.current_index = (self.current_index + 1) % len(self.media_list)
+        pad = self.media_list[self.current_index]
+        logger.debug("Volgende media: idx=%d → %s", self.current_index, pad)
+        self.play_media(pad)
+
+# [END: FUNC: play_next_media]
+# [FUNC: play_media]
+    def play_media(self, pad: str):
+        if not os.path.exists(pad):
+            logger.error("Bestand bestaat niet: %s", pad)
+            return
+
+        # Afbeelding
+        if pad.lower().endswith((".png", ".jpg", ".jpeg", ".bmp", ".gif", ".tiff", ".webp", ".heic")):
+            logger.debug("Afbeelding tonen: %s", pad)
+            self._timer.stop()  # straks herstarten met juiste delay
+            self.video_widget.setVisible(False)
+
+            pixmap = QPixmap(pad)
+            self.media_label.setPixmap(
+                pixmap.scaled(
+                    self.media_label.size(),
+                    Qt.AspectRatioMode.KeepAspectRatio,
+                    Qt.TransformationMode.SmoothTransformation,
+                )
+            )
+            self.media_label.setVisible(True)
+
+            if self.slideshow_running:
+                self._timer.start(self.delay_ms)
+
+        # Video
+        elif pad.lower().endswith((".mp4", ".avi", ".mov", ".mkv", ".wmv", ".flv", ".webm", ".mpeg", ".mpg")):
+            logger.debug("Video afspelen: %s", pad)
+            self._timer.stop()  # video bepaalt tempo
+            self.media_label.setVisible(False)
+            self.video_widget.setVisible(True)
+            self.player.setSource(QUrl.fromLocalFile(pad))
+            self.player.play()
+
+        else:
+            logger.warning("Niet-ondersteund mediabestand: %s", pad)
+
+# [END: FUNC: play_media]
+# [FUNC: _on_timeout]
+    def _on_timeout(self):
+        logger.debug("Slideshow-timeout → volgende media")
+        if self.slideshow_running:
+            self.play_next_media()
+        else:
+            self._timer.stop()
+
+# [END: FUNC: _on_timeout]
+# [FUNC: _on_media_status_changed]
+    def _on_media_status_changed(self, status):
+        """Bij video-einde automatisch volgende item indien slideshow actief."""
+        try:
+            if self._QMP and status == self._QMP.MediaStatus.EndOfMedia:
+                logger.debug("Video EndOfMedia → volgende media (slideshow=%s)", self.slideshow_running)
+                if self.slideshow_running:
+                    self.play_next_media()
+        except Exception:
+            # Geen harde afhankelijkheid op QMediaPlayer-enums
+            pass
+# [END: CLASS: MediaPlayer]
+# [END: FUNC: _on_media_status_changed]
+# [END: SECTION: CLASS: MediaPlayer]

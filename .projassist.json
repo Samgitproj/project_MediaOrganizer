@@ -1,125 +1,102 @@
 {
-    "project_name": "MediaOrganizer",
-    "project_path": "C:\\OneDrive\\Vioprint\\OneDrive - Vioprint\\software projecten\\MediaOrganizer",
-    "github_repo": "https://github.com/Samgitproj/project_MediaOrganizer",
-    "scripts": [
-        {
-            "path": "main.py",
-            "github_url": "https://github.com/Samgitproj/project_MediaOrganizer/blob/main/main.py"
-        },
-        {
-            "path": "core/__init__.py",
-            "github_url": "https://github.com/Samgitproj/project_MediaOrganizer/blob/main/core/__init__.py"
-        },
-        {
-            "path": "core/app_controller.py",
-            "github_url": "https://github.com/Samgitproj/project_MediaOrganizer/blob/main/core/app_controller.py"
-        },
-        {
-            "path": "core/gui_handler.py",
-            "github_url": "https://github.com/Samgitproj/project_MediaOrganizer/blob/main/core/gui_handler.py"
-        },
-        {
-            "path": "core/media_player.py",
-            "github_url": "https://github.com/Samgitproj/project_MediaOrganizer/blob/main/core/media_player.py"
-        },
-        {
-            "path": "core/media_scanner.py",
-            "github_url": "https://github.com/Samgitproj/project_MediaOrganizer/blob/main/core/media_scanner.py"
-        },
-        {
-            "path": "core/db_interface.py",
-            "github_url": "https://github.com/Samgitproj/project_MediaOrganizer/blob/main/core/db_interface.py"
-        },
-        {
-            "path": "core/export_tools.py",
-            "github_url": "https://github.com/Samgitproj/project_MediaOrganizer/blob/main/core/export_tools.py"
-        },
-        {
-            "path": "core/media_utils.py",
-            "github_url": "https://github.com/Samgitproj/project_MediaOrganizer/blob/main/core/media_utils.py"
-        },
-        {
-            "path": "core/create_database.py",
-            "github_url": "https://github.com/Samgitproj/project_MediaOrganizer/blob/main/core/create_database.py"
-        },
-        {
-            "path": "core/FotoBeheerApp.py",
-            "github_url": "https://github.com/Samgitproj/project_MediaOrganizer/blob/main/core/FotoBeheerApp.py"
-        },
-        {
-            "path": "threads/__init__.py",
-            "github_url": "https://github.com/Samgitproj/project_MediaOrganizer/blob/main/threads/__init__.py"
-        },
-        {
-            "path": "threads/MediaSearchThread.py",
-            "github_url": "https://github.com/Samgitproj/project_MediaOrganizer/blob/main/threads/MediaSearchThread.py"
-        },
-        {
-            "path": "gui/__init__.py",
-            "github_url": "https://github.com/Samgitproj/project_MediaOrganizer/blob/main/gui/__init__.py"
-        },
-        {
-            "path": "gui/MainWindow.py",
-            "github_url": "https://github.com/Samgitproj/project_MediaOrganizer/blob/main/gui/MainWindow.py"
-        },
-        {
-            "path": "gui/MediaOrganizerGui.py",
-            "github_url": "https://github.com/Samgitproj/project_MediaOrganizer/blob/main/gui/MediaOrganizerGui.py"
-        },
-        {
-            "path": "gui/MainWindow.ui",
-            "github_url": "https://github.com/Samgitproj/project_MediaOrganizer/blob/main/gui/MainWindow.ui"
-        },
-        {
-            "path": "ai/detecteer_donkerheid.py",
-            "github_url": "https://github.com/Samgitproj/project_MediaOrganizer/blob/main/ai/detecteer_donkerheid.py"
-        },
-        {
-            "path": "ai/bepaal_ai_tags.py",
-            "github_url": "https://github.com/Samgitproj/project_MediaOrganizer/blob/main/ai/bepaal_ai_tags.py"
-        },
-        {
-            "path": "ai/onscherpte_detectie.py",
-            "github_url": "https://github.com/Samgitproj/project_MediaOrganizer/blob/main/ai/onscherpte_detectie.py"
-        },
-        {
-            "path": "backup/__init__.py",
-            "github_url": "https://github.com/Samgitproj/project_MediaOrganizer/blob/main/backup/__init__.py"
-        },
-        {
-            "path": "documents/__init__.py",
-            "github_url": "https://github.com/Samgitproj/project_MediaOrganizer/blob/main/documents/__init__.py"
-        },
-        {
-            "path": "resources/__init__.py",
-            "github_url": "https://github.com/Samgitproj/project_MediaOrganizer/blob/main/resources/__init__.py"
-        },
-        {
-            "path": "core\\app_controller.py",
-            "github_url": "https://github.com/Samgitproj/project_MediaOrganizer/blob/main/core/app_controller.py"
-        }
-    ],
-    "changelogs": [
-        "main.changelog.txt"
-    ],
-    "log_file": "log.txt",
-    "rules": {
-        "auto_changelog": {
-            "enabled": true,
-            "apply_to_new_scripts": true
-        },
-        "log_format": "default",
-        "backup_on_edit": true
+  "project_name": "MediaOrganizer",
+  "project_path": "C:\\OneDrive\\Vioprint\\OneDrive - Vioprint\\software projecten\\MediaOrganizer",
+  "github_repo": "https://github.com/Samgitproj/project_MediaOrganizer",
+  "scripts": [
+    "main.py",
+    "core/__init__.py",
+    "core/app_controller.py",
+    "core/gui_handler.py",
+    "core/media_player.py",
+    "core/media_scanner.py",
+    "core/db_interface.py",
+    "core/export_tools.py",
+    "core/media_utils.py",
+    "core/create_database.py",
+    "core/FotoBeheerApp.py",
+    "threads/__init__.py",
+    "threads/MediaSearchThread.py",
+    "gui/__init__.py",
+    "gui/MainWindow.py",
+    "gui/MediaOrganizerGui.py",
+    "gui/MainWindow.ui",
+    "ai/detecteer_donkerheid.py",
+    "ai/bepaal_ai_tags.py",
+    "ai/onscherpte_detectie.py",
+    "backup/__init__.py",
+    "documents/__init__.py",
+    "resources/__init__.py"
+  ],
+  "changelogs": [
+    "main.changelog.txt"
+  ],
+  "log_file": "log.txt",
+  "rules": {
+    "auto_changelog": {
+      "enabled": true,
+      "apply_to_new_scripts": true
     },
-    "ai_rules": [
-        {
-            "id": "add_logging",
-            "description": "Voeg logging.debug toe aan elke methode",
-            "active": true,
-            "trigger": "btnAddLoggingAI",
-            "prompt": "Voeg logging.debug() toe aan het begin van elke functie om aan te geven welke methode wordt aangeroepen. Gebruik geen andere loggingniveaus tenzij nodig."
-        }
-    ],
-    "gpt_status_url": "https://github.com/Samgitproj/project_MediaOrganizer/raw/main/.projassist.json"
+    "log_format": "default",
+    "backup_on_edit": true
+  },
+  "ai_rules": [
+    {
+      "id": "add_logging",
+      "description": "Voeg logging.debug toe aan elke methode",
+      "active": true,
+      "trigger": "btnAddLoggingAI",
+      "prompt": "Voeg logging.debug() toe aan het begin van elke functie om aan te geven welke methode wordt aangeroepen. Gebruik geen andere loggingniveaus tenzij nodig."
+    }
+  ],
+  "gpt_status_url": "https://raw.githubusercontent.com/Samgitproj/project_MediaOrganizer/main/.projassist.json",
+  "script_urls": {
+    "main.py": "https://github.com/Samgitproj/project_MediaOrganizer/blob/main/main.py",
+    "core/__init__.py": "https://github.com/Samgitproj/project_MediaOrganizer/blob/main/core/__init__.py",
+    "core/app_controller.py": "https://github.com/Samgitproj/project_MediaOrganizer/blob/main/core/app_controller.py",
+    "core/gui_handler.py": "https://github.com/Samgitproj/project_MediaOrganizer/blob/main/core/gui_handler.py",
+    "core/media_player.py": "https://github.com/Samgitproj/project_MediaOrganizer/blob/main/core/media_player.py",
+    "core/media_scanner.py": "https://github.com/Samgitproj/project_MediaOrganizer/blob/main/core/media_scanner.py",
+    "core/db_interface.py": "https://github.com/Samgitproj/project_MediaOrganizer/blob/main/core/db_interface.py",
+    "core/export_tools.py": "https://github.com/Samgitproj/project_MediaOrganizer/blob/main/core/export_tools.py",
+    "core/media_utils.py": "https://github.com/Samgitproj/project_MediaOrganizer/blob/main/core/media_utils.py",
+    "core/create_database.py": "https://github.com/Samgitproj/project_MediaOrganizer/blob/main/core/create_database.py",
+    "core/FotoBeheerApp.py": "https://github.com/Samgitproj/project_MediaOrganizer/blob/main/core/FotoBeheerApp.py",
+    "threads/__init__.py": "https://github.com/Samgitproj/project_MediaOrganizer/blob/main/threads/__init__.py",
+    "threads/MediaSearchThread.py": "https://github.com/Samgitproj/project_MediaOrganizer/blob/main/threads/MediaSearchThread.py",
+    "gui/__init__.py": "https://github.com/Samgitproj/project_MediaOrganizer/blob/main/gui/__init__.py",
+    "gui/MainWindow.py": "https://github.com/Samgitproj/project_MediaOrganizer/blob/main/gui/MainWindow.py",
+    "gui/MediaOrganizerGui.py": "https://github.com/Samgitproj/project_MediaOrganizer/blob/main/gui/MediaOrganizerGui.py",
+    "gui/MainWindow.ui": "https://github.com/Samgitproj/project_MediaOrganizer/blob/main/gui/MainWindow.ui",
+    "ai/detecteer_donkerheid.py": "https://github.com/Samgitproj/project_MediaOrganizer/blob/main/ai/detecteer_donkerheid.py",
+    "ai/bepaal_ai_tags.py": "https://github.com/Samgitproj/project_MediaOrganizer/blob/main/ai/bepaal_ai_tags.py",
+    "ai/onscherpte_detectie.py": "https://github.com/Samgitproj/project_MediaOrganizer/blob/main/ai/onscherpte_detectie.py",
+    "backup/__init__.py": "https://github.com/Samgitproj/project_MediaOrganizer/blob/main/backup/__init__.py",
+    "documents/__init__.py": "https://github.com/Samgitproj/project_MediaOrganizer/blob/main/documents/__init__.py",
+    "resources/__init__.py": "https://github.com/Samgitproj/project_MediaOrganizer/blob/main/resources/__init__.py"
+  },
+  "raw_script_urls": {
+    "main.py": "https://raw.githubusercontent.com/Samgitproj/project_MediaOrganizer/main/main.py",
+    "core/__init__.py": "https://raw.githubusercontent.com/Samgitproj/project_MediaOrganizer/main/core/__init__.py",
+    "core/app_controller.py": "https://raw.githubusercontent.com/Samgitproj/project_MediaOrganizer/main/core/app_controller.py",
+    "core/gui_handler.py": "https://raw.githubusercontent.com/Samgitproj/project_MediaOrganizer/main/core/gui_handler.py",
+    "core/media_player.py": "https://raw.githubusercontent.com/Samgitproj/project_MediaOrganizer/main/core/media_player.py",
+    "core/media_scanner.py": "https://raw.githubusercontent.com/Samgitproj/project_MediaOrganizer/main/core/media_scanner.py",
+    "core/db_interface.py": "https://raw.githubusercontent.com/Samgitproj/project_MediaOrganizer/main/core/db_interface.py",
+    "core/export_tools.py": "https://raw.githubusercontent.com/Samgitproj/project_MediaOrganizer/main/core/export_tools.py",
+    "core/media_utils.py": "https://raw.githubusercontent.com/Samgitproj/project_MediaOrganizer/main/core/media_utils.py",
+    "core/create_database.py": "https://raw.githubusercontent.com/Samgitproj/project_MediaOrganizer/main/core/create_database.py",
+    "core/FotoBeheerApp.py": "https://raw.githubusercontent.com/Samgitproj/project_MediaOrganizer/main/core/FotoBeheerApp.py",
+    "threads/__init__.py": "https://raw.githubusercontent.com/Samgitproj/project_MediaOrganizer/main/threads/__init__.py",
+    "threads/MediaSearchThread.py": "https://raw.githubusercontent.com/Samgitproj/project_MediaOrganizer/main/threads/MediaSearchThread.py",
+    "gui/__init__.py": "https://raw.githubusercontent.com/Samgitproj/project_MediaOrganizer/main/gui/__init__.py",
+    "gui/MainWindow.py": "https://raw.githubusercontent.com/Samgitproj/project_MediaOrganizer/main/gui/MainWindow.py",
+    "gui/MediaOrganizerGui.py": "https://raw.githubusercontent.com/Samgitproj/project_MediaOrganizer/main/gui/MediaOrganizerGui.py",
+    "gui/MainWindow.ui": "https://raw.githubusercontent.com/Samgitproj/project_MediaOrganizer/main/gui/MainWindow.ui",
+    "ai/detecteer_donkerheid.py": "https://raw.githubusercontent.com/Samgitproj/project_MediaOrganizer/main/ai/detecteer_donkerheid.py",
+    "ai/bepaal_ai_tags.py": "https://raw.githubusercontent.com/Samgitproj/project_MediaOrganizer/main/ai/bepaal_ai_tags.py",
+    "ai/onscherpte_detectie.py": "https://raw.githubusercontent.com/Samgitproj/project_MediaOrganizer/main/ai/onscherpte_detectie.py",
+    "backup/__init__.py": "https://raw.githubusercontent.com/Samgitproj/project_MediaOrganizer/main/backup/__init__.py",
+    "documents/__init__.py": "https://raw.githubusercontent.com/Samgitproj/project_MediaOrganizer/main/documents/__init__.py",
+    "resources/__init__.py": "https://raw.githubusercontent.com/Samgitproj/project_MediaOrganizer/main/resources/__init__.py"
+  }
 }
