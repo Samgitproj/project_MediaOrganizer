@@ -3,16 +3,15 @@ import logging
 import os
 from PyQt6.QtGui import QPixmap
 from PyQt6.QtCore import Qt, QUrl
-
-
 # [END: SECTION: IMPORTS]
-logger = logging.getLogger(__name__)
 
+# [SECTION: LOGGER]
+logger = logging.getLogger(__name__)
+# [END: SECTION: LOGGER]
 
 # [CLASS: MediaPlayer]
-# [SECTION: CLASS: MediaPlayer]
 class MediaPlayer:
-# [FUNC: __init__]
+# [FUNC: def __init__]
     def __init__(self, media_label, video_widget, player):
         logger.debug("MediaPlayer __init__ gestart")
         self.media_label = media_label
@@ -39,14 +38,16 @@ class MediaPlayer:
         except Exception:
             self._QMP = None
 
-# [END: FUNC: __init__]
-# [FUNC: set_loop]
+# [END: FUNC: def __init__]
+
+# [FUNC: def set_loop]
     def set_loop(self, enabled: bool) -> None:
         logger.info("Loop ingesteld → %s", enabled)
         self.loop_enabled = bool(enabled)
 
-# [END: FUNC: set_loop]
-# [FUNC: set_delay]
+# [END: FUNC: def set_loop]
+
+# [FUNC: def set_delay]
     def set_delay(self, ms: int) -> None:
         ms = max(250, int(ms))  # minimaal 250 ms
         logger.info("Delay ingesteld → %d ms", ms)
@@ -54,8 +55,9 @@ class MediaPlayer:
         if self._timer.isActive():
             self._timer.start(self.delay_ms)  # interval live bijstellen
 
-# [END: FUNC: set_delay]
-# [FUNC: start_slideshow]
+# [END: FUNC: def set_delay]
+
+# [FUNC: def start_slideshow]
     def start_slideshow(self):
         logger.info("Slideshow gestart")
         if not self.media_list:
@@ -64,8 +66,9 @@ class MediaPlayer:
         self.slideshow_running = True
         self.play_next_media()
 
-# [END: FUNC: start_slideshow]
-# [FUNC: pause_slideshow]
+# [END: FUNC: def start_slideshow]
+
+# [FUNC: def pause_slideshow]
     def pause_slideshow(self):
         logger.info("Slideshow gepauzeerd")
         self.slideshow_running = False
@@ -75,8 +78,9 @@ class MediaPlayer:
         except Exception:
             pass
 
-# [END: FUNC: pause_slideshow]
-# [FUNC: stop_slideshow]
+# [END: FUNC: def pause_slideshow]
+
+# [FUNC: def stop_slideshow]
     def stop_slideshow(self):
         logger.info("Slideshow gestopt")
         self.slideshow_running = False
@@ -89,8 +93,9 @@ class MediaPlayer:
         self.media_label.setVisible(False)
         self.video_widget.setVisible(False)
 
-# [END: FUNC: stop_slideshow]
-# [FUNC: play_next_media]
+# [END: FUNC: def stop_slideshow]
+
+# [FUNC: def play_next_media]
     def play_next_media(self):
         if not self.media_list:
             logger.warning("Geen media in de lijst om af te spelen")
@@ -107,8 +112,9 @@ class MediaPlayer:
         logger.debug("Volgende media: idx=%d → %s", self.current_index, pad)
         self.play_media(pad)
 
-# [END: FUNC: play_next_media]
-# [FUNC: play_media]
+# [END: FUNC: def play_next_media]
+
+# [FUNC: def play_media]
     def play_media(self, pad: str):
         if not os.path.exists(pad):
             logger.error("Bestand bestaat niet: %s", pad)
@@ -145,8 +151,9 @@ class MediaPlayer:
         else:
             logger.warning("Niet-ondersteund mediabestand: %s", pad)
 
-# [END: FUNC: play_media]
-# [FUNC: _on_timeout]
+# [END: FUNC: def play_media]
+
+# [FUNC: def _on_timeout]
     def _on_timeout(self):
         logger.debug("Slideshow-timeout → volgende media")
         if self.slideshow_running:
@@ -154,8 +161,9 @@ class MediaPlayer:
         else:
             self._timer.stop()
 
-# [END: FUNC: _on_timeout]
-# [FUNC: _on_media_status_changed]
+# [END: FUNC: def _on_timeout]
+
+# [FUNC: def _on_media_status_changed]
     def _on_media_status_changed(self, status):
         """Bij video-einde automatisch volgende item indien slideshow actief."""
         try:
@@ -167,5 +175,5 @@ class MediaPlayer:
             # Geen harde afhankelijkheid op QMediaPlayer-enums
             pass
 # [END: CLASS: MediaPlayer]
-# [END: FUNC: _on_media_status_changed]
-# [END: SECTION: CLASS: MediaPlayer]
+# [END: FUNC: def _on_media_status_changed]
+
