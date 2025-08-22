@@ -6,18 +6,18 @@ import os
 import time
 from typing import Dict, Iterable, List, Tuple
 
-# [END: SECTION: IMPORTS]
 # Externe libs (PIL/ffprobe) bewust vermeden; we beperken ons tot mtime/size/ext.
 from .db_interface import DbService
+# [END: SECTION: IMPORTS]
 
-
+# [SECTION: LOGGER]
 logger = logging.getLogger(__name__)
+# [END: SECTION: LOGGER]
 
 IMAGE_EXTS = {".jpg", ".jpeg", ".png", ".bmp", ".gif", ".tiff", ".webp"}
 VIDEO_EXTS = {".mp4", ".avi", ".mov", ".mkv", ".wmv", ".m4v", ".webm"}
 
-
-# [FUNC: _detect_type]
+# [FUNC: def _detect_type]
 def _detect_type(ext: str) -> str:
     ext_l = ext.lower()
     if ext_l in IMAGE_EXTS:
@@ -26,11 +26,9 @@ def _detect_type(ext: str) -> str:
         return "video"
     return "other"
 
-# [END: FUNC: _detect_type]
+# [END: FUNC: def _detect_type]
 
-
-
-# [FUNC: iter_media_files]
+# [FUNC: def iter_media_files]
 def iter_media_files(root: str) -> Iterable[Tuple[str, str, str]]:
     """
     Yield (full_path, filename, ext) voor bestanden onder root.
@@ -41,11 +39,9 @@ def iter_media_files(root: str) -> Iterable[Tuple[str, str, str]]:
             _, ext = os.path.splitext(fn)
             yield full, fn, ext
 
-# [END: FUNC: iter_media_files]
+# [END: FUNC: def iter_media_files]
 
-
-
-# [FUNC: scan_folder_into_db]
+# [FUNC: def scan_folder_into_db]
 def scan_folder_into_db(root: str, db: DbService) -> Dict[str, int]:
     """
     Scant een map en schrijft/actualiseert media in de DB.
@@ -105,9 +101,7 @@ def scan_folder_into_db(root: str, db: DbService) -> Dict[str, int]:
     logger.info("Scan klaar: %s", stats)
     return stats
 
-# [END: FUNC: scan_folder_into_db]
-
-
+# [END: FUNC: def scan_folder_into_db]
 
 # [SECTION: MAIN]
 if __name__ == "__main__":
@@ -124,3 +118,4 @@ if __name__ == "__main__":
     # Pas hieronder het pad aan voor een snelle test
     print(scan_folder_into_db("C:/Temp/MediaDemo", db))
 # [END: SECTION: MAIN]
+
