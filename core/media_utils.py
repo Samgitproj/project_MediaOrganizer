@@ -3,8 +3,8 @@ import os
 import logging
 from datetime import datetime, date
 from typing import Optional, Iterable
-
 # [END: SECTION: IMPORTS]
+
 # Pillow optioneel voor EXIF
 try:
     from PIL import Image, ExifTags  # type: ignore
@@ -12,7 +12,9 @@ except Exception:
     Image = None  # type: ignore
     ExifTags = None  # type: ignore
 
+# [SECTION: LOGGER]
 logger = logging.getLogger(__name__)
+# [END: SECTION: LOGGER]
 
 # Vaste extensies voor afbeeldingen
 image_extensions = [".jpg", ".jpeg", ".png", ".bmp", ".gif", ".tiff", ".heic", ".webp"]
@@ -45,8 +47,7 @@ excluded_folders = [
     r"C:\MSOCache",
 ]
 
-
-# [FUNC: _file_mtime_datetime]
+# [FUNC: def _file_mtime_datetime]
 def _file_mtime_datetime(path: str) -> Optional[datetime]:
     try:
         ts = os.path.getmtime(path)
@@ -54,9 +55,9 @@ def _file_mtime_datetime(path: str) -> Optional[datetime]:
     except Exception:
         return None
 
-# [END: FUNC: _file_mtime_datetime]
+# [END: FUNC: def _file_mtime_datetime]
 
-# [FUNC: get_exif_datetime]
+# [FUNC: def get_exif_datetime]
 def get_exif_datetime(path: str) -> Optional[datetime]:
     """
     Retourneert opnametijd (EXIF DateTimeOriginal) indien mogelijk,
@@ -86,9 +87,9 @@ def get_exif_datetime(path: str) -> Optional[datetime]:
     except Exception:
         return None
 
-# [END: FUNC: get_exif_datetime]
+# [END: FUNC: def get_exif_datetime]
 
-# [FUNC: in_date_range]
+# [FUNC: def in_date_range]
 def in_date_range(path: str, start, end) -> Optional[bool]:
     """
     True/False als we zeker zijn dat path binnen/ buiten de range valt.
@@ -124,17 +125,15 @@ def in_date_range(path: str, start, end) -> Optional[bool]:
         return None
     return sd <= dt.date() <= ed
 
-# [END: FUNC: in_date_range]
+# [END: FUNC: def in_date_range]
 
-
-
-# [FUNC: _file_datetime_for_sequence]
+# [FUNC: def _file_datetime_for_sequence]
 def _file_datetime_for_sequence(path: str) -> Optional[datetime]:
     return get_exif_datetime(path) or _file_mtime_datetime(path)
 
-# [END: FUNC: _file_datetime_for_sequence]
+# [END: FUNC: def _file_datetime_for_sequence]
 
-# [FUNC: detect_sequences]
+# [FUNC: def detect_sequences]
 def detect_sequences(files: Iterable[str], gap_seconds: int) -> list[list[str]]:
     """
     Sorteert files op tijd en groepeert in reeksen zodra de kloof > gap_seconds is.
@@ -165,11 +164,9 @@ def detect_sequences(files: Iterable[str], gap_seconds: int) -> list[list[str]]:
         sequences.append(current)
     return sequences
 
-# [END: FUNC: detect_sequences]
+# [END: FUNC: def detect_sequences]
 
-
-
-# [FUNC: is_media_file]
+# [FUNC: def is_media_file]
 def is_media_file(filepath: str, filtertype: str) -> bool:
     """
     Bepaal of een pad een media-item is volgens het gekozen filtertype:
@@ -192,5 +189,5 @@ def is_media_file(filepath: str, filtertype: str) -> bool:
     logger.debug("is_media_file → match=%s", match)
     return match
 
-# [END: FUNC: is_media_file]
+# [END: FUNC: def is_media_file]
 
